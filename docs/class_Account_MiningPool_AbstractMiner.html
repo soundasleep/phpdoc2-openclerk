@@ -1,0 +1,98 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+  <title>PHPDoc2 - openclerk</title>
+  <link rel="stylesheet" type="text/css" href="default.css">
+</head>
+<body>
+<nav>
+  <a href="index.html">Root</a>
+</nav>
+
+<div class="content">
+<ul class="class-hierarchy"><li><a href="class_Account_SimpleAccountType.html" class="">Account\SimpleAccountType</a><ul><li>Account\MiningPool\AbstractMiner</li></ul></li></ul>
+<h1>
+  <small>abstract class</small>
+
+  <a href="namespace_Account_MiningPool.html" class="">Account\MiningPool</a>  \
+  <a href="class_Account_MiningPool_AbstractMiner.html" class="">AbstractMiner</a></h1>
+
+
+<dl>
+  <dt>All implemented interfaces:</dt>
+  <dd>
+    <a href="interface_Account_AccountType.html" class="">AccountType</a>, <a href="interface_Account_Miner.html" class="">Miner</a>, <a href="interface_Account_AccountTypeInformation.html" class="">AccountTypeInformation</a>  </dd>
+</dl>
+
+
+
+
+<dl>
+  <dt>All known direct subclasses:</dt>
+  <dd>
+    <a href="class_Account_MiningPool_AbstractMMCFEAccount.html" class="">AbstractMMCFEAccount</a>, <a href="class_Account_MiningPool_AbstractMPOSAccount.html" class="">AbstractMPOSAccount</a>, <a href="class_Account_MiningPool_BTCGuild.html" class="">BTCGuild</a>, <a href="class_Account_MiningPool_Beeeeer.html" class="">Beeeeer</a>, <a href="class_Account_MiningPool_BitMinter.html" class="">BitMinter</a>, <a href="class_Account_MiningPool_CoinHuntr.html" class="">CoinHuntr</a>, <a href="class_Account_MiningPool_Eligius.html" class="">Eligius</a>, <a href="class_Account_MiningPool_Eobot.html" class="">Eobot</a>, <a href="class_Account_MiningPool_FiftyBTC.html" class="">FiftyBTC</a>, <a href="class_Account_MiningPool_GHashIO.html" class="">GHashIO</a>, <a href="class_Account_MiningPool_HypernovaPw.html" class="">HypernovaPw</a>, <a href="class_Account_MiningPool_LTCMineRu.html" class="">LTCMineRu</a>, <a href="class_Account_MiningPool_LiteGuardian.html" class="">LiteGuardian</a>, <a href="class_Account_MiningPool_LitecoinPool.html" class="">LitecoinPool</a>, <a href="class_Account_MiningPool_MiningPoolCo.html" class="">MiningPoolCo</a>, <a href="class_Account_MiningPool_Multipool.html" class="">Multipool</a>, <a href="class_Account_MiningPool_NiceHash.html" class="">NiceHash</a>, <a href="class_Account_MiningPool_OzCoinBTC.html" class="">OzCoinBTC</a>, <a href="class_Account_MiningPool_OzCoinLTC.html" class="">OzCoinLTC</a>, <a href="class_Account_MiningPool_ScryptGuild.html" class="">ScryptGuild</a>, <a href="class_Account_MiningPool_Slush.html" class="">Slush</a>, <a href="class_Account_MiningPool_TripleMining.html" class="">TripleMining</a>, <a href="class_Account_MiningPool_WestHash.html" class="">WestHash</a>, <a href="class_Account_MiningPool_YPool.html" class="">YPool</a>  </dd>
+</dl>
+
+
+<hr>
+
+<p>Basic miner type.</p><p>Instances of this account may be represented as an Account, and can be used to obtain current balances for this account. For example, get the current wallet balances for a mining pool or exchange wallet.</p><p>In theory this could also be extended to cryptocurrency addresses? <i>(from <a href="interface_Account_AccountType.html" class="">AccountType</a>)</i></p><dl></dl>
+<hr>
+
+<h2>Method Summary</h2>
+
+<table>
+  <thead>
+    <tr>
+      <th>Name</th>
+      <th>Description</th>
+    </tr>
+  </thead>
+  <tbody>
+<tr><td><a href="class_Account_MiningPool_AbstractMiner.html#fetchJSON" class="">fetchJSON($url, Logger $logger, $throttle = 3)</a></td><td>Fetch the JSON from the given GET URL, or throw a {@Link AccountFetchException} if something bad happened.</td></tr><tr><td><a href="class_Account_MiningPool_AbstractMiner.html#jsonDecode" class="">jsonDecode($raw)</a></td><td>By default, calls <a href="class_Apis_Fetch.html#jsonDecode" class="">Fetch#jsonDecode()</a></td></tr>  </tbody>
+</table>
+
+
+<h2>Inherited Method Summary</h2>
+
+<table>
+  <thead>
+    <tr>
+      <th>Name</th>
+      <th>Description</th>
+    </tr>
+  </thead>
+  <tbody>
+<tr><td><a href="class_Account_SimpleAccountType.html#checkFields" class="">checkFields($account)</a></td><td>Basic implementation of <a href="class_Account_SimpleAccountType.html#checkFields" class="">#checkFields()</a> using regular expressions. <i>(from <a href="class_Account_SimpleAccountType.html#checkFields" class="">SimpleAccountType</a>)</i></td></tr><tr><td><a href="class_Account_SimpleAccountType.html#fetchBalance" class="">fetchBalance($currency, $account, CurrencyFactory $factory, Logger $logger)</a></td><td>Helper function to get all balances for the given currency for this account, or <code>null</code> if there is no balance for this currency. May block. <i>(from <a href="class_Account_SimpleAccountType.html#fetchBalance" class="">SimpleAccountType</a>)</i></td></tr><tr><td><a href="class_Account_SimpleAccountType.html#fetchConfirmedBalance" class="">fetchConfirmedBalance($currency, $account, CurrencyFactory $factory, Logger $logger)</a></td><td>Helper function to get the current, confirmed, available balance of the given currency for this account. May block. <i>(from <a href="class_Account_SimpleAccountType.html#fetchConfirmedBalance" class="">SimpleAccountType</a>)</i></td></tr><tr><td><a href="class_Account_SimpleAccountType.html#throttle" class="">throttle(Logger $logger, $default = 3)</a></td><td>This allows all exchanges to optionally throttle multiple repeated requests based on a runtime configuration value. The throttle time is selected from either the <code>accounts_NAME_throttle</code> or <code>accounts_throttle</code> config values, or <code>$default</code> seconds; which is the time in seconds to wait between repeated requests. <i>(from <a href="class_Account_SimpleAccountType.html#throttle" class="">SimpleAccountType</a>)</i></td></tr>  </tbody>
+</table>
+
+
+
+<hr>
+
+<h3>
+  <small>public function</small>
+  fetchJSON($url, Logger $logger, $throttle = 3)  <a name="fetchJSON"></a>
+</h3>
+
+<blockquote>
+<p>Fetch the JSON from the given GET URL, or throw a {@Link AccountFetchException} if something bad happened.</p><dl><dt>Parameters:</dt><dd><code>$throttle</code> - the default delay, or 3 seconds if not specified<br></dd><dt>Defaults:</dt><dd><code>throttle</code> = 3<br></dd></dl></blockquote>
+
+
+<hr>
+
+<h3>
+  <small>public function</small>
+  jsonDecode($raw)  <a name="jsonDecode"></a>
+</h3>
+
+<blockquote>
+<p>By default, calls <a href="class_Apis_Fetch.html#jsonDecode" class="">Fetch#jsonDecode()</a></p><dl><dt>Throws:</dt><dd>FetchException - if the JSON could not be read<br></dd></dl></blockquote>
+
+</div>
+
+<div class="footer">
+  Generated by <a href="https://github.com/soundasleep/phpdoc2/" class="github">PHPDoc2</a> Fri, 24 Apr 2015 14:42:21 +1200</div>
+
+</body>
+</html>

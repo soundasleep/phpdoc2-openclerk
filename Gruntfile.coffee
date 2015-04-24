@@ -21,9 +21,19 @@ module.exports = (grunt) ->
     phpdoc2:
       openclerk:
         options:
-          directories: ['openclerk/']
+          directories: [
+            'openclerk/batch/',
+            'openclerk/core/',
+            'openclerk/inc/',
+            'openclerk/jobs/',
+            'openclerk/site/',
+            'openclerk/templates/',
+            'openclerk/vendor/openclerk/',
+            'openclerk/vendor/soundasleep/'
+          ],
           output: 'docs/'
           json: 'database.json'
+          config: 'phpdoc2.json'
 
   grunt.loadNpmTasks 'grunt-contrib-clean'
   grunt.loadNpmTasks 'grunt-composer'

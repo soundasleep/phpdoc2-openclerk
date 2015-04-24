@@ -1,7 +1,7 @@
 <!DOCTYPE HTML>
 <html>
 <head>
-  <title>PHPDoc2 - Untitled</title>
+  <title>PHPDoc2 - openclerk</title>
   <link rel="stylesheet" type="text/css" href="default.css">
 </head>
 <body>
@@ -22,7 +22,7 @@
 
 <hr>
 
-<p>Issue #259: tests to check the output of notification jobs.</p><dl><dt>See Also:</dt><dd>#user<br>#getRates()<br></dd></dl>
+<p>Issue #259: tests to check the output of notification jobs.</p><dl><dt>See Also:</dt><dd>#user<br><a href="class__NotificationJobTest.html#getRates" class="">getRates()</a><br></dd></dl>
 <hr>
 
 <h2>Method Summary</h2>
@@ -38,7 +38,6 @@
 <tr><td><a href="class__NotificationJobTest.html#createNotification" class="">createNotification($user, $parameters)</a></td><td></td></tr><tr><td><a href="class__NotificationJobTest.html#createNotificationTicker" class="">createNotificationTicker($user, $parameters)</a></td><td></td></tr><tr><td><a href="class__NotificationJobTest.html#getJobType" class="">getJobType()</a></td><td>Return the job type to execute, e.g. 'sum' or 'notification'</td></tr><tr><td><a href="class__NotificationJobTest.html#getRates" class="">getRates()</a></td><td>Return a list of exchange rates, (exchange, currency1, currency2, last_trade, ask, bid). Used in #executeJob.</td></tr><tr><td><a href="class__NotificationJobTest.html#testDogecoin" class="">testDogecoin()</a></td><td>Test a BTC/DOGE exchange increase notification, particularly the precision. Issue #257</td></tr><tr><td><a href="class__NotificationJobTest.html#testIncrease" class="">testIncrease()</a></td><td>Test a USD/BTC exchange increase notification</td></tr><tr><td><a href="class__NotificationJobTest.html#testIncreaseAbove" class="">testIncreaseAbove()</a></td><td>Test a USD/BTC exchange increase notification, above a value</td></tr><tr><td><a href="class__NotificationJobTest.html#testNop" class="">testNop()</a></td><td>Test a USD/BTC exchange increase notification, if the rate didn't actually increase.</td></tr>  </tbody>
 </table>
 
-[Warning] Could not find parent class 'PHPUnit_Framework_TestCase' for 'AbstractEmulatedJobTest'
 
 <h2>Inherited Method Summary</h2>
 
@@ -59,7 +58,8 @@
 
 <h3>
   <small>public function</small>
-  createNotification($user, $parameters)</h3>
+  createNotification($user, $parameters)  <a name="createNotification"></a>
+</h3>
 
 <blockquote>
 <dl></dl></blockquote>
@@ -69,7 +69,8 @@
 
 <h3>
   <small>public function</small>
-  createNotificationTicker($user, $parameters)</h3>
+  createNotificationTicker($user, $parameters)  <a name="createNotificationTicker"></a>
+</h3>
 
 <blockquote>
 <dl></dl></blockquote>
@@ -79,27 +80,30 @@
 
 <h3>
   <small>public function</small>
-  getJobType()</h3>
+  getJobType()  <a name="getJobType"></a>
+</h3>
 
 <blockquote>
-<p>Return the job type to execute, e.g. 'sum' or 'notification' <i>(from <a href="class__AbstractEmulatedJobTest.html#getJobType" class="">getJobType</a>)</i></p><dl><dt>See Also:</dt><dd>#executeJob()<br></dd></dl></blockquote>
+<p>Return the job type to execute, e.g. 'sum' or 'notification' <i>(from <a href="class__AbstractEmulatedJobTest.html#getJobType" class="">getJobType</a>)</i></p><dl><dt>Overrides:</dt><dd><a href="class__AbstractEmulatedJobTest.html#getJobType" class="">getJobType()</a></dd><dt>See Also:</dt><dd><a href="class__AbstractEmulatedJobTest.html#executeJob" class="">executeJob($user, $arg_id)</a><br></dd></dl></blockquote>
 
 
 <hr>
 
 <h3>
   <small>public function</small>
-  getRates()</h3>
+  getRates()  <a name="getRates"></a>
+</h3>
 
 <blockquote>
-<p>Return a list of exchange rates, (exchange, currency1, currency2, last_trade, ask, bid). Used in #executeJob. <i>(from <a href="class__AbstractEmulatedJobTest.html#getRates" class="">getRates</a>)</i></p><dl><dt>See Also:</dt><dd>#executeJob()<br></dd></dl></blockquote>
+<p>Return a list of exchange rates, (exchange, currency1, currency2, last_trade, ask, bid). Used in #executeJob. <i>(from <a href="class__AbstractEmulatedJobTest.html#getRates" class="">getRates</a>)</i></p><dl><dt>Overrides:</dt><dd><a href="class__AbstractEmulatedJobTest.html#getRates" class="">getRates()</a></dd><dt>See Also:</dt><dd><a href="class__AbstractEmulatedJobTest.html#executeJob" class="">executeJob($user, $arg_id)</a><br></dd></dl></blockquote>
 
 
 <hr>
 
 <h3>
   <small>public function</small>
-  testDogecoin()</h3>
+  testDogecoin()  <a name="testDogecoin"></a>
+</h3>
 
 <blockquote>
 <p>Test a BTC/DOGE exchange increase notification, particularly the precision. Issue #257</p><dl></dl></blockquote>
@@ -109,7 +113,8 @@
 
 <h3>
   <small>public function</small>
-  testIncrease()</h3>
+  testIncrease()  <a name="testIncrease"></a>
+</h3>
 
 <blockquote>
 <p>Test a USD/BTC exchange increase notification</p><dl></dl></blockquote>
@@ -119,7 +124,8 @@
 
 <h3>
   <small>public function</small>
-  testIncreaseAbove()</h3>
+  testIncreaseAbove()  <a name="testIncreaseAbove"></a>
+</h3>
 
 <blockquote>
 <p>Test a USD/BTC exchange increase notification, above a value</p><dl></dl></blockquote>
@@ -129,7 +135,8 @@
 
 <h3>
   <small>public function</small>
-  testNop()</h3>
+  testNop()  <a name="testNop"></a>
+</h3>
 
 <blockquote>
 <p>Test a USD/BTC exchange increase notification, if the rate didn't actually increase.</p><dl></dl></blockquote>
@@ -137,7 +144,7 @@
 </div>
 
 <div class="footer">
-  Generated by <a href="https://github.com/soundasleep/phpdoc2/" class="github">PHPDoc2</a> Thu, 23 Apr 2015 16:20:57 +1200</div>
+  Generated by <a href="https://github.com/soundasleep/phpdoc2/" class="github">PHPDoc2</a> Fri, 24 Apr 2015 14:35:59 +1200</div>
 
 </body>
 </html>

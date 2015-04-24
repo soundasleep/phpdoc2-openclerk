@@ -1,7 +1,7 @@
 <!DOCTYPE HTML>
 <html>
 <head>
-  <title>PHPDoc2 - Untitled</title>
+  <title>PHPDoc2 - openclerk</title>
   <link rel="stylesheet" type="text/css" href="default.css">
 </head>
 <body>
@@ -29,7 +29,7 @@
 
 <hr>
 
-<p>Allows us to test jobs directly, by inserting new users into the database as necessary. This job also allows one to set rates for testing, which are then emulated through set_latest_ticker(), so we can have consistent testing behaviour.</p><dl><dt>See Also:</dt><dd>#user<br>#getRates()<br></dd></dl>
+<p>Allows us to test jobs directly, by inserting new users into the database as necessary. This job also allows one to set rates for testing, which are then emulated through set_latest_ticker(), so we can have consistent testing behaviour.</p><dl><dt>See Also:</dt><dd>#user<br><a href="class__AbstractEmulatedJobTest.html#getRates" class="">getRates()</a><br></dd></dl>
 <hr>
 
 <h2>Method Summary</h2>
@@ -45,14 +45,14 @@
 <tr><td><a href="class__AbstractEmulatedJobTest.html#assertHasLine" class="">assertHasLine($needle, $lines)</a></td><td></td></tr><tr><td><a href="class__AbstractEmulatedJobTest.html#createNewUser" class="">createNewUser()</a></td><td></td></tr><tr><td><a href="class__AbstractEmulatedJobTest.html#deleteUser" class="">deleteUser($user)</a></td><td></td></tr><tr><td><a href="class__AbstractEmulatedJobTest.html#executeJob" class="">executeJob($user, $arg_id)</a></td><td>Execute the given job with the given argument ID. Mocks away the mailer, so mails can be retrieved through <a href="class__AbstractEmulatedJobTest.html#getMails" class="">#getMails()</a>. Does not return anything.</td></tr><tr><td><a href="class__AbstractEmulatedJobTest.html#getJobType" class="">getJobType()</a></td><td>Return the job type to execute, e.g. 'sum' or 'notification'</td></tr><tr><td><a href="class__AbstractEmulatedJobTest.html#getMails" class="">getMails()</a></td><td></td></tr><tr><td><a href="class__AbstractEmulatedJobTest.html#getRates" class="">getRates()</a></td><td>Return a list of exchange rates, (exchange, currency1, currency2, last_trade, ask, bid). Used in <a href="class__AbstractEmulatedJobTest.html#executeJob" class="">#executeJob()</a>.</td></tr><tr><td><a href="class__AbstractEmulatedJobTest.html#mockMailer" class="">mockMailer($to_email, $to_name, $subject, $template, $html_template)</a></td><td></td></tr><tr><td><a href="class__AbstractEmulatedJobTest.html#setUp" class="">setUp()</a></td><td>Create a new user, and set up the mock mailer.</td></tr><tr><td><a href="class__AbstractEmulatedJobTest.html#tearDown" class="">tearDown()</a></td><td>Remove the test user, and remove the mock mailer.</td></tr>  </tbody>
 </table>
 
-[Warning] Could not find parent class 'PHPUnit_Framework_TestCase' for 'AbstractEmulatedJobTest'
 
 
 <hr>
 
 <h3>
   <small>public function</small>
-  assertHasLine($needle, $lines)</h3>
+  assertHasLine($needle, $lines)  <a name="assertHasLine"></a>
+</h3>
 
 <blockquote>
 <dl></dl></blockquote>
@@ -62,7 +62,8 @@
 
 <h3>
   <small>public function</small>
-  createNewUser()</h3>
+  createNewUser()  <a name="createNewUser"></a>
+</h3>
 
 <blockquote>
 <dl></dl></blockquote>
@@ -72,7 +73,8 @@
 
 <h3>
   <small>public function</small>
-  deleteUser($user)</h3>
+  deleteUser($user)  <a name="deleteUser"></a>
+</h3>
 
 <blockquote>
 <dl></dl></blockquote>
@@ -82,27 +84,30 @@
 
 <h3>
   <small>public function</small>
-  executeJob($user, $arg_id)</h3>
+  executeJob($user, $arg_id)  <a name="executeJob"></a>
+</h3>
 
 <blockquote>
-<p>Execute the given job with the given argument ID. Mocks away the mailer, so mails can be retrieved through <a href="class__AbstractEmulatedJobTest.html#getMails" class="">#getMails()</a>. Does not return anything.</p><dl><dt>See Also:</dt><dd>#getMails()<br>#getJobType()<br></dd></dl></blockquote>
+<p>Execute the given job with the given argument ID. Mocks away the mailer, so mails can be retrieved through <a href="class__AbstractEmulatedJobTest.html#getMails" class="">#getMails()</a>. Does not return anything.</p><dl><dt>See Also:</dt><dd><a href="class__AbstractEmulatedJobTest.html#getMails" class="">getMails()</a><br><a href="class__AbstractEmulatedJobTest.html#getJobType" class="">getJobType()</a><br></dd></dl></blockquote>
 
 
 <hr>
 
 <h3>
   <small>abstract function</small>
-  getJobType()</h3>
+  getJobType()  <a name="getJobType"></a>
+</h3>
 
 <blockquote>
-<p>Return the job type to execute, e.g. 'sum' or 'notification'</p><dl><dt>See Also:</dt><dd>#executeJob()<br></dd></dl></blockquote>
+<p>Return the job type to execute, e.g. 'sum' or 'notification'</p><dl><dt>See Also:</dt><dd><a href="class__AbstractEmulatedJobTest.html#executeJob" class="">executeJob($user, $arg_id)</a><br></dd></dl></blockquote>
 
 
 <hr>
 
 <h3>
   <small>public function</small>
-  getMails()</h3>
+  getMails()  <a name="getMails"></a>
+</h3>
 
 <blockquote>
 <dl></dl></blockquote>
@@ -112,17 +117,19 @@
 
 <h3>
   <small>abstract function</small>
-  getRates()</h3>
+  getRates()  <a name="getRates"></a>
+</h3>
 
 <blockquote>
-<p>Return a list of exchange rates, (exchange, currency1, currency2, last_trade, ask, bid). Used in <a href="class__AbstractEmulatedJobTest.html#executeJob" class="">#executeJob()</a>.</p><dl><dt>See Also:</dt><dd>#executeJob()<br></dd></dl></blockquote>
+<p>Return a list of exchange rates, (exchange, currency1, currency2, last_trade, ask, bid). Used in <a href="class__AbstractEmulatedJobTest.html#executeJob" class="">#executeJob()</a>.</p><dl><dt>See Also:</dt><dd><a href="class__AbstractEmulatedJobTest.html#executeJob" class="">executeJob($user, $arg_id)</a><br></dd></dl></blockquote>
 
 
 <hr>
 
 <h3>
   <small>public function</small>
-  mockMailer($to_email, $to_name, $subject, $template, $html_template)</h3>
+  mockMailer($to_email, $to_name, $subject, $template, $html_template)  <a name="mockMailer"></a>
+</h3>
 
 <blockquote>
 <dl></dl></blockquote>
@@ -132,7 +139,8 @@
 
 <h3>
   <small>public function</small>
-  setUp()</h3>
+  setUp()  <a name="setUp"></a>
+</h3>
 
 <blockquote>
 <p>Create a new user, and set up the mock mailer.</p><dl></dl></blockquote>
@@ -142,7 +150,8 @@
 
 <h3>
   <small>public function</small>
-  tearDown()</h3>
+  tearDown()  <a name="tearDown"></a>
+</h3>
 
 <blockquote>
 <p>Remove the test user, and remove the mock mailer.</p><dl></dl></blockquote>
@@ -150,7 +159,7 @@
 </div>
 
 <div class="footer">
-  Generated by <a href="https://github.com/soundasleep/phpdoc2/" class="github">PHPDoc2</a> Thu, 23 Apr 2015 16:20:54 +1200</div>
+  Generated by <a href="https://github.com/soundasleep/phpdoc2/" class="github">PHPDoc2</a> Fri, 24 Apr 2015 14:35:57 +1200</div>
 
 </body>
 </html>

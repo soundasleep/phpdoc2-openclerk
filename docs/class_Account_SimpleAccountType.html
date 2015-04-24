@@ -1,0 +1,106 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+  <title>PHPDoc2 - openclerk</title>
+  <link rel="stylesheet" type="text/css" href="default.css">
+</head>
+<body>
+<nav>
+  <a href="index.html">Root</a>
+</nav>
+
+<div class="content">
+<ul><li>Account\SimpleAccountType</li></ul>
+<h1>
+  <small>abstract class</small>
+
+  <a href="namespace_Account.html" class="">Account</a>  \
+  <a href="class_Account_SimpleAccountType.html" class="">SimpleAccountType</a></h1>
+
+
+<dl>
+  <dt>All implemented interfaces:</dt>
+  <dd>
+    <a href="interface_Account_AccountType.html" class="">AccountType</a>, <a href="interface_Account_AccountTypeInformation.html" class="">AccountTypeInformation</a>  </dd>
+</dl>
+
+
+
+
+<dl>
+  <dt>All known direct subclasses:</dt>
+  <dd>
+    <a href="class_Account_MiningPool_AbstractMiner.html" class="">AbstractMiner</a>  </dd>
+</dl>
+
+
+<hr>
+
+<p>Implements some basic helper methods for an account type.</p><p>Instances of this account may be represented as an Account, and can be used to obtain current balances for this account. For example, get the current wallet balances for a mining pool or exchange wallet.</p><p>In theory this could also be extended to cryptocurrency addresses? <i>(from <a href="interface_Account_AccountType.html" class="">AccountType</a>)</i></p><dl></dl>
+<hr>
+
+<h2>Method Summary</h2>
+
+<table>
+  <thead>
+    <tr>
+      <th>Name</th>
+      <th>Description</th>
+    </tr>
+  </thead>
+  <tbody>
+<tr><td><a href="class_Account_SimpleAccountType.html#checkFields" class="">checkFields($account)</a></td><td>Basic implementation of <a href="class_Account_SimpleAccountType.html#checkFields" class="">#checkFields()</a> using regular expressions.</td></tr><tr><td><a href="class_Account_SimpleAccountType.html#fetchBalance" class="">fetchBalance($currency, $account, CurrencyFactory $factory, Logger $logger)</a></td><td>Helper function to get all balances for the given currency for this account, or <code>null</code> if there is no balance for this currency. May block.</td></tr><tr><td><a href="class_Account_SimpleAccountType.html#fetchConfirmedBalance" class="">fetchConfirmedBalance($currency, $account, CurrencyFactory $factory, Logger $logger)</a></td><td>Helper function to get the current, confirmed, available balance of the given currency for this account. May block.</td></tr><tr><td><a href="class_Account_SimpleAccountType.html#throttle" class="">throttle(Logger $logger, $default = 3)</a></td><td>This allows all exchanges to optionally throttle multiple repeated requests based on a runtime configuration value. The throttle time is selected from either the <code>accounts_NAME_throttle</code> or <code>accounts_throttle</code> config values, or <code>$default</code> seconds; which is the time in seconds to wait between repeated requests.</td></tr>  </tbody>
+</table>
+
+
+
+<hr>
+
+<h3>
+  <small>public function</small>
+  checkFields($account)  <a name="checkFields"></a>
+</h3>
+
+<blockquote>
+<p>Basic implementation of <a href="class_Account_SimpleAccountType.html#checkFields" class="">#checkFields()</a> using regular expressions.</p><dl><dt>Returns:</dt><dd>array of errors or <code>false</code> if there are no errors<br></dd></dl></blockquote>
+
+
+<hr>
+
+<h3>
+  <small>public function</small>
+  fetchBalance($currency, $account, <a href="interface_Openclerk_Currencies_CurrencyFactory.html" class="">CurrencyFactory</a> $factory, Logger $logger)  <a name="fetchBalance"></a>
+</h3>
+
+<blockquote>
+<p>Helper function to get all balances for the given currency for this account, or <code>null</code> if there is no balance for this currency. May block.</p><p>We need to have a reference to a <a href="interface_Openclerk_Currencies_CurrencyFactory.html" class="">CurrencyFactory</a> because we might need to find out runtime properties of a currency in order to correctly distinguish hash rates, currency codes etc. <i>(from <a href="interface_Account_AccountType.html#fetchBalance" class="">fetchBalance</a>)</i></p><dl><dt>Parameters:</dt><dd><code>$account</code> - fields that satisfy #getFields<br></dd><dt>Returns:</dt><dd>array('confirmed', 'unconfirmed', 'hashrate', ...) or <code>null</code><br></dd></dl></blockquote>
+
+
+<hr>
+
+<h3>
+  <small>public function</small>
+  fetchConfirmedBalance($currency, $account, <a href="interface_Openclerk_Currencies_CurrencyFactory.html" class="">CurrencyFactory</a> $factory, Logger $logger)  <a name="fetchConfirmedBalance"></a>
+</h3>
+
+<blockquote>
+<p>Helper function to get the current, confirmed, available balance of the given currency for this account. May block.</p><p>We need to have a reference to a <a href="interface_Openclerk_Currencies_CurrencyFactory.html" class="">CurrencyFactory</a> because we might need to find out runtime properties of a currency in order to correctly distinguish hash rates, currency codes etc. <i>(from <a href="interface_Account_AccountType.html#fetchConfirmedBalance" class="">fetchConfirmedBalance</a>)</i></p><dl><dt>Parameters:</dt><dd><code>$account</code> - fields that satisfy #getFields<br></dd><dt>Returns:</dt><dd>confirmed balance or <code>null</code><br></dd></dl></blockquote>
+
+
+<hr>
+
+<h3>
+  <small>public function</small>
+  throttle(Logger $logger, $default = 3)  <a name="throttle"></a>
+</h3>
+
+<blockquote>
+<p>This allows all exchanges to optionally throttle multiple repeated requests based on a runtime configuration value. The throttle time is selected from either the <code>accounts_NAME_throttle</code> or <code>accounts_throttle</code> config values, or <code>$default</code> seconds; which is the time in seconds to wait between repeated requests.</p><dl><dt>Parameters:</dt><dd><code>$default</code> - the default delay, or 3 seconds if not specified<br></dd><dt>Defaults:</dt><dd><code>default</code> = 3<br></dd></dl></blockquote>
+
+</div>
+
+<div class="footer">
+  Generated by <a href="https://github.com/soundasleep/phpdoc2/" class="github">PHPDoc2</a> Fri, 24 Apr 2015 14:42:20 +1200</div>
+
+</body>
+</html>

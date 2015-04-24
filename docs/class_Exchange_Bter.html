@@ -1,0 +1,124 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+  <title>PHPDoc2 - openclerk</title>
+  <link rel="stylesheet" type="text/css" href="default.css">
+</head>
+<body>
+<nav>
+  <a href="index.html">Root</a>
+</nav>
+
+<div class="content">
+<ul class="class-hierarchy"><li><a href="class_Openclerk_Currencies_SimpleExchange.html" class="">Openclerk\Currencies\SimpleExchange</a><ul><li>Exchange\Bter</li></ul></li></ul>
+<h1>
+  <small>class</small>
+
+  <a href="namespace_Exchange.html" class="">Exchange</a>  \
+  <a href="class_Exchange_Bter.html" class="">Bter</a></h1>
+
+
+<dl>
+  <dt>All implemented interfaces:</dt>
+  <dd>
+    <a href="interface_Openclerk_Currencies_Exchange.html" class="">Exchange</a>, <a href="interface_Openclerk_Currencies_ExchangeInformation.html" class="">ExchangeInformation</a>  </dd>
+</dl>
+
+
+
+
+<hr>
+
+<p>Implements some basic implementations of an Exchange. Assumes there is a single API call that can be used to list all exchanges and get all rates - <a href="class_Exchange_Bter.html#fetchAllRates" class="">#fetchAllRates()</a>. <i>(from <a href="class_Openclerk_Currencies_SimpleExchange.html" class="">SimpleExchange</a>)</i></p><p>An Exchange does not provide conversion functionality; this can be done naively with #getLastTrade.</p><p>This is the base interface; other interfaces will provide additional functionality as necessary. <i>(from <a href="interface_Openclerk_Currencies_Exchange.html" class="">Exchange</a>)</i></p><dl></dl>
+<hr>
+
+<h2>Method Summary</h2>
+
+<table>
+  <thead>
+    <tr>
+      <th>Name</th>
+      <th>Description</th>
+    </tr>
+  </thead>
+  <tbody>
+<tr><td><a href="class_Exchange_Bter.html#fetchAllRates" class="">fetchAllRates(Logger $logger)</a></td><td>Return a list of rates for each supported market, e.g. array(array('currency1' => 'usd', 'currency2' => 'btc', 'last_trade' => 1, 'bid' => 2), ...)</td></tr><tr><td><a href="class_Exchange_Bter.html#getCode" class="">getCode()</a></td><td></td></tr><tr><td><a href="class_Exchange_Bter.html#getCurrencyCode" class="">getCurrencyCode($str)</a></td><td>Convert the given BTER currency code (uppercase) into the openclerk/currencies currency code (lowercase, three characters) so that it can be used in openclerk/currencies</td></tr><tr><td><a href="class_Exchange_Bter.html#getName" class="">getName()</a></td><td></td></tr><tr><td><a href="class_Exchange_Bter.html#getURL" class="">getURL()</a></td><td></td></tr>  </tbody>
+</table>
+
+
+<h2>Inherited Method Summary</h2>
+
+<table>
+  <thead>
+    <tr>
+      <th>Name</th>
+      <th>Description</th>
+    </tr>
+  </thead>
+  <tbody>
+<tr><td><a href="class_Openclerk_Currencies_SimpleExchange.html#fetchAsk" class="">fetchAsk($currency1, $currency2, Logger $logger)</a></td><td>Get the lowest price that a seller is willing to accept for trading the given pair (also known as the <i>buy price</i>), or <code>null</code> if there is none. <i>(from <a href="class_Openclerk_Currencies_SimpleExchange.html#fetchAsk" class="">SimpleExchange</a>)</i></td></tr><tr><td><a href="class_Openclerk_Currencies_SimpleExchange.html#fetchBid" class="">fetchBid($currency1, $currency2, Logger $logger)</a></td><td>Get the highest price that a buyer is willing to accept for trading the given pair (also known as the <i>sell price</i>), or <code>null</code> if there is none. <i>(from <a href="class_Openclerk_Currencies_SimpleExchange.html#fetchBid" class="">SimpleExchange</a>)</i></td></tr><tr><td><a href="class_Openclerk_Currencies_SimpleExchange.html#fetchLastTrade" class="">fetchLastTrade($currency1, $currency2, Logger $logger)</a></td><td>Get the last traded value for the given currency pair, or <code>null</code> if there is none. <i>(from <a href="class_Openclerk_Currencies_SimpleExchange.html#fetchLastTrade" class="">SimpleExchange</a>)</i></td></tr><tr><td><a href="class_Openclerk_Currencies_SimpleExchange.html#fetchMarkets" class="">fetchMarkets(Logger $logger)</a></td><td>Each of these pairs represents a market, e.g. 'btc', 'usd' These pairs can be in any (a, b) order, because we should (in theory) be able to swap last/bid/ask as necessary. <i>(from <a href="class_Openclerk_Currencies_SimpleExchange.html#fetchMarkets" class="">SimpleExchange</a>)</i></td></tr><tr><td><a href="class_Openclerk_Currencies_SimpleExchange.html#fetchRates" class="">fetchRates($currency1, $currency2, Logger $logger)</a></td><td>Fetch all rates for a given currency, returns an array of (last_trade, bid, ask, volume). Some fields may not be present for a given exchange. <code>volume</code> is the last 24h volume. May also return additional fields. <i>(from <a href="class_Openclerk_Currencies_SimpleExchange.html#fetchRates" class="">SimpleExchange</a>)</i></td></tr><tr><td><a href="class_Openclerk_Currencies_SimpleExchange.html#throttle" class="">throttle(Logger $logger)</a></td><td>This allows all exchanges to optionally throttle multiple repeated requests based on a runtime configuration value. The throttle time is selected from either the <code>exchanges_NAME_throttle</code> or <code>exchanges_throttle</code> config values, or three seconds; which is the time in seconds to wait between repeated requests. <i>(from <a href="class_Openclerk_Currencies_SimpleExchange.html#throttle" class="">SimpleExchange</a>)</i></td></tr>  </tbody>
+</table>
+
+
+
+<hr>
+
+<h3>
+  <small>public function</small>
+  fetchAllRates(Logger $logger)  <a name="fetchAllRates"></a>
+</h3>
+
+<blockquote>
+<p>Return a list of rates for each supported market, e.g. array(array('currency1' => 'usd', 'currency2' => 'btc', 'last_trade' => 1, 'bid' => 2), ...) <i>(from <a href="interface_Openclerk_Currencies_Exchange.html#fetchAllRates" class="">fetchAllRates</a>)</i></p><dl><dt>See Also:</dt><dd><a href="class_Openclerk_Currencies_SimpleExchange.html#fetchRates" class="">fetchRates($currency1, $currency2, Logger $logger)</a><br></dd></dl></blockquote>
+
+
+<hr>
+
+<h3>
+  <small>public function</small>
+  getCode()  <a name="getCode"></a>
+</h3>
+
+<blockquote>
+<dl><dt>Returns:</dt><dd>a unique string representing this exchange; must be lowercase and 1-32 characters<br></dd></dl></blockquote>
+
+
+<hr>
+
+<h3>
+  <small>public function</small>
+  getCurrencyCode($str)  <a name="getCurrencyCode"></a>
+</h3>
+
+<blockquote>
+<p>Convert the given BTER currency code (uppercase) into the openclerk/currencies currency code (lowercase, three characters) so that it can be used in openclerk/currencies</p><dl></dl></blockquote>
+
+
+<hr>
+
+<h3>
+  <small>public function</small>
+  getName()  <a name="getName"></a>
+</h3>
+
+<blockquote>
+<dl><dt>Returns:</dt><dd>the full name of the exchange<br></dd></dl></blockquote>
+
+
+<hr>
+
+<h3>
+  <small>public function</small>
+  getURL()  <a name="getURL"></a>
+</h3>
+
+<blockquote>
+<dl><dt>Returns:</dt><dd>the URL of the exchange, or <code>null</code><br></dd></dl></blockquote>
+
+</div>
+
+<div class="footer">
+  Generated by <a href="https://github.com/soundasleep/phpdoc2/" class="github">PHPDoc2</a> Fri, 24 Apr 2015 14:42:37 +1200</div>
+
+</body>
+</html>

@@ -1,7 +1,7 @@
 <!DOCTYPE HTML>
 <html>
 <head>
-  <title>PHPDoc2 - Untitled</title>
+  <title>PHPDoc2 - openclerk</title>
   <link rel="stylesheet" type="text/css" href="default.css">
 </head>
 <body>
@@ -22,7 +22,7 @@
 
 <hr>
 
-<p>Issue #112: tests to make sure that the sum job is considering all currencies correctly. It's pretty important to test this functionality, because it is so critical to the correct operation of the site.</p><dl><dt>See Also:</dt><dd>#user<br>#getRates()<br></dd></dl>
+<p>Issue #112: tests to make sure that the sum job is considering all currencies correctly. It's pretty important to test this functionality, because it is so critical to the correct operation of the site.</p><dl><dt>See Also:</dt><dd>#user<br><a href="class__SumJobTest.html#getRates" class="">getRates()</a><br></dd></dl>
 <hr>
 
 <h2>Method Summary</h2>
@@ -38,7 +38,6 @@
 <tr><td><a href="class__SumJobTest.html#assertEqualRate" class="">assertEqualRate($values, $expected, $currency)</a></td><td></td></tr><tr><td><a href="class__SumJobTest.html#createAccountBalance" class="">createAccountBalance($user, $exchange, $currency, $balance)</a></td><td></td></tr><tr><td><a href="class__SumJobTest.html#executeSum" class="">executeSum($user, $currencies)</a></td><td></td></tr><tr><td><a href="class__SumJobTest.html#getJobType" class="">getJobType()</a></td><td>Return the job type to execute, e.g. 'sum' or 'notification'</td></tr><tr><td><a href="class__SumJobTest.html#getRates" class="">getRates()</a></td><td>Return a list of exchange rates, (exchange, currency1, currency2, last_trade, ask, bid). Used in #executeJob.</td></tr><tr><td><a href="class__SumJobTest.html#testJustBTC" class="">testJustBTC()</a></td><td>The user only has BTC and is interested in USD/BTC.</td></tr><tr><td><a href="class__SumJobTest.html#testJustEUR" class="">testJustEUR()</a></td><td>The user only has EUR and is interested in USD/BTC/EUR.</td></tr><tr><td><a href="class__SumJobTest.html#testJustUSD" class="">testJustUSD()</a></td><td>The user only has USD and is interested in USD/BTC.</td></tr>  </tbody>
 </table>
 
-[Warning] Could not find parent class 'PHPUnit_Framework_TestCase' for 'AbstractEmulatedJobTest'
 
 <h2>Inherited Method Summary</h2>
 
@@ -59,7 +58,8 @@
 
 <h3>
   <small>public function</small>
-  assertEqualRate($values, $expected, $currency)</h3>
+  assertEqualRate($values, $expected, $currency)  <a name="assertEqualRate"></a>
+</h3>
 
 <blockquote>
 <dl></dl></blockquote>
@@ -69,7 +69,8 @@
 
 <h3>
   <small>public function</small>
-  createAccountBalance($user, $exchange, $currency, $balance)</h3>
+  createAccountBalance($user, $exchange, $currency, $balance)  <a name="createAccountBalance"></a>
+</h3>
 
 <blockquote>
 <dl></dl></blockquote>
@@ -79,7 +80,8 @@
 
 <h3>
   <small>public function</small>
-  executeSum($user, $currencies)</h3>
+  executeSum($user, $currencies)  <a name="executeSum"></a>
+</h3>
 
 <blockquote>
 <dl></dl></blockquote>
@@ -89,27 +91,30 @@
 
 <h3>
   <small>public function</small>
-  getJobType()</h3>
+  getJobType()  <a name="getJobType"></a>
+</h3>
 
 <blockquote>
-<p>Return the job type to execute, e.g. 'sum' or 'notification' <i>(from <a href="class__AbstractEmulatedJobTest.html#getJobType" class="">getJobType</a>)</i></p><dl><dt>See Also:</dt><dd>#executeJob()<br></dd></dl></blockquote>
+<p>Return the job type to execute, e.g. 'sum' or 'notification' <i>(from <a href="class__AbstractEmulatedJobTest.html#getJobType" class="">getJobType</a>)</i></p><dl><dt>Overrides:</dt><dd><a href="class__AbstractEmulatedJobTest.html#getJobType" class="">getJobType()</a></dd><dt>See Also:</dt><dd><a href="class__AbstractEmulatedJobTest.html#executeJob" class="">executeJob($user, $arg_id)</a><br></dd></dl></blockquote>
 
 
 <hr>
 
 <h3>
   <small>public function</small>
-  getRates()</h3>
+  getRates()  <a name="getRates"></a>
+</h3>
 
 <blockquote>
-<p>Return a list of exchange rates, (exchange, currency1, currency2, last_trade, ask, bid). Used in #executeJob. <i>(from <a href="class__AbstractEmulatedJobTest.html#getRates" class="">getRates</a>)</i></p><dl><dt>See Also:</dt><dd>#executeJob()<br></dd></dl></blockquote>
+<p>Return a list of exchange rates, (exchange, currency1, currency2, last_trade, ask, bid). Used in #executeJob. <i>(from <a href="class__AbstractEmulatedJobTest.html#getRates" class="">getRates</a>)</i></p><dl><dt>Overrides:</dt><dd><a href="class__AbstractEmulatedJobTest.html#getRates" class="">getRates()</a></dd><dt>See Also:</dt><dd><a href="class__AbstractEmulatedJobTest.html#executeJob" class="">executeJob($user, $arg_id)</a><br></dd></dl></blockquote>
 
 
 <hr>
 
 <h3>
   <small>public function</small>
-  testJustBTC()</h3>
+  testJustBTC()  <a name="testJustBTC"></a>
+</h3>
 
 <blockquote>
 <p>The user only has BTC and is interested in USD/BTC.</p><dl></dl></blockquote>
@@ -119,7 +124,8 @@
 
 <h3>
   <small>public function</small>
-  testJustEUR()</h3>
+  testJustEUR()  <a name="testJustEUR"></a>
+</h3>
 
 <blockquote>
 <p>The user only has EUR and is interested in USD/BTC/EUR.</p><dl></dl></blockquote>
@@ -129,7 +135,8 @@
 
 <h3>
   <small>public function</small>
-  testJustUSD()</h3>
+  testJustUSD()  <a name="testJustUSD"></a>
+</h3>
 
 <blockquote>
 <p>The user only has USD and is interested in USD/BTC.</p><dl></dl></blockquote>
@@ -137,7 +144,7 @@
 </div>
 
 <div class="footer">
-  Generated by <a href="https://github.com/soundasleep/phpdoc2/" class="github">PHPDoc2</a> Thu, 23 Apr 2015 16:20:58 +1200</div>
+  Generated by <a href="https://github.com/soundasleep/phpdoc2/" class="github">PHPDoc2</a> Fri, 24 Apr 2015 14:36:00 +1200</div>
 
 </body>
 </html>

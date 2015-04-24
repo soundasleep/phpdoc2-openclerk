@@ -1,0 +1,114 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+  <title>PHPDoc2 - openclerk</title>
+  <link rel="stylesheet" type="text/css" href="default.css">
+</head>
+<body>
+<nav>
+  <a href="index.html">Root</a>
+</nav>
+
+<div class="content">
+<ul><li>Apis\Fetch</li></ul>
+<h1>
+  <small>class</small>
+
+  <a href="namespace_Apis.html" class="">Apis</a>  \
+  <a href="class_Apis_Fetch.html" class="">Fetch</a></h1>
+
+
+
+
+<hr>
+
+<dl></dl>
+<hr>
+
+<h2>Method Summary</h2>
+
+<table>
+  <thead>
+    <tr>
+      <th>Name</th>
+      <th>Description</th>
+    </tr>
+  </thead>
+  <tbody>
+<tr><td><a href="class_Apis_Fetch.html#checkJSend" class="">checkJSend($json)</a></td><td>Checks the JSON to make sure it adheres to the JSend format http://labs.omniti.com/labs/jsend. Throws an JSendException if the JSON returned a 'fail', otherwise returns the wrapped data.</td></tr><tr><td><a href="class_Apis_Fetch.html#checkResponse" class="">checkResponse($string)</a></td><td></td></tr><tr><td><a href="class_Apis_Fetch.html#get" class="">get($url, $options = array())</a></td><td>Wraps #file_get_contents with timeout information etc. Actually uses <code>curl</code> to do the fetch. Optionally uses the user agent defined in Config::get('fetch_user_agent').</td></tr><tr><td><a href="class_Apis_Fetch.html#initCurl" class="">initCurl()</a></td><td>Extends #curl_init to also set <code>CURLOPT_TIMEOUT</code> and <code>CURLOPT_CONNECTTIMEOUT</code> appropriately. These are set based on Config::get('get_contents_timeout') and Config::get('get_contents_timeout')</td></tr><tr><td><a href="class_Apis_Fetch.html#jsonDecode" class="">jsonDecode($string)</a></td><td>Try to decode a JSON string, or try and work out why it failed to decode but throw an exception if it was not a valid JSON string.</td></tr><tr><td><a href="class_Apis_Fetch.html#post" class="">post($url, $post_data, $options = array(), $headers = array())</a></td><td>Uses <code>curl</code> to POST data to a URL. Optionally uses the user agent defined in Config::get('fetch_user_agent').</td></tr>  </tbody>
+</table>
+
+
+
+<hr>
+
+<h3>
+  <small>static function</small>
+  checkJSend($json)  <a name="checkJSend"></a>
+</h3>
+
+<blockquote>
+<p>Checks the JSON to make sure it adheres to the JSend format http://labs.omniti.com/labs/jsend. Throws an JSendException if the JSON returned a 'fail', otherwise returns the wrapped data.</p><dl><dt>Returns:</dt><dd>$json['data'] if there were no problems<br></dd><dt>Throws:</dt><dd><a href="class__JSendException.html" class="">JSendException</a> - if there was a failure in the response<br></dd></dl></blockquote>
+
+
+<hr>
+
+<h3>
+  <small>static function</small>
+  checkResponse($string)  <a name="checkResponse"></a>
+</h3>
+
+<blockquote>
+<dl><dt>Throws:</dt><dd>a - <a href="class__CloudFlareException.html" class="">CloudFlareException</a> or <a href="class__IncapsulaException.html" class="">IncapsulaException</a> if the given remote response suggests something about CloudFlare or Incapsula<br>an - <a href="class_Apis_FetchException.html" class="">FetchException</a> if the response suggests something else that was unexpected<br></dd></dl></blockquote>
+
+
+<hr>
+
+<h3>
+  <small>static function</small>
+  get($url, $options = array())  <a name="get"></a>
+</h3>
+
+<blockquote>
+<p>Wraps #file_get_contents with timeout information etc. Actually uses <code>curl</code> to do the fetch. Optionally uses the user agent defined in Config::get('fetch_user_agent').</p><p>TODO currently sets CURLOPT_SSL_VERIFYPEER to FALSE globally; this should be an option</p><dl><dt>Parameters:</dt><dd><code>$options</code> - additional CURL options to pass<br></dd><dt>Defaults:</dt><dd><code>options</code> = array()<br></dd><dt>Throws:</dt><dd>a - <a href="class_Apis_FetchHttpException.html" class="">FetchHttpException</a> if the remote server returned HTTP 400 or higher<br></dd></dl></blockquote>
+
+
+<hr>
+
+<h3>
+  <small>static function</small>
+  initCurl()  <a name="initCurl"></a>
+</h3>
+
+<blockquote>
+<p>Extends #curl_init to also set <code>CURLOPT_TIMEOUT</code> and <code>CURLOPT_CONNECTTIMEOUT</code> appropriately. These are set based on Config::get('get_contents_timeout') and Config::get('get_contents_timeout')</p><dl></dl></blockquote>
+
+
+<hr>
+
+<h3>
+  <small>static function</small>
+  jsonDecode($string)  <a name="jsonDecode"></a>
+</h3>
+
+<blockquote>
+<p>Try to decode a JSON string, or try and work out why it failed to decode but throw an exception if it was not a valid JSON string.</p><dl><dt>Throws:</dt><dd>a - <a href="class_Apis_FetchException.html" class="">FetchException</a> if the JSON is not valid<br></dd></dl></blockquote>
+
+
+<hr>
+
+<h3>
+  <small>static function</small>
+  post($url, $post_data, $options = array(), $headers = array())  <a name="post"></a>
+</h3>
+
+<blockquote>
+<p>Uses <code>curl</code> to POST data to a URL. Optionally uses the user agent defined in Config::get('fetch_user_agent').</p><p>TODO currently sets CURLOPT_SSL_VERIFYPEER to FALSE globally; this should be an option</p><dl><dt>Parameters:</dt><dd><code>$options</code> - additional CURL options to pass<br><code>$headers</code> - additional headers to pass<br></dd><dt>Defaults:</dt><dd><code>options</code> = array()<br><code>headers</code> = array()<br></dd><dt>Throws:</dt><dd>a - <a href="class_Apis_FetchHttpException.html" class="">FetchHttpException</a> if the remote server returned HTTP 400 or higher<br></dd></dl></blockquote>
+
+</div>
+
+<div class="footer">
+  Generated by <a href="https://github.com/soundasleep/phpdoc2/" class="github">PHPDoc2</a> Fri, 24 Apr 2015 14:42:25 +1200</div>
+
+</body>
+</html>
