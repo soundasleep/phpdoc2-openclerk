@@ -1,32 +1,25 @@
-<!DOCTYPE HTML>
-<html>
-<head>
+<!DOCTYPE html>
+<html><head>
   <title>PHPDoc2 - openclerk</title>
   <link rel="stylesheet" type="text/css" href="default.css">
-</head>
-<body>
-<nav>
+  </head>
+<body><nav>
   <a href="index.html">Root</a>
 </nav>
-
-<div class="content">
-<ul><li>Openclerk\I18n</li></ul>
+<div class="content"><ul>
+  <li>
+    Openclerk\I18n  </li>
+</ul>
 <h1>
   <small>class</small>
-
-  <a href="namespace_Openclerk.html" class="">Openclerk</a>  \
-  <a href="class_Openclerk_I18n.html" class="">I18n</a></h1>
-
-
-
-
+  <a href="namespace_Openclerk.html" class="">Openclerk</a>  \  <a href="class_Openclerk_I18n.html" class="">I18n</a></h1>
 <hr>
-
-<p>A simple class to support internationalisation (i18n) through the t() method. The locale needs to be loaded at runtime either through session data, cookies, databases etc. Also see the methods for getting the list of available locales.</p><dl></dl>
+  <p>
+    A simple class to support internationalisation (i18n) through the t() method. The locale needs to be loaded at runtime either through session data, cookies, databases etc. Also see the methods for getting the list of available locales.          </p>
+<dl>
+            </dl>
 <hr>
-
 <h2>Method Summary</h2>
-
 <table>
   <thead>
     <tr>
@@ -35,135 +28,242 @@
     </tr>
   </thead>
   <tbody>
-<tr><td><a href="class_Openclerk_I18n.html#addAvailableLocale" class="">addAvailableLocale(Locale $locale)</a></td><td>Locales can be defined through a number of different ways at runtime; one way is through component-discovery, for example. Here, locales can be registered.</td></tr><tr><td><a href="class_Openclerk_I18n.html#addAvailableLocales" class="">addAvailableLocales($locales)</a></td><td>Add a mapping of (key => locale)s, useful for component-discovery</td></tr><tr><td><a href="class_Openclerk_I18n.html#addDefaultKeys" class="">addDefaultKeys($keys)</a></td><td>Add default keys to all strings, e.g. :site_name</td></tr><tr><td><a href="class_Openclerk_I18n.html#getAvailableLocales" class="">getAvailableLocales()</a></td><td></td></tr><tr><td><a href="class_Openclerk_I18n.html#getCurrentLocale" class="">getCurrentLocale()</a></td><td>Get the current locale, or 'en' if none is defined.</td></tr><tr><td><a href="class_Openclerk_I18n.html#plural" class="">plural($string, $strings, $number = false, $decimals = 0)</a></td><td>Return the plural of something. e.g. plural('book', 1), plural('book', 'books', 1), plural('book', 1000)</td></tr><tr><td><a href="class_Openclerk_I18n.html#resetAvailableLocales" class="">resetAvailableLocales()</a></td><td></td></tr><tr><td><a href="class_Openclerk_I18n.html#setLocale" class="">setLocale($code = null)</a></td><td></td></tr><tr><td><a href="class_Openclerk_I18n.html#stripKey" class="">stripKey($key)</a></td><td>remove any unnecessary whitespace in the key that won't be displayed</td></tr><tr><td><a href="class_Openclerk_I18n.html#t" class="">t($category, $key = false, $args = array())</a></td><td>Translate a given 'en' string into the current locale. Loads locale data from <code>__DIR__ . "/../locale/" . $locale . ".php"</code>.</td></tr><tr><td><a href="class_Openclerk_I18n.html#tWithoutCategory" class="">tWithoutCategory($key = false, $args = array())</a></td><td></td></tr>  </tbody>
+          <tr>
+        <td><a href="class_Openclerk_I18n.html#addAvailableLocale" class="">addAvailableLocale(Locale $locale)</a></td>
+        <td>
+          Locales can be defined through a number of different ways at runtime; one way is through component-discovery, for example. Here, locales can be registered.                  </td>
+      </tr>
+          <tr>
+        <td><a href="class_Openclerk_I18n.html#addAvailableLocales" class="">addAvailableLocales($locales)</a></td>
+        <td>
+          Add a mapping of (key => locale)s, useful for component-discovery                  </td>
+      </tr>
+          <tr>
+        <td><a href="class_Openclerk_I18n.html#addDefaultKeys" class="">addDefaultKeys($keys)</a></td>
+        <td>
+          Add default keys to all strings, e.g. :site_name                  </td>
+      </tr>
+          <tr>
+        <td><a href="class_Openclerk_I18n.html#getAvailableLocales" class="">getAvailableLocales()</a></td>
+        <td>
+                            </td>
+      </tr>
+          <tr>
+        <td><a href="class_Openclerk_I18n.html#getCurrentLocale" class="">getCurrentLocale()</a></td>
+        <td>
+          Get the current locale, or 'en' if none is defined.                  </td>
+      </tr>
+          <tr>
+        <td><a href="class_Openclerk_I18n.html#plural" class="">plural($string, $strings, $number = false, $decimals = 0)</a></td>
+        <td>
+          Return the plural of something. e.g. plural('book', 1), plural('book', 'books', 1), plural('book', 1000)                  </td>
+      </tr>
+          <tr>
+        <td><a href="class_Openclerk_I18n.html#resetAvailableLocales" class="">resetAvailableLocales()</a></td>
+        <td>
+                            </td>
+      </tr>
+          <tr>
+        <td><a href="class_Openclerk_I18n.html#setLocale" class="">setLocale($code = null)</a></td>
+        <td>
+                            </td>
+      </tr>
+          <tr>
+        <td><a href="class_Openclerk_I18n.html#stripKey" class="">stripKey($key)</a></td>
+        <td>
+          remove any unnecessary whitespace in the key that won't be displayed                  </td>
+      </tr>
+          <tr>
+        <td><a href="class_Openclerk_I18n.html#t" class="">t($category, $key = false, $args = array())</a></td>
+        <td>
+          Translate a given 'en' string into the current locale. Loads locale data from <code>__DIR__ . "/../locale/" . $locale . ".php"</code>.                  </td>
+      </tr>
+          <tr>
+        <td><a href="class_Openclerk_I18n.html#tWithoutCategory" class="">tWithoutCategory($key = false, $args = array())</a></td>
+        <td>
+                            </td>
+      </tr>
+      </tbody>
 </table>
-
-
-
-<hr>
-
-<h3>
-  <small>static function</small>
-  addAvailableLocale(<a href="interface_Openclerk_Locale.html" class="">Locale</a> $locale)  <a name="addAvailableLocale"></a>
-</h3>
-
-<blockquote>
-<p>Locales can be defined through a number of different ways at runtime; one way is through component-discovery, for example. Here, locales can be registered.</p><dl></dl></blockquote>
-
-
-<hr>
-
-<h3>
-  <small>static function</small>
-  addAvailableLocales($locales)  <a name="addAvailableLocales"></a>
-</h3>
-
-<blockquote>
-<p>Add a mapping of (key => locale)s, useful for component-discovery</p><dl><dt>See Also:</dt><dd><a href="class_Openclerk_I18n.html#addAvailableLocale" class="">addAvailableLocale(Locale $locale)</a><br></dd></dl></blockquote>
-
-
-<hr>
-
-<h3>
-  <small>static function</small>
-  addDefaultKeys($keys)  <a name="addDefaultKeys"></a>
-</h3>
-
-<blockquote>
-<p>Add default keys to all strings, e.g. :site_name</p><dl></dl></blockquote>
-
-
-<hr>
-
-<h3>
-  <small>static function</small>
-  getAvailableLocales()  <a name="getAvailableLocales"></a>
-</h3>
-
-<blockquote>
-<dl></dl></blockquote>
-
-
-<hr>
-
-<h3>
-  <small>static function</small>
-  getCurrentLocale()  <a name="getCurrentLocale"></a>
-</h3>
-
-<blockquote>
-<p>Get the current locale, or 'en' if none is defined.</p><dl></dl></blockquote>
-
-
-<hr>
-
-<h3>
-  <small>static function</small>
-  plural($string, $strings, $number = false, $decimals = 0)  <a name="plural"></a>
-</h3>
-
-<blockquote>
-<p>Return the plural of something. e.g. plural('book', 1), plural('book', 'books', 1), plural('book', 1000)</p><dl><dt>Defaults:</dt><dd><code>number</code> = <code>false</code><br><code>decimals</code> = 0<br></dd></dl></blockquote>
-
-
-<hr>
-
-<h3>
-  <small>static function</small>
-  resetAvailableLocales()  <a name="resetAvailableLocales"></a>
-</h3>
-
-<blockquote>
-<dl></dl></blockquote>
-
-
-<hr>
-
-<h3>
-  <small>static function</small>
-  setLocale($code = null)  <a name="setLocale"></a>
-</h3>
-
-<blockquote>
-<dl><dt>Parameters:</dt><dd><code>$code</code> - string the locale code to set to, or <code>null</code> to reset it to default<br></dd><dt>Defaults:</dt><dd><code>code</code> = <code>null</code><br></dd></dl></blockquote>
-
-
-<hr>
-
-<h3>
-  <small>static function</small>
-  stripKey($key)  <a name="stripKey"></a>
-</h3>
-
-<blockquote>
-<p>remove any unnecessary whitespace in the key that won't be displayed</p><dl><dt>Returns:</dt><dd>the key with all leading, trailing and multiple inline spaces removed<br></dd></dl></blockquote>
-
-
-<hr>
-
-<h3>
-  <small>static function</small>
-  t($category, $key = false, $args = array())  <a name="t"></a>
-</h3>
-
-<blockquote>
-<p>Translate a given 'en' string into the current locale. Loads locale data from <code>__DIR__ . "/../locale/" . $locale . ".php"</code>.</p><p>If the given string does not exist in the locale then call <code>missing_locale_string($key, $locale)</code> (if the function exists) and return the default translation (in 'en').</p><dl><dt>Defaults:</dt><dd><code>key</code> = <code>false</code><br><code>args</code> = array()<br></dd><dt>See Also:</dt><dd>setLocale($locale)<br></dd></dl></blockquote>
-
-
-<hr>
-
-<h3>
-  <small>static function</small>
-  tWithoutCategory($key = false, $args = array())  <a name="tWithoutCategory"></a>
-</h3>
-
-<blockquote>
-<dl><dt>Defaults:</dt><dd><code>key</code> = <code>false</code><br><code>args</code> = array()<br></dd></dl></blockquote>
-
-</div>
-
-<div class="footer">
-  Generated by <a href="https://github.com/soundasleep/phpdoc2/" class="github">PHPDoc2</a> Fri, 24 Apr 2015 14:42:39 +1200</div>
-
-</body>
-</html>
+  <hr>
+  <h3>
+    <small>static function</small>
+    addAvailableLocale(<a href="interface_Openclerk_Locale.html" class="">Locale</a> $locale)    <a name="addAvailableLocale"></a>
+  </h3>
+  <blockquote>
+      <p>
+    Locales can be defined through a number of different ways at runtime; one way is through component-discovery, for example. Here, locales can be registered.          </p>
+<dl>
+            </dl>
+  </blockquote>
+  <hr>
+  <h3>
+    <small>static function</small>
+    addAvailableLocales($locales)    <a name="addAvailableLocales"></a>
+  </h3>
+  <blockquote>
+      <p>
+    Add a mapping of (key => locale)s, useful for component-discovery          </p>
+<dl>
+                <dt>See:</dt>
+    <dd>
+              <div>
+          <a href="class_Openclerk_I18n.html#addAvailableLocale" class="">addAvailableLocale(Locale $locale)</a>        </div>
+          </dd>
+  </dl>
+  </blockquote>
+  <hr>
+  <h3>
+    <small>static function</small>
+    addDefaultKeys($keys)    <a name="addDefaultKeys"></a>
+  </h3>
+  <blockquote>
+      <p>
+    Add default keys to all strings, e.g. :site_name          </p>
+<dl>
+            </dl>
+  </blockquote>
+  <hr>
+  <h3>
+    <small>static function</small>
+    getAvailableLocales()    <a name="getAvailableLocales"></a>
+  </h3>
+  <blockquote>
+    <dl>
+            </dl>
+  </blockquote>
+  <hr>
+  <h3>
+    <small>static function</small>
+    getCurrentLocale()    <a name="getCurrentLocale"></a>
+  </h3>
+  <blockquote>
+      <p>
+    Get the current locale, or 'en' if none is defined.          </p>
+<dl>
+            </dl>
+  </blockquote>
+  <hr>
+  <h3>
+    <small>static function</small>
+    plural($string, $strings, $number = false, $decimals = 0)    <a name="plural"></a>
+  </h3>
+  <blockquote>
+      <p>
+    Return the plural of something. e.g. plural('book', 1), plural('book', 'books', 1), plural('book', 1000)          </p>
+<dl>
+          <dt>Defaults:</dt>
+    <dd>
+              <div>
+          <code>number</code>
+          =
+          <code>false</code>        </div>
+              <div>
+          <code>decimals</code>
+          =
+          0        </div>
+          </dd>
+        </dl>
+  </blockquote>
+  <hr>
+  <h3>
+    <small>static function</small>
+    resetAvailableLocales()    <a name="resetAvailableLocales"></a>
+  </h3>
+  <blockquote>
+    <dl>
+            </dl>
+  </blockquote>
+  <hr>
+  <h3>
+    <small>static function</small>
+    setLocale($code = null)    <a name="setLocale"></a>
+  </h3>
+  <blockquote>
+    <dl>
+        <dt>Parameters:</dt>
+    <dd>
+              <div>
+          <code>$code</code>
+          -
+          string the locale code to set to, or <code>null</code> to reset it to default        </div>
+          </dd>
+        <dt>Defaults:</dt>
+    <dd>
+              <div>
+          <code>code</code>
+          =
+          <code>null</code>        </div>
+          </dd>
+        </dl>
+  </blockquote>
+  <hr>
+  <h3>
+    <small>static function</small>
+    stripKey($key)    <a name="stripKey"></a>
+  </h3>
+  <blockquote>
+      <p>
+    remove any unnecessary whitespace in the key that won't be displayed          </p>
+<dl>
+            <dt>Returns:</dt>
+    <dd>
+              <div>
+          the key with all leading, trailing and multiple inline spaces removed        </div>
+          </dd>
+      </dl>
+  </blockquote>
+  <hr>
+  <h3>
+    <small>static function</small>
+    t($category, $key = false, $args = array())    <a name="t"></a>
+  </h3>
+  <blockquote>
+      <p>
+    Translate a given 'en' string into the current locale. Loads locale data from <code>__DIR__ . "/../locale/" . $locale . ".php"</code>.          </p>
+  <p>
+    If the given string does not exist in the locale then call <code>missing_locale_string($key, $locale)</code> (if the function exists) and return the default translation (in 'en').          </p>
+<dl>
+          <dt>Defaults:</dt>
+    <dd>
+              <div>
+          <code>key</code>
+          =
+          <code>false</code>        </div>
+              <div>
+          <code>args</code>
+          =
+          array()        </div>
+          </dd>
+            <dt>See:</dt>
+    <dd>
+              <div>
+          setLocale($locale)        </div>
+          </dd>
+  </dl>
+  </blockquote>
+  <hr>
+  <h3>
+    <small>static function</small>
+    tWithoutCategory($key = false, $args = array())    <a name="tWithoutCategory"></a>
+  </h3>
+  <blockquote>
+    <dl>
+          <dt>Defaults:</dt>
+    <dd>
+              <div>
+          <code>key</code>
+          =
+          <code>false</code>        </div>
+              <div>
+          <code>args</code>
+          =
+          array()        </div>
+          </dd>
+        </dl>
+  </blockquote>
+</div><div class="footer">
+  Generated by
+  <a class="github" href="https://github.com/soundasleep/phpdoc2/">PHPDoc2</a>
+  Wed, 06 May 2015 15:59:44 +1200</div>
+</body></html>

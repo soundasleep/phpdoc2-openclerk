@@ -1,46 +1,35 @@
-<!DOCTYPE HTML>
-<html>
-<head>
+<!DOCTYPE html>
+<html><head>
   <title>PHPDoc2 - openclerk</title>
   <link rel="stylesheet" type="text/css" href="default.css">
-</head>
-<body>
-<nav>
+  </head>
+<body><nav>
   <a href="index.html">Root</a>
 </nav>
-
-<div class="content">
-<ul><li>Db\Query</li></ul>
+<div class="content"><ul>
+  <li>
+    Db\Query  </li>
+</ul>
 <h1>
   <small>class</small>
-
-  <a href="namespace_Db.html" class="">Db</a>  \
-  <a href="class_Db_Query.html" class="">Query</a></h1>
-
-
-<dl>
-  <dt>All implemented interfaces:</dt>
-  <dd>
-    Serializable  </dd>
-</dl>
-
-
-
-
-<dl>
-  <dt>All known direct subclasses:</dt>
-  <dd>
-    <a href="class_Db_ReplicatedQuery.html" class="">ReplicatedQuery</a>  </dd>
-</dl>
-
-
+  <a href="namespace_Db.html" class="">Db</a>  \  <a href="class_Db_Query.html" class="">Query</a></h1>
+  <dl>
+    <dt>All implemented interfaces:</dt>
+    <dd>
+            Serializable    </dd>
+  </dl>
+  <dl>
+    <dt>All known direct subclasses:</dt>
+    <dd>
+            <a href="class_Db_ReplicatedQuery.html" class="">ReplicatedQuery</a>    </dd>
+  </dl>
 <hr>
-
-<p>Represents an instance of a query, which can be executed and results fetched.</p><dl></dl>
+  <p>
+    Represents an instance of a query, which can be executed and results fetched.          </p>
+<dl>
+            </dl>
 <hr>
-
 <h2>Method Summary</h2>
-
 <table>
   <thead>
     <tr>
@@ -49,102 +38,146 @@
     </tr>
   </thead>
   <tbody>
-<tr><td><a href="class_Db_Query.html#__construct" class="">__construct(Connection $connection, $query)</a></td><td></td></tr><tr><td><a href="class_Db_Query.html#execute" class="">execute($args = array())</a></td><td></td></tr><tr><td><a href="class_Db_Query.html#fetch" class="">fetch()</a></td><td></td></tr><tr><td><a href="class_Db_Query.html#fetchAll" class="">fetchAll()</a></td><td></td></tr><tr><td><a href="class_Db_Query.html#getConnection" class="">getConnection()</a></td><td></td></tr><tr><td><a href="class_Db_Query.html#rowCount" class="">rowCount()</a></td><td></td></tr><tr><td><a href="class_Db_Query.html#serialize" class="">serialize()</a></td><td>We implement Serializable so that this can be used in a serialized exception argument.</td></tr><tr><td><a href="class_Db_Query.html#unserialize" class="">unserialize($ser)</a></td><td></td></tr>  </tbody>
+          <tr>
+        <td><a href="class_Db_Query.html#__construct" class="">__construct(Connection $connection, $query)</a></td>
+        <td>
+                            </td>
+      </tr>
+          <tr>
+        <td><a href="class_Db_Query.html#execute" class="">execute($args = array())</a></td>
+        <td>
+                            </td>
+      </tr>
+          <tr>
+        <td><a href="class_Db_Query.html#fetch" class="">fetch()</a></td>
+        <td>
+                            </td>
+      </tr>
+          <tr>
+        <td><a href="class_Db_Query.html#fetchAll" class="">fetchAll()</a></td>
+        <td>
+                            </td>
+      </tr>
+          <tr>
+        <td><a href="class_Db_Query.html#getConnection" class="">getConnection()</a></td>
+        <td>
+                            </td>
+      </tr>
+          <tr>
+        <td><a href="class_Db_Query.html#rowCount" class="">rowCount()</a></td>
+        <td>
+                            </td>
+      </tr>
+          <tr>
+        <td><a href="class_Db_Query.html#serialize" class="">serialize()</a></td>
+        <td>
+          We implement Serializable so that this can be used in a serialized exception argument.                  </td>
+      </tr>
+          <tr>
+        <td><a href="class_Db_Query.html#unserialize" class="">unserialize($ser)</a></td>
+        <td>
+                            </td>
+      </tr>
+      </tbody>
 </table>
-
-
-
-<hr>
-
-<h3>
-  <small>public function</small>
-  __construct(<a href="interface_Db_Connection.html" class="">Connection</a> $connection, $query)  <a name="__construct"></a>
-</h3>
-
-<blockquote>
-<dl></dl></blockquote>
-
-
-<hr>
-
-<h3>
-  <small>public function</small>
-  execute($args = array())  <a name="execute"></a>
-</h3>
-
-<blockquote>
-<dl><dt>Defaults:</dt><dd><code>args</code> = array()<br></dd><dt>Returns:</dt><dd>true on success<br></dd><dt>Throws:</dt><dd><a href="class_Db_DbException.html" class="">DbException</a> - on error with PDOStatement#errorInfo.<br></dd></dl></blockquote>
-
-
-<hr>
-
-<h3>
-  <small>public function</small>
-  fetch()  <a name="fetch"></a>
-</h3>
-
-<blockquote>
-<dl></dl></blockquote>
-
-
-<hr>
-
-<h3>
-  <small>public function</small>
-  fetchAll()  <a name="fetchAll"></a>
-</h3>
-
-<blockquote>
-<dl></dl></blockquote>
-
-
-<hr>
-
-<h3>
-  <small>public function</small>
-  getConnection()  <a name="getConnection"></a>
-</h3>
-
-<blockquote>
-<dl></dl></blockquote>
-
-
-<hr>
-
-<h3>
-  <small>public function</small>
-  rowCount()  <a name="rowCount"></a>
-</h3>
-
-<blockquote>
-<dl></dl></blockquote>
-
-
-<hr>
-
-<h3>
-  <small>public function</small>
-  serialize()  <a name="serialize"></a>
-</h3>
-
-<blockquote>
-<p>We implement Serializable so that this can be used in a serialized exception argument.</p><dl></dl></blockquote>
-
-
-<hr>
-
-<h3>
-  <small>public function</small>
-  unserialize($ser)  <a name="unserialize"></a>
-</h3>
-
-<blockquote>
-<dl><dt>Throws:</dt><dd>Exception - since unserialize() is not supported on this object<br></dd></dl></blockquote>
-
-</div>
-
-<div class="footer">
-  Generated by <a href="https://github.com/soundasleep/phpdoc2/" class="github">PHPDoc2</a> Fri, 24 Apr 2015 14:42:36 +1200</div>
-
-</body>
-</html>
+  <hr>
+  <h3>
+    <small>public function</small>
+    __construct(<a href="interface_Db_Connection.html" class="">Connection</a> $connection, $query)    <a name="__construct"></a>
+  </h3>
+  <blockquote>
+    <dl>
+            </dl>
+  </blockquote>
+  <hr>
+  <h3>
+    <small>public function</small>
+    execute($args = array())    <a name="execute"></a>
+  </h3>
+  <blockquote>
+    <dl>
+          <dt>Defaults:</dt>
+    <dd>
+              <div>
+          <code>args</code>
+          =
+          array()        </div>
+          </dd>
+        <dt>Returns:</dt>
+    <dd>
+              <div>
+          true on success        </div>
+          </dd>
+        <dt>Throws:</dt>
+    <dd>
+              <div>
+          <a href="class_Db_DbException.html" class="">DbException</a> - on error with PDOStatement#errorInfo.        </div>
+          </dd>
+    </dl>
+  </blockquote>
+  <hr>
+  <h3>
+    <small>public function</small>
+    fetch()    <a name="fetch"></a>
+  </h3>
+  <blockquote>
+    <dl>
+            </dl>
+  </blockquote>
+  <hr>
+  <h3>
+    <small>public function</small>
+    fetchAll()    <a name="fetchAll"></a>
+  </h3>
+  <blockquote>
+    <dl>
+            </dl>
+  </blockquote>
+  <hr>
+  <h3>
+    <small>public function</small>
+    getConnection()    <a name="getConnection"></a>
+  </h3>
+  <blockquote>
+    <dl>
+            </dl>
+  </blockquote>
+  <hr>
+  <h3>
+    <small>public function</small>
+    rowCount()    <a name="rowCount"></a>
+  </h3>
+  <blockquote>
+    <dl>
+            </dl>
+  </blockquote>
+  <hr>
+  <h3>
+    <small>public function</small>
+    serialize()    <a name="serialize"></a>
+  </h3>
+  <blockquote>
+      <p>
+    We implement Serializable so that this can be used in a serialized exception argument.          </p>
+<dl>
+            </dl>
+  </blockquote>
+  <hr>
+  <h3>
+    <small>public function</small>
+    unserialize($ser)    <a name="unserialize"></a>
+  </h3>
+  <blockquote>
+    <dl>
+              <dt>Throws:</dt>
+    <dd>
+              <div>
+          Exception - since unserialize() is not supported on this object        </div>
+          </dd>
+    </dl>
+  </blockquote>
+</div><div class="footer">
+  Generated by
+  <a class="github" href="https://github.com/soundasleep/phpdoc2/">PHPDoc2</a>
+  Wed, 06 May 2015 15:59:41 +1200</div>
+</body></html>

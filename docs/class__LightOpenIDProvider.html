@@ -1,0 +1,669 @@
+<!DOCTYPE html>
+<html><head>
+  <title>PHPDoc2 - openclerk</title>
+  <link rel="stylesheet" type="text/css" href="default.css">
+  </head>
+<body><nav>
+  <a href="index.html">Root</a>
+</nav>
+<div class="content"><ul>
+  <li>
+    \LightOpenIDProvider  </li>
+</ul>
+<h1>
+  <small>abstract class</small>
+  <a href="namespace_.html" class="">(none)</a>  \  <a href="class__LightOpenIDProvider.html" class="">LightOpenIDProvider</a></h1>
+  <dl>
+    <dt>All known direct subclasses:</dt>
+    <dd>
+            <a href="class__BasicProvider.html" class="">BasicProvider</a>,<a href="class__MysqlProvider.html" class="">MysqlProvider</a>    </dd>
+  </dl>
+<hr>
+<dl>
+            </dl>
+<hr>
+<h2>Method Summary</h2>
+<table>
+  <thead>
+    <tr>
+      <th>Name</th>
+      <th>Description</th>
+    </tr>
+  </thead>
+  <tbody>
+          <tr>
+        <td><a href="class__LightOpenIDProvider.html#__call" class="">__call($name, $args)</a></td>
+        <td>
+                            </td>
+      </tr>
+          <tr>
+        <td><a href="class__LightOpenIDProvider.html#__construct" class="">__construct()</a></td>
+        <td>
+                            </td>
+      </tr>
+          <tr>
+        <td><a href="class__LightOpenIDProvider.html#assoc_handle" class="">assoc_handle()</a></td>
+        <td>
+          Generates a new association handle.                  </td>
+      </tr>
+          <tr>
+        <td><a href="class__LightOpenIDProvider.html#associate" class="">associate()</a></td>
+        <td>
+          Performs association with an RP.                  </td>
+      </tr>
+          <tr>
+        <td><a href="class__LightOpenIDProvider.html#ax" class="">ax()</a></td>
+        <td>
+                            </td>
+      </tr>
+          <tr>
+        <td><a href="class__LightOpenIDProvider.html#b64dec" class="">b64dec($str)</a></td>
+        <td>
+          Converts base64 encoded number to it's decimal representation.                  </td>
+      </tr>
+          <tr>
+        <td><a href="class__LightOpenIDProvider.html#cancel" class="">cancel()</a></td>
+        <td>
+          Responds with an information that the user has canceled authentication.                  </td>
+      </tr>
+          <tr>
+        <td><a href="class__LightOpenIDProvider.html#checkRealm" class="">checkRealm()</a></td>
+        <td>
+                            </td>
+      </tr>
+          <tr>
+        <td><a href="class__LightOpenIDProvider.html#checkid" class="">checkid($realm, $attributes)</a></td>
+        <td>
+          Checks whether an user is authenticated. The function should determine what fields it wants to send to the RP, and put them in the $attributes array.                  </td>
+      </tr>
+          <tr>
+        <td><a href="class__LightOpenIDProvider.html#decb64" class="">decb64($num)</a></td>
+        <td>
+          Complements b64dec.                  </td>
+      </tr>
+          <tr>
+        <td><a href="class__LightOpenIDProvider.html#delAssoc" class="">delAssoc($handle)</a></td>
+        <td>
+          Deletes an association. If you want to use php sessions in your provider code, you have to replace it.                  </td>
+      </tr>
+          <tr>
+        <td><a href="class__LightOpenIDProvider.html#dh" class="">dh()</a></td>
+        <td>
+          Encrypts the MAC key using DH key exchange.                  </td>
+      </tr>
+          <tr>
+        <td><a href="class__LightOpenIDProvider.html#errorResponse" class="">errorResponse()</a></td>
+        <td>
+          Outputs a direct error.                  </td>
+      </tr>
+          <tr>
+        <td><a href="class__LightOpenIDProvider.html#generateAssociation" class="">generateAssociation()</a></td>
+        <td>
+          Creates a private association.                  </td>
+      </tr>
+          <tr>
+        <td><a href="class__LightOpenIDProvider.html#getAssoc" class="">getAssoc($handle)</a></td>
+        <td>
+          Retreives association data. If you want to use php sessions in your provider code, you have to replace it.                  </td>
+      </tr>
+          <tr>
+        <td><a href="class__LightOpenIDProvider.html#keyValueForm" class="">keyValueForm($params)</a></td>
+        <td>
+          Encodes fields in key-value form.                  </td>
+      </tr>
+          <tr>
+        <td><a href="class__LightOpenIDProvider.html#keygen" class="">keygen($length)</a></td>
+        <td>
+          Generates a private key.                  </td>
+      </tr>
+          <tr>
+        <td><a href="class__LightOpenIDProvider.html#positiveResponse" class="">positiveResponse($identity, $attributes)</a></td>
+        <td>
+          Sends an positive assertion.                  </td>
+      </tr>
+          <tr>
+        <td><a href="class__LightOpenIDProvider.html#redirect" class="">redirect($location)</a></td>
+        <td>
+          Redirects the user to an url.                  </td>
+      </tr>
+          <tr>
+        <td><a href="class__LightOpenIDProvider.html#response" class="">response($params)</a></td>
+        <td>
+          Prepares an indirect response url.                  </td>
+      </tr>
+          <tr>
+        <td><a href="class__LightOpenIDProvider.html#responseAttributes" class="">responseAttributes($attributes)</a></td>
+        <td>
+          Prepares an array of attributes to send                  </td>
+      </tr>
+          <tr>
+        <td><a href="class__LightOpenIDProvider.html#server" class="">server()</a></td>
+        <td>
+          Does everything that a provider has to -- in one function.                  </td>
+      </tr>
+          <tr>
+        <td><a href="class__LightOpenIDProvider.html#setAssoc" class="">setAssoc($handle, $assoc)</a></td>
+        <td>
+          Stores an association. If you want to use php sessions in your provider code, you have to replace it.                  </td>
+      </tr>
+          <tr>
+        <td><a href="class__LightOpenIDProvider.html#setup" class="">setup($identity, $realm, $assoc_handle, $attributes)</a></td>
+        <td>
+          Displays an user interface for inputting user's login and password. Attributes are always AX field namespaces, with stripped host part. For example, the $attributes array may be: array( 'required' => array('namePerson/friendly', 'contact/email'), 'optional' => array('pref/timezone', 'pref/language')                  </td>
+      </tr>
+          <tr>
+        <td><a href="class__LightOpenIDProvider.html#shared_secret" class="">shared_secret($hash)</a></td>
+        <td>
+          Generates a random shared secret.                  </td>
+      </tr>
+          <tr>
+        <td><a href="class__LightOpenIDProvider.html#sreg" class="">sreg()</a></td>
+        <td>
+                            </td>
+      </tr>
+          <tr>
+        <td><a href="class__LightOpenIDProvider.html#verify" class="">verify()</a></td>
+        <td>
+          Aids an RP in assertion verification.                  </td>
+      </tr>
+          <tr>
+        <td><a href="class__LightOpenIDProvider.html#x_or" class="">x_or($a, $b)</a></td>
+        <td>
+          XORs two strings.                  </td>
+      </tr>
+          <tr>
+        <td><a href="class__LightOpenIDProvider.html#xrds" class="">xrds($force = null)</a></td>
+        <td>
+          Displays an XRDS document, or redirects to it. By default, it detects whether it should display or redirect automatically.                  </td>
+      </tr>
+          <tr>
+        <td><a href="class__LightOpenIDProvider.html#xrdsContent" class="">xrdsContent()</a></td>
+        <td>
+          Returns the content of the XRDS document                  </td>
+      </tr>
+      </tbody>
+</table>
+  <hr>
+  <h3>
+    <small>public function</small>
+    __call($name, $args)    <a name="__call"></a>
+  </h3>
+  <blockquote>
+    <dl>
+            </dl>
+  </blockquote>
+  <hr>
+  <h3>
+    <small>public function</small>
+    __construct()    <a name="__construct"></a>
+  </h3>
+  <blockquote>
+    <dl>
+            </dl>
+  </blockquote>
+  <hr>
+  <h3>
+    <small>protected function</small>
+    assoc_handle()    <a name="assoc_handle"></a>
+  </h3>
+  <blockquote>
+      <p>
+    Generates a new association handle.          </p>
+<dl>
+            <dt>Returns:</dt>
+    <dd>
+              <div>
+          string        </div>
+          </dd>
+      </dl>
+  </blockquote>
+  <hr>
+  <h3>
+    <small>protected function</small>
+    associate()    <a name="associate"></a>
+  </h3>
+  <blockquote>
+      <p>
+    Performs association with an RP.          </p>
+<dl>
+            </dl>
+  </blockquote>
+  <hr>
+  <h3>
+    <small>protected function</small>
+    ax()    <a name="ax"></a>
+  </h3>
+  <blockquote>
+    <dl>
+            </dl>
+  </blockquote>
+  <hr>
+  <h3>
+    <small>protected function</small>
+    b64dec($str)    <a name="b64dec"></a>
+  </h3>
+  <blockquote>
+      <p>
+    Converts base64 encoded number to it's decimal representation.          </p>
+<dl>
+        <dt>Parameters:</dt>
+    <dd>
+              <div>
+          <code>String</code>
+          -
+          $str base64 encoded number.        </div>
+          </dd>
+          <dt>Returns:</dt>
+    <dd>
+              <div>
+          String Decimal representation of that number.        </div>
+          </dd>
+      </dl>
+  </blockquote>
+  <hr>
+  <h3>
+    <small>protected function</small>
+    cancel()    <a name="cancel"></a>
+  </h3>
+  <blockquote>
+      <p>
+    Responds with an information that the user has canceled authentication.          </p>
+<dl>
+            </dl>
+  </blockquote>
+  <hr>
+  <h3>
+    <small>protected function</small>
+    checkRealm()    <a name="checkRealm"></a>
+  </h3>
+  <blockquote>
+    <dl>
+            </dl>
+  </blockquote>
+  <hr>
+  <h3>
+    <small>abstract function</small>
+    checkid($realm, $attributes)    <a name="checkid"></a>
+  </h3>
+  <blockquote>
+      <p>
+    Checks whether an user is authenticated. The function should determine what fields it wants to send to the RP, and put them in the $attributes array.          </p>
+<dl>
+        <dt>Parameters:</dt>
+    <dd>
+              <div>
+          <code>Array</code>
+          -
+          $attributes        </div>
+              <div>
+          <code>String</code>
+          -
+          $realm Realm used for authentication.        </div>
+          </dd>
+          <dt>Returns:</dt>
+    <dd>
+              <div>
+          String OP-local identifier of an authenticated user, or an empty value.        </div>
+          </dd>
+      </dl>
+  </blockquote>
+  <hr>
+  <h3>
+    <small>protected function</small>
+    decb64($num)    <a name="decb64"></a>
+  </h3>
+  <blockquote>
+      <p>
+    Complements b64dec.          </p>
+<dl>
+            </dl>
+  </blockquote>
+  <hr>
+  <h3>
+    <small>protected function</small>
+    delAssoc($handle)    <a name="delAssoc"></a>
+  </h3>
+  <blockquote>
+      <p>
+    Deletes an association. If you want to use php sessions in your provider code, you have to replace it.          </p>
+<dl>
+        <dt>Parameters:</dt>
+    <dd>
+              <div>
+          <code>String</code>
+          -
+          $handle Association handle.        </div>
+          </dd>
+          </dl>
+  </blockquote>
+  <hr>
+  <h3>
+    <small>protected function</small>
+    dh()    <a name="dh"></a>
+  </h3>
+  <blockquote>
+      <p>
+    Encrypts the MAC key using DH key exchange.          </p>
+<dl>
+            </dl>
+  </blockquote>
+  <hr>
+  <h3>
+    <small>protected function</small>
+    errorResponse()    <a name="errorResponse"></a>
+  </h3>
+  <blockquote>
+      <p>
+    Outputs a direct error.          </p>
+<dl>
+            </dl>
+  </blockquote>
+  <hr>
+  <h3>
+    <small>protected function</small>
+    generateAssociation()    <a name="generateAssociation"></a>
+  </h3>
+  <blockquote>
+      <p>
+    Creates a private association.          </p>
+<dl>
+            </dl>
+  </blockquote>
+  <hr>
+  <h3>
+    <small>protected function</small>
+    getAssoc($handle)    <a name="getAssoc"></a>
+  </h3>
+  <blockquote>
+      <p>
+    Retreives association data. If you want to use php sessions in your provider code, you have to replace it.          </p>
+<dl>
+        <dt>Parameters:</dt>
+    <dd>
+              <div>
+          <code>String</code>
+          -
+          $handle Association handle.        </div>
+          </dd>
+          <dt>Returns:</dt>
+    <dd>
+              <div>
+          Array Association data.        </div>
+          </dd>
+      </dl>
+  </blockquote>
+  <hr>
+  <h3>
+    <small>protected function</small>
+    keyValueForm($params)    <a name="keyValueForm"></a>
+  </h3>
+  <blockquote>
+      <p>
+    Encodes fields in key-value form.          </p>
+<dl>
+        <dt>Parameters:</dt>
+    <dd>
+              <div>
+          <code>Array</code>
+          -
+          $params Fields to be encoded.        </div>
+          </dd>
+          <dt>Returns:</dt>
+    <dd>
+              <div>
+          String $params in key-value form.        </div>
+          </dd>
+      </dl>
+  </blockquote>
+  <hr>
+  <h3>
+    <small>protected function</small>
+    keygen($length)    <a name="keygen"></a>
+  </h3>
+  <blockquote>
+      <p>
+    Generates a private key.          </p>
+<dl>
+        <dt>Parameters:</dt>
+    <dd>
+              <div>
+          <code>int</code>
+          -
+          $length Length of the key.        </div>
+          </dd>
+          </dl>
+  </blockquote>
+  <hr>
+  <h3>
+    <small>protected function</small>
+    positiveResponse($identity, $attributes)    <a name="positiveResponse"></a>
+  </h3>
+  <blockquote>
+      <p>
+    Sends an positive assertion.          </p>
+<dl>
+        <dt>Parameters:</dt>
+    <dd>
+              <div>
+          <code>String</code>
+          -
+          $identity the OP-Local Identifier that is being authenticated.        </div>
+              <div>
+          <code>Array</code>
+          -
+          $attributes User attributes to be sent.        </div>
+          </dd>
+          </dl>
+  </blockquote>
+  <hr>
+  <h3>
+    <small>protected function</small>
+    redirect($location)    <a name="redirect"></a>
+  </h3>
+  <blockquote>
+      <p>
+    Redirects the user to an url.          </p>
+<dl>
+        <dt>Parameters:</dt>
+    <dd>
+              <div>
+          <code>String</code>
+          -
+          $location The url that the user will be redirected to.        </div>
+          </dd>
+          </dl>
+  </blockquote>
+  <hr>
+  <h3>
+    <small>protected function</small>
+    response($params)    <a name="response"></a>
+  </h3>
+  <blockquote>
+      <p>
+    Prepares an indirect response url.          </p>
+<dl>
+        <dt>Parameters:</dt>
+    <dd>
+              <div>
+          <code>array</code>
+          -
+          $params Parameters to be sent.        </div>
+          </dd>
+          </dl>
+  </blockquote>
+  <hr>
+  <h3>
+    <small>protected function</small>
+    responseAttributes($attributes)    <a name="responseAttributes"></a>
+  </h3>
+  <blockquote>
+      <p>
+    Prepares an array of attributes to send          </p>
+<dl>
+            </dl>
+  </blockquote>
+  <hr>
+  <h3>
+    <small>public function</small>
+    server()    <a name="server"></a>
+  </h3>
+  <blockquote>
+      <p>
+    Does everything that a provider has to -- in one function.          </p>
+<dl>
+            </dl>
+  </blockquote>
+  <hr>
+  <h3>
+    <small>protected function</small>
+    setAssoc($handle, $assoc)    <a name="setAssoc"></a>
+  </h3>
+  <blockquote>
+      <p>
+    Stores an association. If you want to use php sessions in your provider code, you have to replace it.          </p>
+<dl>
+        <dt>Parameters:</dt>
+    <dd>
+              <div>
+          <code>String</code>
+          -
+          $handle Association handle -- should be used as a key.        </div>
+              <div>
+          <code>Array</code>
+          -
+          $assoc Association data.        </div>
+          </dd>
+          </dl>
+  </blockquote>
+  <hr>
+  <h3>
+    <small>abstract function</small>
+    setup($identity, $realm, $assoc_handle, $attributes)    <a name="setup"></a>
+  </h3>
+  <blockquote>
+      <p>
+    Displays an user interface for inputting user's login and password. Attributes are always AX field namespaces, with stripped host part. For example, the $attributes array may be: array( 'required' => array('namePerson/friendly', 'contact/email'), 'optional' => array('pref/timezone', 'pref/language')          </p>
+<dl>
+        <dt>Parameters:</dt>
+    <dd>
+              <div>
+          <code>String</code>
+          -
+          Association handle. must be sent as openid.assoc_handle in $_GET or $_POST in subsequent requests.        </div>
+              <div>
+          <code>Array</code>
+          -
+          User attributes requested by the RP.        </div>
+          </dd>
+          </dl>
+  </blockquote>
+  <hr>
+  <h3>
+    <small>protected function</small>
+    shared_secret($hash)    <a name="shared_secret"></a>
+  </h3>
+  <blockquote>
+      <p>
+    Generates a random shared secret.          </p>
+<dl>
+            <dt>Returns:</dt>
+    <dd>
+              <div>
+          string        </div>
+          </dd>
+      </dl>
+  </blockquote>
+  <hr>
+  <h3>
+    <small>protected function</small>
+    sreg()    <a name="sreg"></a>
+  </h3>
+  <blockquote>
+    <dl>
+            </dl>
+  </blockquote>
+  <hr>
+  <h3>
+    <small>protected function</small>
+    verify()    <a name="verify"></a>
+  </h3>
+  <blockquote>
+      <p>
+    Aids an RP in assertion verification.          </p>
+<dl>
+            <dt>Returns:</dt>
+    <dd>
+              <div>
+          bool Information whether the verification suceeded.        </div>
+          </dd>
+      </dl>
+  </blockquote>
+  <hr>
+  <h3>
+    <small>protected function</small>
+    x_or($a, $b)    <a name="x_or"></a>
+  </h3>
+  <blockquote>
+      <p>
+    XORs two strings.          </p>
+<dl>
+        <dt>Parameters:</dt>
+    <dd>
+              <div>
+          <code>String</code>
+          -
+          $b        </div>
+          </dd>
+          <dt>Returns:</dt>
+    <dd>
+              <div>
+          String $a ^ $b        </div>
+          </dd>
+      </dl>
+  </blockquote>
+  <hr>
+  <h3>
+    <small>public function</small>
+    xrds($force = null)    <a name="xrds"></a>
+  </h3>
+  <blockquote>
+      <p>
+    Displays an XRDS document, or redirects to it. By default, it detects whether it should display or redirect automatically.          </p>
+<dl>
+        <dt>Parameters:</dt>
+    <dd>
+              <div>
+          <code>bool|null</code>
+          -
+          $force When true, always display the document, when false always redirect.        </div>
+          </dd>
+        <dt>Defaults:</dt>
+    <dd>
+              <div>
+          <code>force</code>
+          =
+          <code>null</code>        </div>
+          </dd>
+        </dl>
+  </blockquote>
+  <hr>
+  <h3>
+    <small>protected function</small>
+    xrdsContent()    <a name="xrdsContent"></a>
+  </h3>
+  <blockquote>
+      <p>
+    Returns the content of the XRDS document          </p>
+<dl>
+            <dt>Returns:</dt>
+    <dd>
+              <div>
+          String The XRDS document.        </div>
+          </dd>
+      </dl>
+  </blockquote>
+</div><div class="footer">
+  Generated by
+  <a class="github" href="https://github.com/soundasleep/phpdoc2/">PHPDoc2</a>
+  Wed, 06 May 2015 15:59:17 +1200</div>
+</body></html>

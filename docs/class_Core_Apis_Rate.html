@@ -1,32 +1,36 @@
-<!DOCTYPE HTML>
-<html>
-<head>
+<!DOCTYPE html>
+<html><head>
   <title>PHPDoc2 - openclerk</title>
   <link rel="stylesheet" type="text/css" href="default.css">
-</head>
-<body>
-<nav>
+  </head>
+<body><nav>
   <a href="index.html">Root</a>
 </nav>
-
-<div class="content">
-<ul class="class-hierarchy"><li><a href="class_Apis_Api.html" class="">Apis\Api</a><ul class="class-hierarchy"><li><a href="class_Apis_CachedApi.html" class="">Apis\CachedApi</a><ul><li>Core\Apis\Rate</li></ul></li></ul></li></ul>
-<h1>
+<div class="content">  <ul class="class-hierarchy">  <li>      <a href="class_Apis_Api.html" class="">Apis\Api</a>    <ul class="class-hierarchy">  <li>      <a href="class_Apis_CachedApi.html" class="">Apis\CachedApi</a>  <ul>
+  <li>
+    Core\Apis\Rate  </li>
+</ul>
+  </li>  </ul>  </li>  </ul><h1>
   <small>class</small>
-
-  <a href="namespace_Core_Apis.html" class="">Core\Apis</a>  \
-  <a href="class_Core_Apis_Rate.html" class="">Rate</a></h1>
-
-
-
-
+  <a href="namespace_Core_Apis.html" class="">Core\Apis</a>  \  <a href="class_Core_Apis_Rate.html" class="">Rate</a></h1>
 <hr>
-
-<p>Get the latest rates for the given currency pair across all tracked exchanges.</p><dl><dt>Parameters:</dt><dd><code>currency1</code> - first currency, e.g. 'nzd'<br><code>currency2</code> - second currency, e.g. 'btc'<br></dd></dl>
+  <p>
+    Get the latest rates for the given currency pair across all tracked exchanges.          </p>
+<dl>
+        <dt>Parameters:</dt>
+    <dd>
+              <div>
+          <code>currency1</code>
+          -
+          first currency, e.g. 'nzd'        </div>
+              <div>
+          <code>currency2</code>
+          -
+          second currency, e.g. 'btc'        </div>
+          </dd>
+          </dl>
 <hr>
-
 <h2>Method Summary</h2>
-
 <table>
   <thead>
     <tr>
@@ -35,61 +39,107 @@
     </tr>
   </thead>
   <tbody>
-<tr><td><a href="class_Core_Apis_Rate.html#getEndpoint" class="">getEndpoint()</a></td><td></td></tr><tr><td><a href="class_Core_Apis_Rate.html#getHash" class="">getHash($arguments)</a></td><td>Return a 32-character hash from the given argmuents so that it can be cached.</td></tr><tr><td><a href="class_Core_Apis_Rate.html#getJSON" class="">getJSON($arguments)</a></td><td>Compile the JSON with the given arguments, as parsed from the <a href="class_Core_Apis_Rate.html#getEndpoint" class="">#getEndpoint()</a> string.</td></tr>  </tbody>
+          <tr>
+        <td><a href="class_Core_Apis_Rate.html#getEndpoint" class="">getEndpoint()</a></td>
+        <td>
+                            </td>
+      </tr>
+          <tr>
+        <td><a href="class_Core_Apis_Rate.html#getHash" class="">getHash($arguments)</a></td>
+        <td>
+          Return a 32-character hash from the given argmuents so that it can be cached.                  </td>
+      </tr>
+          <tr>
+        <td><a href="class_Core_Apis_Rate.html#getJSON" class="">getJSON($arguments)</a></td>
+        <td>
+          Compile the JSON with the given arguments, as parsed from the <a href="class_Core_Apis_Rate.html#getEndpoint" class="">#getEndpoint()</a> string.                  </td>
+      </tr>
+      </tbody>
 </table>
-
-
-<h2>Inherited Method Summary</h2>
-
-<table>
-  <thead>
-    <tr>
-      <th>Name</th>
-      <th>Description</th>
-    </tr>
-  </thead>
-  <tbody>
-<tr><td><a href="class_Apis_CachedApi.html#render" class="">render($arguments)</a></td><td>Try and get the JSON result for this API, and return either <code>{success: true: result: $json}</code> or <code>{success: false, error: $message}</code> if an exception occured. <i>(from <a href="class_Apis_CachedApi.html#render" class="">CachedApi</a>)</i></td></tr><tr><td><a href="class_Apis_CachedApi.html#getAge" class="">getAge()</a></td><td>How long are API calls cached? <i>(from <a href="class_Apis_CachedApi.html#getAge" class="">CachedApi</a>)</i></td></tr><tr><td><a href="class_Apis_CachedApi.html#getCached" class="">getCached($arguments)</a></td><td> <i>(from <a href="class_Apis_CachedApi.html#getCached" class="">CachedApi</a>)</i></td></tr><tr><td><a href="class_Apis_CachedApi.html#renderJSON" class="">renderJSON($arguments)</a></td><td> <i>(from <a href="class_Apis_CachedApi.html#renderJSON" class="">CachedApi</a>)</i></td></tr>  </tbody>
-</table>
-
-
-
-<hr>
-
-<h3>
-  <small>public function</small>
-  getEndpoint()  <a name="getEndpoint"></a>
-</h3>
-
-<blockquote>
-<dl><dt>Overrides:</dt><dd><a href="class_Apis_Api.html#getEndpoint" class="">getEndpoint()</a></dd><dt>Returns:</dt><dd>e.g. "/api/v1/currency/:currency"<br></dd></dl></blockquote>
-
-
-<hr>
-
-<h3>
-  <small>public function</small>
-  getHash($arguments)  <a name="getHash"></a>
-</h3>
-
-<blockquote>
-<p>Return a 32-character hash from the given argmuents so that it can be cached. <i>(from <a href="class_Apis_CachedApi.html#getHash" class="">getHash</a>)</i></p><dl><dt>Overrides:</dt><dd><a href="class_Apis_CachedApi.html#getHash" class="">getHash($arguments)</a></dd></dl></blockquote>
-
-
-<hr>
-
-<h3>
-  <small>public function</small>
-  getJSON($arguments)  <a name="getJSON"></a>
-</h3>
-
-<blockquote>
-<p>Compile the JSON with the given arguments, as parsed from the <a href="class_Core_Apis_Rate.html#getEndpoint" class="">#getEndpoint()</a> string. <i>(from <a href="class_Apis_Api.html#getJSON" class="">getJSON</a>)</i></p><dl><dt>Overrides:</dt><dd><a href="class_Apis_Api.html#getJSON" class="">getJSON($arguments)</a></dd></dl></blockquote>
-
-</div>
-
-<div class="footer">
-  Generated by <a href="https://github.com/soundasleep/phpdoc2/" class="github">PHPDoc2</a> Fri, 24 Apr 2015 14:42:26 +1200</div>
-
-</body>
-</html>
+  <h2>Inherited Method Summary</h2>
+  <table>
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+              <tr>
+          <td><a href="class_Apis_CachedApi.html#render" class="">render($arguments)</a></td>
+          <td>
+            Try and get the JSON result for this API, and return either <code>{success: true: result: $json}</code> or <code>{success: false, error: $message}</code> if an exception occured.            <i>(from <a href="class_Apis_CachedApi.html#render" class="">CachedApi</a>)</i>
+                      </td>
+        </tr>
+              <tr>
+          <td><a href="class_Apis_CachedApi.html#getAge" class="">getAge()</a></td>
+          <td>
+            How long are API calls cached?            <i>(from <a href="class_Apis_CachedApi.html#getAge" class="">CachedApi</a>)</i>
+                      </td>
+        </tr>
+              <tr>
+          <td><a href="class_Apis_CachedApi.html#getCached" class="">getCached($arguments)</a></td>
+          <td>
+                        <i>(from <a href="class_Apis_CachedApi.html#getCached" class="">CachedApi</a>)</i>
+                      </td>
+        </tr>
+              <tr>
+          <td><a href="class_Apis_CachedApi.html#renderJSON" class="">renderJSON($arguments)</a></td>
+          <td>
+                        <i>(from <a href="class_Apis_CachedApi.html#renderJSON" class="">CachedApi</a>)</i>
+                      </td>
+        </tr>
+          </tbody>
+  </table>
+  <hr>
+  <h3>
+    <small>public function</small>
+    getEndpoint()    <a name="getEndpoint"></a>
+  </h3>
+  <blockquote>
+    <dl>
+      <dt>Overrides:</dt>
+    <dd>
+      <a href="class_Apis_Api.html#getEndpoint" class="">getEndpoint()</a>    </dd>
+            <dt>Returns:</dt>
+    <dd>
+              <div>
+          e.g. "/api/v1/currency/:currency"        </div>
+          </dd>
+      </dl>
+  </blockquote>
+  <hr>
+  <h3>
+    <small>public function</small>
+    getHash($arguments)    <a name="getHash"></a>
+  </h3>
+  <blockquote>
+      <p>
+    Return a 32-character hash from the given argmuents so that it can be cached.              <i>(from <a href="class_Apis_CachedApi.html#getHash" class="">getHash</a>)</i>
+      </p>
+<dl>
+      <dt>Overrides:</dt>
+    <dd>
+      <a href="class_Apis_CachedApi.html#getHash" class="">getHash($arguments)</a>    </dd>
+            </dl>
+  </blockquote>
+  <hr>
+  <h3>
+    <small>public function</small>
+    getJSON($arguments)    <a name="getJSON"></a>
+  </h3>
+  <blockquote>
+      <p>
+    Compile the JSON with the given arguments, as parsed from the <a href="class_Core_Apis_Rate.html#getEndpoint" class="">#getEndpoint()</a> string.              <i>(from <a href="class_Apis_Api.html#getJSON" class="">getJSON</a>)</i>
+      </p>
+<dl>
+      <dt>Overrides:</dt>
+    <dd>
+      <a href="class_Apis_Api.html#getJSON" class="">getJSON($arguments)</a>    </dd>
+            </dl>
+  </blockquote>
+</div><div class="footer">
+  Generated by
+  <a class="github" href="https://github.com/soundasleep/phpdoc2/">PHPDoc2</a>
+  Wed, 06 May 2015 15:59:29 +1200</div>
+</body></html>

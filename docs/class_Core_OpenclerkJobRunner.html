@@ -1,39 +1,34 @@
-<!DOCTYPE HTML>
-<html>
-<head>
+<!DOCTYPE html>
+<html><head>
   <title>PHPDoc2 - openclerk</title>
   <link rel="stylesheet" type="text/css" href="default.css">
-</head>
-<body>
-<nav>
+  </head>
+<body><nav>
   <a href="index.html">Root</a>
 </nav>
-
-<div class="content">
-<ul class="class-hierarchy"><li><a href="class_Openclerk_Jobs_JobRunner.html" class="">Openclerk\Jobs\JobRunner</a><ul><li>Core\OpenclerkJobRunner</li></ul></li></ul>
-<h1>
+<div class="content">  <ul class="class-hierarchy">  <li>      <a href="class_Openclerk_Jobs_JobRunner.html" class="">Openclerk\Jobs\JobRunner</a>  <ul>
+  <li>
+    Core\OpenclerkJobRunner  </li>
+</ul>
+  </li>  </ul><h1>
   <small>class</small>
-
-  <a href="namespace_Core.html" class="">Core</a>  \
-  <a href="class_Core_OpenclerkJobRunner.html" class="">OpenclerkJobRunner</a></h1>
-
-
-
-
+  <a href="namespace_Core.html" class="">Core</a>  \  <a href="class_Core_OpenclerkJobRunner.html" class="">OpenclerkJobRunner</a></h1>
+  <dl>
+    <dt>All known direct subclasses:</dt>
+    <dd>
+            <a href="class__OpenclerkJobRunnerPremium.html" class="">OpenclerkJobRunnerPremium</a>,<a href="class__OpenclerkJobRunnerSystem.html" class="">OpenclerkJobRunnerSystem</a>,<a href="class__OpenclerkJobRunnerType.html" class="">OpenclerkJobRunnerType</a>    </dd>
+  </dl>
+<hr>
+  <p>
+    A helper class to select job instances, run them, and manage their pass/fail statuses. Job queueing is managed by JobQueuer.              <i>(from <a href="class_Openclerk_Jobs_JobRunner.html" class="">JobRunner</a>)</i>
+      </p>
+  <p>
+    TODO create more intelligent job selection methods              <i>(from <a href="class_Openclerk_Jobs_JobRunner.html" class="">JobRunner</a>)</i>
+      </p>
 <dl>
-  <dt>All known direct subclasses:</dt>
-  <dd>
-    <a href="class__OpenclerkJobRunnerPremium.html" class="">OpenclerkJobRunnerPremium</a>, <a href="class__OpenclerkJobRunnerSystem.html" class="">OpenclerkJobRunnerSystem</a>, <a href="class__OpenclerkJobRunnerType.html" class="">OpenclerkJobRunnerType</a>  </dd>
-</dl>
-
-
+            </dl>
 <hr>
-
-<p>A helper class to select job instances, run them, and manage their pass/fail statuses. Job queueing is managed by JobQueuer. <i>(from <a href="class_Openclerk_Jobs_JobRunner.html" class="">JobRunner</a>)</i></p><p>TODO create more intelligent job selection methods <i>(from <a href="class_Openclerk_Jobs_JobRunner.html" class="">JobRunner</a>)</i></p><dl></dl>
-<hr>
-
 <h2>Method Summary</h2>
-
 <table>
   <thead>
     <tr>
@@ -42,61 +37,96 @@
     </tr>
   </thead>
   <tbody>
-<tr><td><a href="class_Core_OpenclerkJobRunner.html#createJob" class="">createJob($job, Connection $db, Logger $logger)</a></td><td>Just creates <a href="class_Core_GenericOpenclerkJob.html" class="">GenericOpenclerkJob</a>s for now</td></tr><tr><td><a href="class_Core_OpenclerkJobRunner.html#findJob" class="">findJob(Connection $db, Logger $logger)</a></td><td>If we have a ?job_id parameter, then select only this job</td></tr><tr><td><a href="class_Core_OpenclerkJobRunner.html#isJobsDisabled" class="">isJobsDisabled(Logger $logger)</a></td><td></td></tr>  </tbody>
+          <tr>
+        <td><a href="class_Core_OpenclerkJobRunner.html#createJob" class="">createJob($job, Connection $db, Logger $logger)</a></td>
+        <td>
+          Just creates <a href="class_Core_GenericOpenclerkJob.html" class="">GenericOpenclerkJobs</a> for now                  </td>
+      </tr>
+          <tr>
+        <td><a href="class_Core_OpenclerkJobRunner.html#findJob" class="">findJob(Connection $db, Logger $logger)</a></td>
+        <td>
+          If we have a ?job_id parameter, then select only this job                  </td>
+      </tr>
+          <tr>
+        <td><a href="class_Core_OpenclerkJobRunner.html#isJobsDisabled" class="">isJobsDisabled(Logger $logger)</a></td>
+        <td>
+                            </td>
+      </tr>
+      </tbody>
 </table>
-
-
-<h2>Inherited Method Summary</h2>
-
-<table>
-  <thead>
-    <tr>
-      <th>Name</th>
-      <th>Description</th>
-    </tr>
-  </thead>
-  <tbody>
-<tr><td><a href="class_Openclerk_Jobs_JobRunner.html#__construct" class="">__construct()</a></td><td> <i>(from <a href="class_Openclerk_Jobs_JobRunner.html#__construct" class="">JobRunner</a>)</i></td></tr><tr><td><a href="class_Openclerk_Jobs_JobRunner.html#defaultFindJobQuery" class="">defaultFindJobQuery()</a></td><td> <i>(from <a href="class_Openclerk_Jobs_JobRunner.html#defaultFindJobQuery" class="">JobRunner</a>)</i></td></tr><tr><td><a href="class_Openclerk_Jobs_JobRunner.html#runOne" class="">runOne(Connection $db, Logger $logger)</a></td><td>Select and run a <a href="interface_Openclerk_Jobs_Job.html" class="">Job</a>. If the job throws an exception, the job runner will capture this exception and mark the job as failed as necessary. <i>(from <a href="class_Openclerk_Jobs_JobRunner.html#runOne" class="">JobRunner</a>)</i></td></tr>  </tbody>
-</table>
-
-
-
-<hr>
-
-<h3>
-  <small>public function</small>
-  createJob($job, <a href="interface_Db_Connection.html" class="">Connection</a> $db, Logger $logger)  <a name="createJob"></a>
-</h3>
-
-<blockquote>
-<p>Just creates <a href="class_Core_GenericOpenclerkJob.html" class="">GenericOpenclerkJob</a>s for now</p><dl><dt>Overrides:</dt><dd><a href="class_Openclerk_Jobs_JobRunner.html#createJob" class="">createJob($job, Connection $db, Logger $logger)</a></dd></dl></blockquote>
-
-
-<hr>
-
-<h3>
-  <small>public function</small>
-  findJob(<a href="interface_Db_Connection.html" class="">Connection</a> $db, Logger $logger)  <a name="findJob"></a>
-</h3>
-
-<blockquote>
-<p>If we have a ?job_id parameter, then select only this job</p><dl><dt>Overrides:</dt><dd><a href="class_Openclerk_Jobs_JobRunner.html#findJob" class="">findJob(Connection $db, Logger $logger)</a></dd><dt>Returns:</dt><dd>a job array (id, job_type, [user_id], [arg_id]) or <code>false</code> if there is none<br></dd></dl></blockquote>
-
-
-<hr>
-
-<h3>
-  <small>public function</small>
-  isJobsDisabled(Logger $logger)  <a name="isJobsDisabled"></a>
-</h3>
-
-<blockquote>
-<dl></dl></blockquote>
-
-</div>
-
-<div class="footer">
-  Generated by <a href="https://github.com/soundasleep/phpdoc2/" class="github">PHPDoc2</a> Fri, 24 Apr 2015 14:42:26 +1200</div>
-
-</body>
-</html>
+  <h2>Inherited Method Summary</h2>
+  <table>
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+              <tr>
+          <td><a href="class_Openclerk_Jobs_JobRunner.html#__construct" class="">__construct()</a></td>
+          <td>
+                        <i>(from <a href="class_Openclerk_Jobs_JobRunner.html#__construct" class="">JobRunner</a>)</i>
+                      </td>
+        </tr>
+              <tr>
+          <td><a href="class_Openclerk_Jobs_JobRunner.html#defaultFindJobQuery" class="">defaultFindJobQuery()</a></td>
+          <td>
+                        <i>(from <a href="class_Openclerk_Jobs_JobRunner.html#defaultFindJobQuery" class="">JobRunner</a>)</i>
+                      </td>
+        </tr>
+              <tr>
+          <td><a href="class_Openclerk_Jobs_JobRunner.html#runOne" class="">runOne(Connection $db, Logger $logger)</a></td>
+          <td>
+            Select and run a <a href="interface_Openclerk_Jobs_Job.html" class="">Job</a>. If the job throws an exception, the job runner will capture this exception and mark the job as failed as necessary.            <i>(from <a href="class_Openclerk_Jobs_JobRunner.html#runOne" class="">JobRunner</a>)</i>
+                      </td>
+        </tr>
+          </tbody>
+  </table>
+  <hr>
+  <h3>
+    <small>public function</small>
+    createJob($job, <a href="interface_Db_Connection.html" class="">Connection</a> $db, Logger $logger)    <a name="createJob"></a>
+  </h3>
+  <blockquote>
+      <p>
+    Just creates <a href="class_Core_GenericOpenclerkJob.html" class="">GenericOpenclerkJobs</a> for now          </p>
+<dl>
+      <dt>Overrides:</dt>
+    <dd>
+      <a href="class_Openclerk_Jobs_JobRunner.html#createJob" class="">createJob($job, Connection $db, Logger $logger)</a>    </dd>
+            </dl>
+  </blockquote>
+  <hr>
+  <h3>
+    <small>public function</small>
+    findJob(<a href="interface_Db_Connection.html" class="">Connection</a> $db, Logger $logger)    <a name="findJob"></a>
+  </h3>
+  <blockquote>
+      <p>
+    If we have a ?job_id parameter, then select only this job          </p>
+<dl>
+      <dt>Overrides:</dt>
+    <dd>
+      <a href="class_Openclerk_Jobs_JobRunner.html#findJob" class="">findJob(Connection $db, Logger $logger)</a>    </dd>
+            <dt>Returns:</dt>
+    <dd>
+              <div>
+          a job array (id, job_type, [user_id], [arg_id]) or <code>false</code> if there is none        </div>
+          </dd>
+      </dl>
+  </blockquote>
+  <hr>
+  <h3>
+    <small>public function</small>
+    isJobsDisabled(Logger $logger)    <a name="isJobsDisabled"></a>
+  </h3>
+  <blockquote>
+    <dl>
+            </dl>
+  </blockquote>
+</div><div class="footer">
+  Generated by
+  <a class="github" href="https://github.com/soundasleep/phpdoc2/">PHPDoc2</a>
+  Wed, 06 May 2015 15:59:29 +1200</div>
+</body></html>

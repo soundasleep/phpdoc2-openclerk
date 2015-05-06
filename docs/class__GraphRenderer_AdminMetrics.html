@@ -1,32 +1,23 @@
-<!DOCTYPE HTML>
-<html>
-<head>
+<!DOCTYPE html>
+<html><head>
   <title>PHPDoc2 - openclerk</title>
   <link rel="stylesheet" type="text/css" href="default.css">
-</head>
-<body>
-<nav>
+  </head>
+<body><nav>
   <a href="index.html">Root</a>
 </nav>
-
-<div class="content">
-<ul class="class-hierarchy"><li><a href="class__GraphRenderer.html" class="">\GraphRenderer</a><ul><li>\GraphRenderer_AdminMetrics</li></ul></li></ul>
-<h1>
+<div class="content">  <ul class="class-hierarchy">  <li>      <a href="class__GraphRenderer.html" class="">\GraphRenderer</a>  <ul>
+  <li>
+    \GraphRenderer_AdminMetrics  </li>
+</ul>
+  </li>  </ul><h1>
   <small>class</small>
-
-  <a href="namespace_.html" class="">(none)</a>  \
-  <a href="class__GraphRenderer_AdminMetrics.html" class="">GraphRenderer_AdminMetrics</a></h1>
-
-
-
-
+  <a href="namespace_.html" class="">(none)</a>  \  <a href="class__GraphRenderer_AdminMetrics.html" class="">GraphRenderer_AdminMetrics</a></h1>
 <hr>
-
-<dl></dl>
+<dl>
+            </dl>
 <hr>
-
 <h2>Method Summary</h2>
-
 <table>
   <thead>
     <tr>
@@ -35,105 +26,231 @@
     </tr>
   </thead>
   <tbody>
-<tr><td><a href="class__GraphRenderer_AdminMetrics.html#__construct" class="">__construct($key)</a></td><td></td></tr><tr><td><a href="class__GraphRenderer_AdminMetrics.html#getChartType" class="">getChartType()</a></td><td>What type of chart is this rendered as? By default, returns <code>linechart</code>.</td></tr><tr><td><a href="class__GraphRenderer_AdminMetrics.html#getData" class="">getData($days)</a></td><td></td></tr><tr><td><a href="class__GraphRenderer_AdminMetrics.html#getMetrics" class="">getMetrics()</a></td><td></td></tr><tr><td><a href="class__GraphRenderer_AdminMetrics.html#getTitle" class="">getTitle()</a></td><td>Get the title of this graph</td></tr><tr><td><a href="class__GraphRenderer_AdminMetrics.html#getTitleArgs" class="">getTitleArgs()</a></td><td>Get any localisation (i18n) string arguments for the title given in <a href="class__GraphRenderer_AdminMetrics.html#getTitle" class="">#getTitle()</a>. By default, returns an empty array.</td></tr><tr><td><a href="class__GraphRenderer_AdminMetrics.html#requiresAdmin" class="">requiresAdmin()</a></td><td>Does rendering this graph require an admin user? By default, returns <code>false</code>.</td></tr>  </tbody>
+          <tr>
+        <td><a href="class__GraphRenderer_AdminMetrics.html#__construct" class="">__construct($key)</a></td>
+        <td>
+                            </td>
+      </tr>
+          <tr>
+        <td><a href="class__GraphRenderer_AdminMetrics.html#getChartType" class="">getChartType()</a></td>
+        <td>
+          What type of chart is this rendered as? By default, returns <code>linechart</code>.                  </td>
+      </tr>
+          <tr>
+        <td><a href="class__GraphRenderer_AdminMetrics.html#getData" class="">getData($days)</a></td>
+        <td>
+                            </td>
+      </tr>
+          <tr>
+        <td><a href="class__GraphRenderer_AdminMetrics.html#getMetrics" class="">getMetrics()</a></td>
+        <td>
+                            </td>
+      </tr>
+          <tr>
+        <td><a href="class__GraphRenderer_AdminMetrics.html#getTitle" class="">getTitle()</a></td>
+        <td>
+          Get the title of this graph                  </td>
+      </tr>
+          <tr>
+        <td><a href="class__GraphRenderer_AdminMetrics.html#getTitleArgs" class="">getTitleArgs()</a></td>
+        <td>
+          Get any localisation (i18n) string arguments for the title given in <a href="class__GraphRenderer_AdminMetrics.html#getTitle" class="">#getTitle()</a>. By default, returns an empty array.                  </td>
+      </tr>
+          <tr>
+        <td><a href="class__GraphRenderer_AdminMetrics.html#requiresAdmin" class="">requiresAdmin()</a></td>
+        <td>
+          Does rendering this graph require an admin user? By default, returns <code>false</code>.                  </td>
+      </tr>
+      </tbody>
 </table>
-
-
-<h2>Inherited Method Summary</h2>
-
-<table>
-  <thead>
-    <tr>
-      <th>Name</th>
-      <th>Description</th>
-    </tr>
-  </thead>
-  <tbody>
-<tr><td><a href="class__GraphRenderer.html#canHaveTechnicals" class="">canHaveTechnicals()</a></td><td>Can this graph have technicals? If this returns <code>true</code>, then the resulting data will always be sorted. By default, returns <code>true</code>. <i>(from <a href="class__GraphRenderer.html#canHaveTechnicals" class="">GraphRenderer</a>)</i></td></tr><tr><td><a href="class__GraphRenderer.html#convertGraphToProportional" class="">convertGraphToProportional($original)</a></td><td>Relabel all columns to have ' %' prefix, and reformat all data to be proportional based on the sum of each row. Uses the output of <a href="class__GraphRenderer.html#getData" class="">#getData()</a>. <i>(from <a href="class__GraphRenderer.html#convertGraphToProportional" class="">GraphRenderer</a>)</i></td></tr><tr><td><a href="class__GraphRenderer.html#getClasses" class="">getClasses()</a></td><td> <i>(from <a href="class__GraphRenderer.html#getClasses" class="">GraphRenderer</a>)</i></td></tr><tr><td><a href="class__GraphRenderer.html#getCustomSubheading" class="">getCustomSubheading()</a></td><td>Calculate the custom subheading value for this graph, or <code>false</code> if this graph does not have a custom subheading defined (and subheadings calculated through <a href="class__GraphRenderer.html#hasSubheading" class="">#hasSubheading()</a> will use default sum/array logic). By default, returns <code>false</code>. <i>(from <a href="class__GraphRenderer.html#getCustomSubheading" class="">GraphRenderer</a>)</i></td></tr><tr><td><a href="class__GraphRenderer.html#getLabel" class="">getLabel()</a></td><td>Get the label that should be associated with the <a href="class__GraphRenderer.html#getURL" class="">#getURL()</a>. <i>(from <a href="class__GraphRenderer.html#getLabel" class="">GraphRenderer</a>)</i></td></tr><tr><td><a href="class__GraphRenderer.html#getURL" class="">getURL()</a></td><td>Get the URL that the title of this graph should link to, or <code>false</code> if it should not link anywhere <i>(from <a href="class__GraphRenderer.html#getURL" class="">GraphRenderer</a>)</i></td></tr><tr><td><a href="class__GraphRenderer.html#getUser" class="">getUser()</a></td><td> <i>(from <a href="class__GraphRenderer.html#getUser" class="">GraphRenderer</a>)</i></td></tr><tr><td><a href="class__GraphRenderer.html#hasSubheading" class="">hasSubheading()</a></td><td>Does this graph have a subheading? By default, returns <code>true</code>. <i>(from <a href="class__GraphRenderer.html#hasSubheading" class="">GraphRenderer</a>)</i></td></tr><tr><td><a href="class__GraphRenderer.html#requiresUser" class="">requiresUser()</a></td><td>Does rendering this graph require a user? By default, returns <code>false</code>. <i>(from <a href="class__GraphRenderer.html#requiresUser" class="">GraphRenderer</a>)</i></td></tr><tr><td><a href="class__GraphRenderer.html#setUser" class="">setUser($user_id)</a></td><td> <i>(from <a href="class__GraphRenderer.html#setUser" class="">GraphRenderer</a>)</i></td></tr><tr><td><a href="class__GraphRenderer.html#usesDays" class="">usesDays()</a></td><td>Does this function require a days parameter? If <code>true</code>, then the returned data will be stripped based on the keys returned in the data - assumes that the data uses dates as keys. By default, returns <code>true</code>. <i>(from <a href="class__GraphRenderer.html#usesDays" class="">GraphRenderer</a>)</i></td></tr><tr><td><a href="class__GraphRenderer.html#usesSummaries" class="">usesSummaries()</a></td><td>Does this graph use summaries which may be out of date for a user? By default, returns <code>false</code>. <i>(from <a href="class__GraphRenderer.html#usesSummaries" class="">GraphRenderer</a>)</i></td></tr>  </tbody>
-</table>
-
-
-
-<hr>
-
-<h3>
-  <small>public function</small>
-  __construct($key)  <a name="__construct"></a>
-</h3>
-
-<blockquote>
-<dl><dt>Overrides:</dt><dd><a href="class__GraphRenderer.html#__construct" class="">__construct()</a></dd></dl></blockquote>
-
-
-<hr>
-
-<h3>
-  <small>public function</small>
-  getChartType()  <a name="getChartType"></a>
-</h3>
-
-<blockquote>
-<p>What type of chart is this rendered as? By default, returns <code>linechart</code>. <i>(from <a href="class__GraphRenderer.html#getChartType" class="">getChartType</a>)</i></p><dl><dt>Overrides:</dt><dd><a href="class__GraphRenderer.html#getChartType" class="">getChartType()</a></dd></dl></blockquote>
-
-
-<hr>
-
-<h3>
-  <small>public function</small>
-  getData($days)  <a name="getData"></a>
-</h3>
-
-<blockquote>
-<dl><dt>Overrides:</dt><dd><a href="class__GraphRenderer.html#getData" class="">getData($days)</a></dd><dt>Returns:</dt><dd>an array of (columns => [column], data => [(date, value)], last_updated => (date or false))<br></dd></dl></blockquote>
-
-
-<hr>
-
-<h3>
-  <small>public static function</small>
-  getMetrics()  <a name="getMetrics"></a>
-</h3>
-
-<blockquote>
-<dl></dl></blockquote>
-
-
-<hr>
-
-<h3>
-  <small>public function</small>
-  getTitle()  <a name="getTitle"></a>
-</h3>
-
-<blockquote>
-<p>Get the title of this graph <i>(from <a href="class__GraphRenderer.html#getTitle" class="">getTitle</a>)</i></p><dl><dt>Overrides:</dt><dd><a href="class__GraphRenderer.html#getTitle" class="">getTitle()</a></dd><dt>See Also:</dt><dd><a href="class__GraphRenderer_AdminMetrics.html#getTitleArgs" class="">getTitleArgs()</a><br></dd></dl></blockquote>
-
-
-<hr>
-
-<h3>
-  <small>public function</small>
-  getTitleArgs()  <a name="getTitleArgs"></a>
-</h3>
-
-<blockquote>
-<p>Get any localisation (i18n) string arguments for the title given in <a href="class__GraphRenderer_AdminMetrics.html#getTitle" class="">#getTitle()</a>. By default, returns an empty array. <i>(from <a href="class__GraphRenderer.html#getTitleArgs" class="">getTitleArgs</a>)</i></p><dl><dt>Overrides:</dt><dd><a href="class__GraphRenderer.html#getTitleArgs" class="">getTitleArgs()</a></dd></dl></blockquote>
-
-
-<hr>
-
-<h3>
-  <small>public function</small>
-  requiresAdmin()  <a name="requiresAdmin"></a>
-</h3>
-
-<blockquote>
-<p>Does rendering this graph require an admin user? By default, returns <code>false</code>. <i>(from <a href="class__GraphRenderer.html#requiresAdmin" class="">requiresAdmin</a>)</i></p><dl><dt>Overrides:</dt><dd><a href="class__GraphRenderer.html#requiresAdmin" class="">requiresAdmin()</a></dd></dl></blockquote>
-
-</div>
-
-<div class="footer">
-  Generated by <a href="https://github.com/soundasleep/phpdoc2/" class="github">PHPDoc2</a> Fri, 24 Apr 2015 14:42:17 +1200</div>
-
-</body>
-</html>
+  <h2>Inherited Method Summary</h2>
+  <table>
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+              <tr>
+          <td><a href="class__GraphRenderer.html#canHaveTechnicals" class="">canHaveTechnicals()</a></td>
+          <td>
+            Can this graph have technicals? If this returns <code>true</code>, then the resulting data will always be sorted. By default, returns <code>true</code>.            <i>(from <a href="class__GraphRenderer.html#canHaveTechnicals" class="">GraphRenderer</a>)</i>
+                      </td>
+        </tr>
+              <tr>
+          <td><a href="class__GraphRenderer.html#convertGraphToProportional" class="">convertGraphToProportional($original)</a></td>
+          <td>
+            Relabel all columns to have ' %' prefix, and reformat all data to be proportional based on the sum of each row. Uses the output of <a href="class__GraphRenderer.html#getData" class="">#getData()</a>.            <i>(from <a href="class__GraphRenderer.html#convertGraphToProportional" class="">GraphRenderer</a>)</i>
+                      </td>
+        </tr>
+              <tr>
+          <td><a href="class__GraphRenderer.html#getClasses" class="">getClasses()</a></td>
+          <td>
+                        <i>(from <a href="class__GraphRenderer.html#getClasses" class="">GraphRenderer</a>)</i>
+                      </td>
+        </tr>
+              <tr>
+          <td><a href="class__GraphRenderer.html#getCustomSubheading" class="">getCustomSubheading()</a></td>
+          <td>
+            Calculate the custom subheading value for this graph, or <code>false</code> if this graph does not have a custom subheading defined (and subheadings calculated through <a href="class__GraphRenderer.html#hasSubheading" class="">#hasSubheading()</a> will use default sum/array logic). By default, returns <code>false</code>.            <i>(from <a href="class__GraphRenderer.html#getCustomSubheading" class="">GraphRenderer</a>)</i>
+                      </td>
+        </tr>
+              <tr>
+          <td><a href="class__GraphRenderer.html#getLabel" class="">getLabel()</a></td>
+          <td>
+            Get the label that should be associated with the <a href="class__GraphRenderer.html#getURL" class="">#getURL()</a>, or <code>false</code> if there shouldn't be any. Should be wrapped in ct().            <i>(from <a href="class__GraphRenderer.html#getLabel" class="">GraphRenderer</a>)</i>
+                      </td>
+        </tr>
+              <tr>
+          <td><a href="class__GraphRenderer.html#getURL" class="">getURL()</a></td>
+          <td>
+            Get the URL that the title of this graph should link to, or <code>false</code> if it should not link anywhere            <i>(from <a href="class__GraphRenderer.html#getURL" class="">GraphRenderer</a>)</i>
+                      </td>
+        </tr>
+              <tr>
+          <td><a href="class__GraphRenderer.html#getUser" class="">getUser()</a></td>
+          <td>
+                        <i>(from <a href="class__GraphRenderer.html#getUser" class="">GraphRenderer</a>)</i>
+                      </td>
+        </tr>
+              <tr>
+          <td><a href="class__GraphRenderer.html#hasSubheading" class="">hasSubheading()</a></td>
+          <td>
+            Does this graph have a subheading? By default, returns <code>true</code>.            <i>(from <a href="class__GraphRenderer.html#hasSubheading" class="">GraphRenderer</a>)</i>
+                      </td>
+        </tr>
+              <tr>
+          <td><a href="class__GraphRenderer.html#requiresUser" class="">requiresUser()</a></td>
+          <td>
+            Does rendering this graph require a user? By default, returns <code>false</code>.            <i>(from <a href="class__GraphRenderer.html#requiresUser" class="">GraphRenderer</a>)</i>
+                      </td>
+        </tr>
+              <tr>
+          <td><a href="class__GraphRenderer.html#setUser" class="">setUser($user_id)</a></td>
+          <td>
+                        <i>(from <a href="class__GraphRenderer.html#setUser" class="">GraphRenderer</a>)</i>
+                      </td>
+        </tr>
+              <tr>
+          <td><a href="class__GraphRenderer.html#usesDays" class="">usesDays()</a></td>
+          <td>
+            Does this function require a days parameter? If <code>true</code>, then the returned data will be stripped based on the keys returned in the data - assumes that the data uses dates as keys. By default, returns <code>true</code>.            <i>(from <a href="class__GraphRenderer.html#usesDays" class="">GraphRenderer</a>)</i>
+                      </td>
+        </tr>
+              <tr>
+          <td><a href="class__GraphRenderer.html#usesSummaries" class="">usesSummaries()</a></td>
+          <td>
+            Does this graph use summaries which may be out of date for a user? By default, returns <code>false</code>.            <i>(from <a href="class__GraphRenderer.html#usesSummaries" class="">GraphRenderer</a>)</i>
+                      </td>
+        </tr>
+          </tbody>
+  </table>
+  <hr>
+  <h3>
+    <small>public function</small>
+    __construct($key)    <a name="__construct"></a>
+  </h3>
+  <blockquote>
+    <dl>
+      <dt>Overrides:</dt>
+    <dd>
+      <a href="class__GraphRenderer.html#__construct" class="">__construct()</a>    </dd>
+            </dl>
+  </blockquote>
+  <hr>
+  <h3>
+    <small>public function</small>
+    getChartType()    <a name="getChartType"></a>
+  </h3>
+  <blockquote>
+      <p>
+    What type of chart is this rendered as? By default, returns <code>linechart</code>.              <i>(from <a href="class__GraphRenderer.html#getChartType" class="">getChartType</a>)</i>
+      </p>
+<dl>
+      <dt>Overrides:</dt>
+    <dd>
+      <a href="class__GraphRenderer.html#getChartType" class="">getChartType()</a>    </dd>
+            </dl>
+  </blockquote>
+  <hr>
+  <h3>
+    <small>public function</small>
+    getData($days)    <a name="getData"></a>
+  </h3>
+  <blockquote>
+    <dl>
+      <dt>Overrides:</dt>
+    <dd>
+      <a href="class__GraphRenderer.html#getData" class="">getData($days)</a>    </dd>
+            <dt>Returns:</dt>
+    <dd>
+              <div>
+          an array of (columns => [column], data => [(date, value)], last_updated => (date or false))        </div>
+          </dd>
+      </dl>
+  </blockquote>
+  <hr>
+  <h3>
+    <small>public static function</small>
+    getMetrics()    <a name="getMetrics"></a>
+  </h3>
+  <blockquote>
+    <dl>
+            </dl>
+  </blockquote>
+  <hr>
+  <h3>
+    <small>public function</small>
+    getTitle()    <a name="getTitle"></a>
+  </h3>
+  <blockquote>
+      <p>
+    Get the title of this graph              <i>(from <a href="class__GraphRenderer.html#getTitle" class="">getTitle</a>)</i>
+      </p>
+<dl>
+      <dt>Overrides:</dt>
+    <dd>
+      <a href="class__GraphRenderer.html#getTitle" class="">getTitle()</a>    </dd>
+                <dt>See:</dt>
+    <dd>
+              <div>
+          <a href="class__GraphRenderer_AdminMetrics.html#getTitleArgs" class="">getTitleArgs()</a>        </div>
+          </dd>
+  </dl>
+  </blockquote>
+  <hr>
+  <h3>
+    <small>public function</small>
+    getTitleArgs()    <a name="getTitleArgs"></a>
+  </h3>
+  <blockquote>
+      <p>
+    Get any localisation (i18n) string arguments for the title given in <a href="class__GraphRenderer_AdminMetrics.html#getTitle" class="">#getTitle()</a>. By default, returns an empty array.              <i>(from <a href="class__GraphRenderer.html#getTitleArgs" class="">getTitleArgs</a>)</i>
+      </p>
+<dl>
+      <dt>Overrides:</dt>
+    <dd>
+      <a href="class__GraphRenderer.html#getTitleArgs" class="">getTitleArgs()</a>    </dd>
+            </dl>
+  </blockquote>
+  <hr>
+  <h3>
+    <small>public function</small>
+    requiresAdmin()    <a name="requiresAdmin"></a>
+  </h3>
+  <blockquote>
+      <p>
+    Does rendering this graph require an admin user? By default, returns <code>false</code>.              <i>(from <a href="class__GraphRenderer.html#requiresAdmin" class="">requiresAdmin</a>)</i>
+      </p>
+<dl>
+      <dt>Overrides:</dt>
+    <dd>
+      <a href="class__GraphRenderer.html#requiresAdmin" class="">requiresAdmin()</a>    </dd>
+            </dl>
+  </blockquote>
+</div><div class="footer">
+  Generated by
+  <a class="github" href="https://github.com/soundasleep/phpdoc2/">PHPDoc2</a>
+  Wed, 06 May 2015 15:59:15 +1200</div>
+</body></html>

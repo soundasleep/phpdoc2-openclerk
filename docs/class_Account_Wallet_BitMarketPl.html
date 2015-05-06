@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html><head>
+  <title>PHPDoc2 - openclerk</title>
+  <link rel="stylesheet" type="text/css" href="default.css">
+  </head>
+<body><nav>
+  <a href="index.html">Root</a>
+</nav>
+<div class="content">  <ul class="class-hierarchy">  <li>      <a href="class_Account_SimpleAccountType.html" class="">Account\SimpleAccountType</a>    <ul class="class-hierarchy">  <li>      <a href="class_Account_Wallet_AbstractWallet.html" class="">Account\Wallet\AbstractWallet</a>  <ul>
+  <li>
+    Account\Wallet\BitMarketPl  </li>
+</ul>
+  </li>  </ul>  </li>  </ul><h1>
+  <small>class</small>
+  <a href="namespace_Account_Wallet.html" class="">Account\Wallet</a>  \  <a href="class_Account_Wallet_BitMarketPl.html" class="">BitMarketPl</a></h1>
+  <dl>
+    <dt>All implemented interfaces:</dt>
+    <dd>
+            <a href="interface_Account_AccountType.html" class="">AccountType</a>, <a href="interface_Account_AccountTypeInformation.html" class="">AccountTypeInformation</a>    </dd>
+  </dl>
+<hr>
+  <p>
+    Represents the BitMarket.pl exchange wallet.          </p>
+  <p>
+    Instances of this account may be represented as an Account, and can be used to obtain current balances for this account. For example, get the current wallet balances for a mining pool or exchange wallet.</p><p>In theory this could also be extended to cryptocurrency addresses?              <i>(from <a href="interface_Account_AccountType.html" class="">AccountType</a>)</i>
+      </p>
+<dl>
+            </dl>
+<hr>
+<h2>Method Summary</h2>
+<table>
+  <thead>
+    <tr>
+      <th>Name</th>
+      <th>Description</th>
+    </tr>
+  </thead>
+  <tbody>
+          <tr>
+        <td><a href="class_Account_Wallet_BitMarketPl.html#fetchBalances" class="">fetchBalances($account, CurrencyFactory $factory, Logger $logger)</a></td>
+        <td>
+          Get all balances for this account. May block.                  </td>
+      </tr>
+          <tr>
+        <td><a href="class_Account_Wallet_BitMarketPl.html#fetchSupportedCurrencies" class="">fetchSupportedCurrencies(CurrencyFactory $factory, Logger $logger)</a></td>
+        <td>
+          Get a list of all the currencies supported by this account (e.g. "btc", "ltc", ...). Uses currency codes from openclerk/currencies. May block.                  </td>
+      </tr>
+          <tr>
+        <td><a href="class_Account_Wallet_BitMarketPl.html#generatePostData" class="">generatePostData($account)</a></td>
+        <td>
+                            </td>
+      </tr>
+          <tr>
+        <td><a href="class_Account_Wallet_BitMarketPl.html#getBitMarketPlCode" class="">getBitMarketPlCode($str)</a></td>
+        <td>
+                            </td>
+      </tr>
+          <tr>
+        <td><a href="class_Account_Wallet_BitMarketPl.html#getCode" class="">getCode()</a></td>
+        <td>
+                            </td>
+      </tr>
+          <tr>
+        <td><a href="class_Account_Wallet_BitMarketPl.html#getFields" class="">getFields()</a></td>
+        <td>
+                            </td>
+      </tr>
+          <tr>
+        <td><a href="class_Account_Wallet_BitMarketPl.html#getName" class="">getName()</a></td>
+        <td>
+                            </td>
+      </tr>
+          <tr>
+        <td><a href="class_Account_Wallet_BitMarketPl.html#getURL" class="">getURL()</a></td>
+        <td>
+                            </td>
+      </tr>
+      </tbody>
+</table>
+  <h2>Inherited Method Summary</h2>
+  <table>
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+              <tr>
+          <td><a href="class_Account_SimpleAccountType.html#checkFields" class="">checkFields($account)</a></td>
+          <td>
+            Basic implementation of <a href="class_Account_SimpleAccountType.html#checkFields" class="">#checkFields()</a> using regular expressions.            <i>(from <a href="class_Account_SimpleAccountType.html#checkFields" class="">SimpleAccountType</a>)</i>
+                      </td>
+        </tr>
+              <tr>
+          <td><a href="class_Account_SimpleAccountType.html#fetchBalance" class="">fetchBalance($currency, $account, CurrencyFactory $factory, Logger $logger)</a></td>
+          <td>
+            Helper function to get all balances for the given currency for this account, or <code>null</code> if there is no balance for this currency. May block.            <i>(from <a href="class_Account_SimpleAccountType.html#fetchBalance" class="">SimpleAccountType</a>)</i>
+                      </td>
+        </tr>
+              <tr>
+          <td><a href="class_Account_SimpleAccountType.html#fetchConfirmedBalance" class="">fetchConfirmedBalance($currency, $account, CurrencyFactory $factory, Logger $logger)</a></td>
+          <td>
+            Helper function to get the current, confirmed, available balance of the given currency for this account. May block.            <i>(from <a href="class_Account_SimpleAccountType.html#fetchConfirmedBalance" class="">SimpleAccountType</a>)</i>
+                      </td>
+        </tr>
+              <tr>
+          <td><a href="class_Account_SimpleAccountType.html#throttle" class="">throttle(Logger $logger, $default = 3)</a></td>
+          <td>
+            This allows all exchanges to optionally throttle multiple repeated requests based on a runtime configuration value. The throttle time is selected from either the <code>accounts_NAME_throttle</code> or <code>accounts_throttle</code> config values, or <code>$default</code> seconds; which is the time in seconds to wait between repeated requests.            <i>(from <a href="class_Account_SimpleAccountType.html#throttle" class="">SimpleAccountType</a>)</i>
+                      </td>
+        </tr>
+              <tr>
+          <td><a href="class_Account_Wallet_AbstractWallet.html#fetchJSON" class="">fetchJSON($url, Logger $logger, $throttle = 3)</a></td>
+          <td>
+            Fetch the JSON from the given GET URL, or throw a {@Link AccountFetchException} if something bad happened.            <i>(from <a href="class_Account_Wallet_AbstractWallet.html#fetchJSON" class="">AbstractWallet</a>)</i>
+                      </td>
+        </tr>
+              <tr>
+          <td><a href="class_Account_Wallet_AbstractWallet.html#jsonDecode" class="">jsonDecode($raw)</a></td>
+          <td>
+            By default, calls <a href="class_Apis_Fetch.html#jsonDecode" class="">Fetch#jsonDecode()</a>            <i>(from <a href="class_Account_Wallet_AbstractWallet.html#jsonDecode" class="">AbstractWallet</a>)</i>
+                      </td>
+        </tr>
+          </tbody>
+  </table>
+  <hr>
+  <h3>
+    <small>public function</small>
+    fetchBalances($account, <a href="interface_Openclerk_Currencies_CurrencyFactory.html" class="">CurrencyFactory</a> $factory, Logger $logger)    <a name="fetchBalances"></a>
+  </h3>
+  <blockquote>
+      <p>
+    Get all balances for this account. May block.              <i>(from <a href="interface_Account_AccountType.html#fetchBalances" class="">fetchBalances</a>)</i>
+      </p>
+  <p>
+    We need to have a reference to a <a href="interface_Openclerk_Currencies_CurrencyFactory.html" class="">CurrencyFactory</a> because we might need to find out runtime properties of a currency in order to correctly distinguish hash rates, currency codes etc.</p><p>Returned results may include: - confirmed: raw confirmed currency balance (e.g. 1.0 = 1 BTC) - unconfirmed: raw unconfirmed balance (e.g. 1.0 = 1 BTC) - hashrate: raw hash rate per second (e.g. 1.0 = 1 H/s) - workers: number of workers              <i>(from <a href="interface_Account_AccountType.html#fetchBalances" class="">fetchBalances</a>)</i>
+      </p>
+<dl>
+        <dt>Parameters:</dt>
+    <dd>
+              <div>
+          <code>$account</code>
+          -
+          fields that satisfy <a href="class_Account_Wallet_BitMarketPl.html#getFields" class="">#getFields()</a>        </div>
+          </dd>
+          <dt>Returns:</dt>
+    <dd>
+              <div>
+          all account balances        </div>
+          </dd>
+        <dt>Throws:</dt>
+    <dd>
+              <div>
+          AccountFetchException - if something bad happened        </div>
+          </dd>
+    </dl>
+  </blockquote>
+  <hr>
+  <h3>
+    <small>public function</small>
+    fetchSupportedCurrencies(<a href="interface_Openclerk_Currencies_CurrencyFactory.html" class="">CurrencyFactory</a> $factory, Logger $logger)    <a name="fetchSupportedCurrencies"></a>
+  </h3>
+  <blockquote>
+      <p>
+    Get a list of all the currencies supported by this account (e.g. "btc", "ltc", ...). Uses currency codes from openclerk/currencies. May block.              <i>(from <a href="interface_Account_AccountType.html#fetchSupportedCurrencies" class="">fetchSupportedCurrencies</a>)</i>
+      </p>
+  <p>
+    We need to have a reference to a <a href="interface_Openclerk_Currencies_CurrencyFactory.html" class="">CurrencyFactory</a> because we might need to find out runtime properties of a currency in order to correctly distinguish hash rates, currency codes etc.              <i>(from <a href="interface_Account_AccountType.html#fetchSupportedCurrencies" class="">fetchSupportedCurrencies</a>)</i>
+      </p>
+<dl>
+            </dl>
+  </blockquote>
+  <hr>
+  <h3>
+    <small>public function</small>
+    generatePostData($account)    <a name="generatePostData"></a>
+  </h3>
+  <blockquote>
+    <dl>
+            </dl>
+  </blockquote>
+  <hr>
+  <h3>
+    <small>public function</small>
+    getBitMarketPlCode($str)    <a name="getBitMarketPlCode"></a>
+  </h3>
+  <blockquote>
+    <dl>
+            </dl>
+  </blockquote>
+  <hr>
+  <h3>
+    <small>public function</small>
+    getCode()    <a name="getCode"></a>
+  </h3>
+  <blockquote>
+    <dl>
+            <dt>Returns:</dt>
+    <dd>
+              <div>
+          a unique string representing this account type; must be lowercase and 1-32 characters        </div>
+          </dd>
+      </dl>
+  </blockquote>
+  <hr>
+  <h3>
+    <small>public function</small>
+    getFields()    <a name="getFields"></a>
+  </h3>
+  <blockquote>
+    <dl>
+            <dt>Returns:</dt>
+    <dd>
+              <div>
+          an array of fields that need to be provided in order to get balances, e.g. API keys        </div>
+          </dd>
+      </dl>
+  </blockquote>
+  <hr>
+  <h3>
+    <small>public function</small>
+    getName()    <a name="getName"></a>
+  </h3>
+  <blockquote>
+    <dl>
+            <dt>Returns:</dt>
+    <dd>
+              <div>
+          the full name of the account type        </div>
+          </dd>
+      </dl>
+  </blockquote>
+  <hr>
+  <h3>
+    <small>public function</small>
+    getURL()    <a name="getURL"></a>
+  </h3>
+  <blockquote>
+    <dl>
+            <dt>Returns:</dt>
+    <dd>
+              <div>
+          the URL of the account type, or <code>null</code>        </div>
+          </dd>
+      </dl>
+  </blockquote>
+</div><div class="footer">
+  Generated by
+  <a class="github" href="https://github.com/soundasleep/phpdoc2/">PHPDoc2</a>
+  Wed, 06 May 2015 15:59:26 +1200</div>
+</body></html>

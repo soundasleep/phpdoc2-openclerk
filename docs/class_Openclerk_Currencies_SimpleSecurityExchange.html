@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html><head>
+  <title>PHPDoc2 - openclerk</title>
+  <link rel="stylesheet" type="text/css" href="default.css">
+  </head>
+<body><nav>
+  <a href="index.html">Root</a>
+</nav>
+<div class="content"><ul>
+  <li>
+    Openclerk\Currencies\SimpleSecurityExchange  </li>
+</ul>
+<h1>
+  <small>abstract class</small>
+  <a href="namespace_Openclerk_Currencies.html" class="">Openclerk\Currencies</a>  \  <a href="class_Openclerk_Currencies_SimpleSecurityExchange.html" class="">SimpleSecurityExchange</a></h1>
+  <dl>
+    <dt>All implemented interfaces:</dt>
+    <dd>
+            <a href="interface_Openclerk_Currencies_SecurityExchange.html" class="">SecurityExchange</a>, <a href="interface_Openclerk_Currencies_ExchangeInformation.html" class="">ExchangeInformation</a>    </dd>
+  </dl>
+<hr>
+  <p>
+    Implements some basic implementations of an <a href="interface_Openclerk_Currencies_SecurityExchange.html" class="">SecurityExchange</a>. Assumes there is a single API call that can be used to list all exchanges and get all rates - #fetchAllRates.          </p>
+<dl>
+            </dl>
+<hr>
+<h2>Method Summary</h2>
+<table>
+  <thead>
+    <tr>
+      <th>Name</th>
+      <th>Description</th>
+    </tr>
+  </thead>
+  <tbody>
+          <tr>
+        <td><a href="class_Openclerk_Currencies_SimpleSecurityExchange.html#fetchAsk" class="">fetchAsk($security, Logger $logger)</a></td>
+        <td>
+          Get the lowest price that a seller is willing to accept for trading the given security (also known as the <i>buy price</i>), or <code>null</code> if there is none.                  </td>
+      </tr>
+          <tr>
+        <td><a href="class_Openclerk_Currencies_SimpleSecurityExchange.html#fetchBid" class="">fetchBid($security, Logger $logger)</a></td>
+        <td>
+          Get the highest price that a buyer is willing to accept for trading the given security (also known as the <i>sell price</i>), or <code>null</code> if there is none.                  </td>
+      </tr>
+          <tr>
+        <td><a href="class_Openclerk_Currencies_SimpleSecurityExchange.html#fetchLastTrade" class="">fetchLastTrade($security, Logger $logger)</a></td>
+        <td>
+          Get the last traded value for the given security, or <code>null</code> if there is none.                  </td>
+      </tr>
+          <tr>
+        <td><a href="class_Openclerk_Currencies_SimpleSecurityExchange.html#fetchName" class="">fetchName($security, Logger $logger)</a></td>
+        <td>
+          Get the name of the given security, or <code>null</code> if there is none.                  </td>
+      </tr>
+          <tr>
+        <td><a href="class_Openclerk_Currencies_SimpleSecurityExchange.html#fetchRates" class="">fetchRates($security, Logger $logger)</a></td>
+        <td>
+          Fetch all rates for a given security, returns an array of (last_trade, bid, ask, volume, available, security, currency, name, units).                  </td>
+      </tr>
+          <tr>
+        <td><a href="class_Openclerk_Currencies_SimpleSecurityExchange.html#fetchSecurities" class="">fetchSecurities(Logger $logger)</a></td>
+        <td>
+          Fetch all securities that this security exchange currently supports. Currency codes are 3-character codes and must be globally unique. Security codes are any length and are unique only to a certain <a href="interface_Openclerk_Currencies_SecurityExchange.html" class="">SecurityExchange</a>.                  </td>
+      </tr>
+          <tr>
+        <td><a href="class_Openclerk_Currencies_SimpleSecurityExchange.html#fetchSecurityCurrency" class="">fetchSecurityCurrency($security, Logger $logger)</a></td>
+        <td>
+          Get the 3-character code of the currency this security code is traded in.                  </td>
+      </tr>
+          <tr>
+        <td><a href="class_Openclerk_Currencies_SimpleSecurityExchange.html#throttle" class="">throttle(Logger $logger)</a></td>
+        <td>
+          This allows all exchanges to optionally throttle multiple repeated requests based on a runtime configuration value. The throttle time is selected from either the <code>security_exchanges_NAME_throttle</code> or <code>security_exchanges_throttle</code> config values, or three seconds; which is the time in seconds to wait between repeated requests.                  </td>
+      </tr>
+      </tbody>
+</table>
+  <hr>
+  <h3>
+    <small>public function</small>
+    fetchAsk($security, Logger $logger)    <a name="fetchAsk"></a>
+  </h3>
+  <blockquote>
+      <p>
+    Get the lowest price that a seller is willing to accept for trading the given security (also known as the <i>buy price</i>), or <code>null</code> if there is none.          </p>
+<dl>
+            </dl>
+  </blockquote>
+  <hr>
+  <h3>
+    <small>public function</small>
+    fetchBid($security, Logger $logger)    <a name="fetchBid"></a>
+  </h3>
+  <blockquote>
+      <p>
+    Get the highest price that a buyer is willing to accept for trading the given security (also known as the <i>sell price</i>), or <code>null</code> if there is none.          </p>
+<dl>
+            </dl>
+  </blockquote>
+  <hr>
+  <h3>
+    <small>public function</small>
+    fetchLastTrade($security, Logger $logger)    <a name="fetchLastTrade"></a>
+  </h3>
+  <blockquote>
+      <p>
+    Get the last traded value for the given security, or <code>null</code> if there is none.          </p>
+<dl>
+            </dl>
+  </blockquote>
+  <hr>
+  <h3>
+    <small>public function</small>
+    fetchName($security, Logger $logger)    <a name="fetchName"></a>
+  </h3>
+  <blockquote>
+      <p>
+    Get the name of the given security, or <code>null</code> if there is none.          </p>
+<dl>
+            </dl>
+  </blockquote>
+  <hr>
+  <h3>
+    <small>public function</small>
+    fetchRates($security, Logger $logger)    <a name="fetchRates"></a>
+  </h3>
+  <blockquote>
+      <p>
+    Fetch all rates for a given security, returns an array of (last_trade, bid, ask, volume, available, security, currency, name, units).          </p>
+  <p>
+    Some fields may not be present for a given exchange. <code>volume</code> is the last 24h volume.</p><p>May also return additional fields, e.g. high/low/vwap          </p>
+<dl>
+            <dt>Returns:</dt>
+    <dd>
+              <div>
+          A list of rates for the currency pair        </div>
+          </dd>
+        <dt>Throws:</dt>
+    <dd>
+              <div>
+          <a href="class_Openclerk_Currencies_SecurityExchangeRateException.html" class="">SecurityExchangeRateException</a> - if there are no rates for the given pair        </div>
+          </dd>
+    </dl>
+  </blockquote>
+  <hr>
+  <h3>
+    <small>public function</small>
+    fetchSecurities(Logger $logger)    <a name="fetchSecurities"></a>
+  </h3>
+  <blockquote>
+      <p>
+    Fetch all securities that this security exchange currently supports. Currency codes are 3-character codes and must be globally unique. Security codes are any length and are unique only to a certain <a href="interface_Openclerk_Currencies_SecurityExchange.html" class="">SecurityExchange</a>.          </p>
+<dl>
+            <dt>Returns:</dt>
+    <dd>
+              <div>
+          an array of (security, currency)        </div>
+          </dd>
+      </dl>
+  </blockquote>
+  <hr>
+  <h3>
+    <small>public function</small>
+    fetchSecurityCurrency($security, Logger $logger)    <a name="fetchSecurityCurrency"></a>
+  </h3>
+  <blockquote>
+      <p>
+    Get the 3-character code of the currency this security code is traded in.          </p>
+<dl>
+              <dt>Throws:</dt>
+    <dd>
+              <div>
+          <a href="class_Openclerk_Currencies_SecurityExchangeRateException.html" class="">SecurityExchangeRateException</a> - if this isn't a valid security code for this exchange        </div>
+          </dd>
+    </dl>
+  </blockquote>
+  <hr>
+  <h3>
+    <small>public function</small>
+    throttle(Logger $logger)    <a name="throttle"></a>
+  </h3>
+  <blockquote>
+      <p>
+    This allows all exchanges to optionally throttle multiple repeated requests based on a runtime configuration value. The throttle time is selected from either the <code>security_exchanges_NAME_throttle</code> or <code>security_exchanges_throttle</code> config values, or three seconds; which is the time in seconds to wait between repeated requests.          </p>
+<dl>
+            </dl>
+  </blockquote>
+</div><div class="footer">
+  Generated by
+  <a class="github" href="https://github.com/soundasleep/phpdoc2/">PHPDoc2</a>
+  Wed, 06 May 2015 15:59:45 +1200</div>
+</body></html>

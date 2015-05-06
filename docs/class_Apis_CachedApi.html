@@ -1,39 +1,30 @@
-<!DOCTYPE HTML>
-<html>
-<head>
+<!DOCTYPE html>
+<html><head>
   <title>PHPDoc2 - openclerk</title>
   <link rel="stylesheet" type="text/css" href="default.css">
-</head>
-<body>
-<nav>
+  </head>
+<body><nav>
   <a href="index.html">Root</a>
 </nav>
-
-<div class="content">
-<ul class="class-hierarchy"><li><a href="class_Apis_Api.html" class="">Apis\Api</a><ul><li>Apis\CachedApi</li></ul></li></ul>
-<h1>
+<div class="content">  <ul class="class-hierarchy">  <li>      <a href="class_Apis_Api.html" class="">Apis\Api</a>  <ul>
+  <li>
+    Apis\CachedApi  </li>
+</ul>
+  </li>  </ul><h1>
   <small>abstract class</small>
-
-  <a href="namespace_Apis.html" class="">Apis</a>  \
-  <a href="class_Apis_CachedApi.html" class="">CachedApi</a></h1>
-
-
-
-
+  <a href="namespace_Apis.html" class="">Apis</a>  \  <a href="class_Apis_CachedApi.html" class="">CachedApi</a></h1>
+  <dl>
+    <dt>All known direct subclasses:</dt>
+    <dd>
+            <a href="class_Core_Apis_Currencies.html" class="">Currencies</a>,<a href="class_Core_Apis_Currency.html" class="">Currency</a>,<a href="class_Core_Apis_Graph.html" class="">Graph</a>,<a href="class_Core_Apis_Rate.html" class="">Rate</a>,<a href="class_Core_Apis_Rates.html" class="">Rates</a>,<a href="class_Core_Apis_Ticker.html" class="">Ticker</a>,<a href="class_Core_Apis_Tickers.html" class="">Tickers</a>,<a href="class_Core_Apis_Version.html" class="">Version</a>    </dd>
+  </dl>
+<hr>
+  <p>
+    Implements naive API caching using <code>openclerk/cache</code>.          </p>
 <dl>
-  <dt>All known direct subclasses:</dt>
-  <dd>
-    <a href="class_Core_Apis_Currencies.html" class="">Currencies</a>, <a href="class_Core_Apis_Currency.html" class="">Currency</a>, <a href="class_Core_Apis_Graph.html" class="">Graph</a>, <a href="class_Core_Apis_Rate.html" class="">Rate</a>, <a href="class_Core_Apis_Rates.html" class="">Rates</a>, <a href="class_Core_Apis_Ticker.html" class="">Ticker</a>, <a href="class_Core_Apis_Tickers.html" class="">Tickers</a>, <a href="class_Core_Apis_Version.html" class="">Version</a>  </dd>
-</dl>
-
-
+            </dl>
 <hr>
-
-<p>Implements naive API caching using <code>openclerk/cache</code>.</p><dl></dl>
-<hr>
-
 <h2>Method Summary</h2>
-
 <table>
   <thead>
     <tr>
@@ -42,83 +33,119 @@
     </tr>
   </thead>
   <tbody>
-<tr><td><a href="class_Apis_CachedApi.html#getAge" class="">getAge()</a></td><td>How long are API calls cached?</td></tr><tr><td><a href="class_Apis_CachedApi.html#getCached" class="">getCached($arguments)</a></td><td></td></tr><tr><td><a href="class_Apis_CachedApi.html#getHash" class="">getHash($arguments)</a></td><td>Return a 32-character hash from the given argmuents so that it can be cached.</td></tr><tr><td><a href="class_Apis_CachedApi.html#render" class="">render($arguments)</a></td><td>Try and get the JSON result for this API, and return either <code>{success: true: result: $json}</code> or <code>{success: false, error: $message}</code> if an exception occured.</td></tr><tr><td><a href="class_Apis_CachedApi.html#renderJSON" class="">renderJSON($arguments)</a></td><td></td></tr>  </tbody>
+          <tr>
+        <td><a href="class_Apis_CachedApi.html#getAge" class="">getAge()</a></td>
+        <td>
+          How long are API calls cached?                  </td>
+      </tr>
+          <tr>
+        <td><a href="class_Apis_CachedApi.html#getCached" class="">getCached($arguments)</a></td>
+        <td>
+                            </td>
+      </tr>
+          <tr>
+        <td><a href="class_Apis_CachedApi.html#getHash" class="">getHash($arguments)</a></td>
+        <td>
+          Return a 32-character hash from the given argmuents so that it can be cached.                  </td>
+      </tr>
+          <tr>
+        <td><a href="class_Apis_CachedApi.html#render" class="">render($arguments)</a></td>
+        <td>
+          Try and get the JSON result for this API, and return either <code>{success: true: result: $json}</code> or <code>{success: false, error: $message}</code> if an exception occured.                  </td>
+      </tr>
+          <tr>
+        <td><a href="class_Apis_CachedApi.html#renderJSON" class="">renderJSON($arguments)</a></td>
+        <td>
+                            </td>
+      </tr>
+      </tbody>
 </table>
-
-
-<h2>Inherited Method Summary</h2>
-
-<table>
-  <thead>
-    <tr>
-      <th>Name</th>
-      <th>Description</th>
-    </tr>
-  </thead>
-  <tbody>
-<tr><td><a href="class_Apis_Api.html#getEndpoint" class="">getEndpoint()</a></td><td> <i>(from <a href="class_Apis_Api.html#getEndpoint" class="">Api</a>)</i></td></tr><tr><td><a href="class_Apis_Api.html#getJSON" class="">getJSON($arguments)</a></td><td>Compile the JSON with the given arguments, as parsed from the <a href="class_Apis_Api.html#getEndpoint" class="">#getEndpoint()</a> string. <i>(from <a href="class_Apis_Api.html#getJSON" class="">Api</a>)</i></td></tr>  </tbody>
-</table>
-
-
-
-<hr>
-
-<h3>
-  <small>public function</small>
-  getAge()  <a name="getAge"></a>
-</h3>
-
-<blockquote>
-<p>How long are API calls cached?</p><dl><dt>Returns:</dt><dd>number of seconds, default 60<br></dd></dl></blockquote>
-
-
-<hr>
-
-<h3>
-  <small>public function</small>
-  getCached($arguments)  <a name="getCached"></a>
-</h3>
-
-<blockquote>
-<dl></dl></blockquote>
-
-
-<hr>
-
-<h3>
-  <small>abstract function</small>
-  getHash($arguments)  <a name="getHash"></a>
-</h3>
-
-<blockquote>
-<p>Return a 32-character hash from the given argmuents so that it can be cached.</p><dl></dl></blockquote>
-
-
-<hr>
-
-<h3>
-  <small>public function</small>
-  render($arguments)  <a name="render"></a>
-</h3>
-
-<blockquote>
-<p>Try and get the JSON result for this API, and return either <code>{success: true: result: $json}</code> or <code>{success: false, error: $message}</code> if an exception occured.</p><p>This means this <a href="class_Apis_Api.html" class="">Api</a> can be used directly with <code>openclerk/routing</code> as a route callback: <pre> foreach (DiscoveredComponents\Apis::getAllInstances() as $uri => $handler) { \Openclerk\Router::addRoutes(array( $uri => $handler, )); } </pre></p><p>If openclerk/exceptions is installed, logs a new uncaught <a href="class_Apis_CaughtApiException.html" class="">CaughtApiException</a> if there was an exception that occured.</p><p>Caching can be achieved with a <a href="class_Apis_CachedApi.html" class="">CachedApi</a>.</p><dl><dt>Overrides:</dt><dd><a href="class_Apis_Api.html#render" class="">render($arguments)</a></dd></dl></blockquote>
-
-
-<hr>
-
-<h3>
-  <small>public function</small>
-  renderJSON($arguments)  <a name="renderJSON"></a>
-</h3>
-
-<blockquote>
-<dl></dl></blockquote>
-
-</div>
-
-<div class="footer">
-  Generated by <a href="https://github.com/soundasleep/phpdoc2/" class="github">PHPDoc2</a> Fri, 24 Apr 2015 14:42:25 +1200</div>
-
-</body>
-</html>
+  <h2>Inherited Method Summary</h2>
+  <table>
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+              <tr>
+          <td><a href="class_Apis_Api.html#getEndpoint" class="">getEndpoint()</a></td>
+          <td>
+                        <i>(from <a href="class_Apis_Api.html#getEndpoint" class="">Api</a>)</i>
+                      </td>
+        </tr>
+              <tr>
+          <td><a href="class_Apis_Api.html#getJSON" class="">getJSON($arguments)</a></td>
+          <td>
+            Compile the JSON with the given arguments, as parsed from the <a href="class_Apis_Api.html#getEndpoint" class="">#getEndpoint()</a> string.            <i>(from <a href="class_Apis_Api.html#getJSON" class="">Api</a>)</i>
+                      </td>
+        </tr>
+          </tbody>
+  </table>
+  <hr>
+  <h3>
+    <small>public function</small>
+    getAge()    <a name="getAge"></a>
+  </h3>
+  <blockquote>
+      <p>
+    How long are API calls cached?          </p>
+<dl>
+            <dt>Returns:</dt>
+    <dd>
+              <div>
+          number of seconds, default 60        </div>
+          </dd>
+      </dl>
+  </blockquote>
+  <hr>
+  <h3>
+    <small>public function</small>
+    getCached($arguments)    <a name="getCached"></a>
+  </h3>
+  <blockquote>
+    <dl>
+            </dl>
+  </blockquote>
+  <hr>
+  <h3>
+    <small>abstract function</small>
+    getHash($arguments)    <a name="getHash"></a>
+  </h3>
+  <blockquote>
+      <p>
+    Return a 32-character hash from the given argmuents so that it can be cached.          </p>
+<dl>
+            </dl>
+  </blockquote>
+  <hr>
+  <h3>
+    <small>public function</small>
+    render($arguments)    <a name="render"></a>
+  </h3>
+  <blockquote>
+      <p>
+    Try and get the JSON result for this API, and return either <code>{success: true: result: $json}</code> or <code>{success: false, error: $message}</code> if an exception occured.          </p>
+  <p>
+    This means this <a href="class_Apis_Api.html" class="">Api</a> can be used directly with <code>openclerk/routing</code> as a route callback: <pre> foreach (DiscoveredComponents\Apis::getAllInstances() as $uri => $handler) { \Openclerk\Router::addRoutes(array( $uri => $handler, )); } </pre></p><p>If openclerk/exceptions is installed, logs a new uncaught <a href="class_Apis_CaughtApiException.html" class="">CaughtApiException</a> if there was an exception that occured.</p><p>Caching can be achieved with a <a href="class_Apis_CachedApi.html" class="">CachedApi</a>.          </p>
+<dl>
+      <dt>Overrides:</dt>
+    <dd>
+      <a href="class_Apis_Api.html#render" class="">render($arguments)</a>    </dd>
+            </dl>
+  </blockquote>
+  <hr>
+  <h3>
+    <small>public function</small>
+    renderJSON($arguments)    <a name="renderJSON"></a>
+  </h3>
+  <blockquote>
+    <dl>
+            </dl>
+  </blockquote>
+</div><div class="footer">
+  Generated by
+  <a class="github" href="https://github.com/soundasleep/phpdoc2/">PHPDoc2</a>
+  Wed, 06 May 2015 15:59:28 +1200</div>
+</body></html>

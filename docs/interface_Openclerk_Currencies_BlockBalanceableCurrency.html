@@ -1,45 +1,45 @@
-<!DOCTYPE HTML>
-<html>
-<head>
+<!DOCTYPE html>
+<html><head>
   <title>PHPDoc2 - openclerk</title>
   <link rel="stylesheet" type="text/css" href="default.css">
-</head>
-<body>
-<nav>
+  </head>
+<body><nav>
   <a href="index.html">Root</a>
 </nav>
-
-<div class="content">
+<div class="content"><ul>
+  <li>
+    Openclerk\Currencies\BlockBalanceableCurrency  </li>
+</ul>
 <h1>
   <small>interface</small>
-
-  <a href="namespace_Openclerk_Currencies.html" class="">Openclerk\Currencies</a>  \
-  <a href="interface_Openclerk_Currencies_BlockBalanceableCurrency.html" class="">BlockBalanceableCurrency</a></h1>
-
-
-<dl>
-  <dt>All implemented interfaces:</dt>
-  <dd>
-    <a href="interface_Openclerk_Currencies_Currency.html" class="">Currency</a>  </dd>
-</dl>
-
-
-
-<dl>
-  <dt>All known implementing classes:</dt>
-  <dd>
-    <a href="class_Cryptocurrency_Bitcoin.html" class="">Bitcoin</a>, <a href="class_Cryptocurrency_Darkcoin.html" class="">Darkcoin</a>, <a href="class_Cryptocurrency_Dogecoin.html" class="">Dogecoin</a>, <a href="class_Cryptocurrency_Ixcoin.html" class="">Ixcoin</a>, <a href="class_Cryptocurrency_Litecoin.html" class="">Litecoin</a>, <a href="class_Cryptocurrency_Namecoin.html" class="">Namecoin</a>, <a href="class_Cryptocurrency_Netcoin.html" class="">Netcoin</a>  </dd>
-</dl>
-
-
-
+  <a href="namespace_Openclerk_Currencies.html" class="">Openclerk\Currencies</a>  \  <a href="interface_Openclerk_Currencies_BlockBalanceableCurrency.html" class="">BlockBalanceableCurrency</a></h1>
+  <dl>
+    <dt>All implemented interfaces:</dt>
+    <dd>
+            <a href="interface_Openclerk_Currencies_Currency.html" class="">Currency</a>    </dd>
+  </dl>
+  <dl>
+    <dt>All known implementing classes:</dt>
+    <dd>
+            <a href="class_Cryptocurrency_Bitcoin.html" class="">Bitcoin</a>, <a href="class_Cryptocurrency_Darkcoin.html" class="">Darkcoin</a>, <a href="class_Cryptocurrency_Dogecoin.html" class="">Dogecoin</a>, <a href="class_Cryptocurrency_Ixcoin.html" class="">Ixcoin</a>, <a href="class_Cryptocurrency_Litecoin.html" class="">Litecoin</a>, <a href="class_Cryptocurrency_Namecoin.html" class="">Namecoin</a>, <a href="class_Cryptocurrency_Netcoin.html" class="">Netcoin</a>    </dd>
+  </dl>
 <hr>
-
-<p>A "BlockBalanceableCurrency" is a currency in which we can get the balance at a certain block number.</p><p>This is the base interface; other interfaces will provide additional functionality as necessary. <i>(from <a href="interface_Openclerk_Currencies_Currency.html" class="">Currency</a>)</i></p><dl><dt>See Also:</dt><dd><a href="interface_Openclerk_Currencies_BlockCurrency.html" class="">BlockCurrency</a><br><a href="interface_Openclerk_Currencies_ConfirmableCurrency.html" class="">ConfirmableCurrency</a><br></dd></dl>
+  <p>
+    A "BlockBalanceableCurrency" is a currency in which we can get the balance at a certain block number.          </p>
+  <p>
+    This is the base interface; other interfaces will provide additional functionality as necessary.              <i>(from <a href="interface_Openclerk_Currencies_Currency.html" class="">Currency</a>)</i>
+      </p>
+<dl>
+                <dt>See:</dt>
+    <dd>
+              <div>
+          <a href="interface_Openclerk_Currencies_BlockCurrency.html" class="">BlockCurrency</a>        </div>
+              <div>
+          <a href="interface_Openclerk_Currencies_ConfirmableCurrency.html" class="">ConfirmableCurrency</a>        </div>
+          </dd>
+  </dl>
 <hr>
-
 <h2>Method Summary</h2>
-
 <table>
   <thead>
     <tr>
@@ -48,25 +48,38 @@
     </tr>
   </thead>
   <tbody>
-<tr><td><a href="interface_Openclerk_Currencies_BlockBalanceableCurrency.html#getBalanceAtBlock" class="">getBalanceAtBlock($address, $block, Logger $logger)</a></td><td>Get the balance at the given block number. This allows us to cache the block number and not have to request it on every balance request.</td></tr>  </tbody>
+          <tr>
+        <td><a href="interface_Openclerk_Currencies_BlockBalanceableCurrency.html#getBalanceAtBlock" class="">getBalanceAtBlock($address, $block, Logger $logger)</a></td>
+        <td>
+          Get the balance at the given block number. This allows us to cache the block number and not have to request it on every balance request.                  </td>
+      </tr>
+      </tbody>
 </table>
-
-
-
-<hr>
-
-<h3>
-  <small>public function</small>
-  getBalanceAtBlock($address, $block, Logger $logger)  <a name="getBalanceAtBlock"></a>
-</h3>
-
-<blockquote>
-<p>Get the balance at the given block number. This allows us to cache the block number and not have to request it on every balance request.</p><dl><dt>Parameters:</dt><dd><code>$block</code> - the block number, or <code>null</code> to get the most recent balance<br></dd><dt>Throws:</dt><dd><a href="class_Openclerk_Currencies_BalanceException.html" class="">BalanceException</a> if something happened and the block count could not be obtained<br></dd></dl></blockquote>
-
-</div>
-
-<div class="footer">
-  Generated by <a href="https://github.com/soundasleep/phpdoc2/" class="github">PHPDoc2</a> Fri, 24 Apr 2015 14:42:41 +1200</div>
-
-</body>
-</html>
+  <hr>
+  <h3>
+    <small>public function</small>
+    getBalanceAtBlock($address, $block, Logger $logger)    <a name="getBalanceAtBlock"></a>
+  </h3>
+  <blockquote>
+      <p>
+    Get the balance at the given block number. This allows us to cache the block number and not have to request it on every balance request.          </p>
+<dl>
+        <dt>Parameters:</dt>
+    <dd>
+              <div>
+          <code>$block</code>
+          -
+          the block number, or <code>null</code> to get the most recent balance        </div>
+          </dd>
+            <dt>Throws:</dt>
+    <dd>
+              <div>
+          <a href="class_Openclerk_Currencies_BalanceException.html" class="">BalanceException</a> if something happened and the block count could not be obtained        </div>
+          </dd>
+    </dl>
+  </blockquote>
+</div><div class="footer">
+  Generated by
+  <a class="github" href="https://github.com/soundasleep/phpdoc2/">PHPDoc2</a>
+  Wed, 06 May 2015 15:59:46 +1200</div>
+</body></html>

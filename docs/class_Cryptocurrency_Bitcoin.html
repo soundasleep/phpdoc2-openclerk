@@ -1,39 +1,38 @@
-<!DOCTYPE HTML>
-<html>
-<head>
+<!DOCTYPE html>
+<html><head>
   <title>PHPDoc2 - openclerk</title>
   <link rel="stylesheet" type="text/css" href="default.css">
-</head>
-<body>
-<nav>
+  </head>
+<body><nav>
   <a href="index.html">Root</a>
 </nav>
-
-<div class="content">
-<ul class="class-hierarchy"><li><a href="class_Openclerk_Currencies_Cryptocurrency.html" class="">Openclerk\Currencies\Cryptocurrency</a><ul><li>Cryptocurrency\Bitcoin</li></ul></li></ul>
-<h1>
+<div class="content">  <ul class="class-hierarchy">  <li>      <a href="class_Openclerk_Currencies_Cryptocurrency.html" class="">Openclerk\Currencies\Cryptocurrency</a>  <ul>
+  <li>
+    Cryptocurrency\Bitcoin  </li>
+</ul>
+  </li>  </ul><h1>
   <small>class</small>
-
-  <a href="namespace_Cryptocurrency.html" class="">Cryptocurrency</a>  \
-  <a href="class_Cryptocurrency_Bitcoin.html" class="">Bitcoin</a></h1>
-
-
+  <a href="namespace_Cryptocurrency.html" class="">Cryptocurrency</a>  \  <a href="class_Cryptocurrency_Bitcoin.html" class="">Bitcoin</a></h1>
+  <dl>
+    <dt>All implemented interfaces:</dt>
+    <dd>
+            <a href="interface_Openclerk_Currencies_Currency.html" class="">Currency</a>, <a href="interface_Openclerk_Currencies_BlockCurrency.html" class="">BlockCurrency</a>, <a href="interface_Openclerk_Currencies_DifficultyCurrency.html" class="">DifficultyCurrency</a>, <a href="interface_Openclerk_Currencies_ConfirmableCurrency.html" class="">ConfirmableCurrency</a>, <a href="interface_Openclerk_Currencies_BlockBalanceableCurrency.html" class="">BlockBalanceableCurrency</a>, <a href="interface_Openclerk_Currencies_AddressableCurrency.html" class="">AddressableCurrency</a>, <a href="interface_Openclerk_Currencies_ReceivedCurrency.html" class="">ReceivedCurrency</a>, <a href="interface_Openclerk_Currencies_HashableCurrency.html" class="">HashableCurrency</a>, <a href="interface_Openclerk_Currencies_BalanceableCurrency.html" class="">BalanceableCurrency</a>, <a href="interface_Openclerk_Currencies_CurrencyInformation.html" class="">CurrencyInformation</a>    </dd>
+  </dl>
+<hr>
+  <p>
+    Represents the Bitcoin cryptocurrency.          </p>
+  <p>
+    This is the base interface; other interfaces will provide additional functionality as necessary.              <i>(from <a href="interface_Openclerk_Currencies_Currency.html" class="">Currency</a>)</i>
+      </p>
 <dl>
-  <dt>All implemented interfaces:</dt>
-  <dd>
-    <a href="interface_Openclerk_Currencies_Currency.html" class="">Currency</a>, <a href="interface_Openclerk_Currencies_BlockCurrency.html" class="">BlockCurrency</a>, <a href="interface_Openclerk_Currencies_DifficultyCurrency.html" class="">DifficultyCurrency</a>, <a href="interface_Openclerk_Currencies_ConfirmableCurrency.html" class="">ConfirmableCurrency</a>, <a href="interface_Openclerk_Currencies_BlockBalanceableCurrency.html" class="">BlockBalanceableCurrency</a>, <a href="interface_Openclerk_Currencies_AddressableCurrency.html" class="">AddressableCurrency</a>, <a href="interface_Openclerk_Currencies_ReceivedCurrency.html" class="">ReceivedCurrency</a>, <a href="interface_Openclerk_Currencies_HashableCurrency.html" class="">HashableCurrency</a>, <a href="interface_Openclerk_Currencies_BalanceableCurrency.html" class="">BalanceableCurrency</a>, <a href="interface_Openclerk_Currencies_CurrencyInformation.html" class="">CurrencyInformation</a>  </dd>
-</dl>
-
-
-
-
+                <dt>See:</dt>
+    <dd>
+              <div>
+          BlockBalanceableCurrency        </div>
+          </dd>
+  </dl>
 <hr>
-
-<p>Represents the Bitcoin cryptocurrency.</p><p>This is the base interface; other interfaces will provide additional functionality as necessary. <i>(from <a href="interface_Openclerk_Currencies_Currency.html" class="">Currency</a>)</i></p><dl><dt>See Also:</dt><dd>BlockBalanceableCurrency<br></dd></dl>
-<hr>
-
 <h2>Method Summary</h2>
-
 <table>
   <thead>
     <tr>
@@ -42,204 +41,431 @@
     </tr>
   </thead>
   <tbody>
-<tr><td><a href="class_Cryptocurrency_Bitcoin.html#getAlgorithm" class="">getAlgorithm()</a></td><td>Get the main algorithm used by this currency for hashing, as a code from HashAlgorithm#getCode.</td></tr><tr><td><a href="class_Cryptocurrency_Bitcoin.html#getBalance" class="">getBalance($address, Logger $logger)</a></td><td>Get the account balance of the given account. This method blocks until the balance has been obtained.</td></tr><tr><td><a href="class_Cryptocurrency_Bitcoin.html#getBalanceAtBlock" class="">getBalanceAtBlock($address, $block = null, Logger $logger)</a></td><td>Get the balance at the given block number. This allows us to cache the block number and not have to request it on every balance request.</td></tr><tr><td><a href="class_Cryptocurrency_Bitcoin.html#getBalanceURL" class="">getBalanceURL($address)</a></td><td></td></tr><tr><td><a href="class_Cryptocurrency_Bitcoin.html#getBalanceWithConfirmations" class="">getBalanceWithConfirmations($address, $confirmations, Logger $logger)</a></td><td>Get the balance at the given number of confirmations. If this is also a <a href="interface_Openclerk_Currencies_BlockBalanceableCurrency.html" class="">BlockBalanceableCurrency</a> then we can emulate this through <a href="class_Cryptocurrency_Bitcoin.html#getBalanceAtBlock" class="">#getBalanceAtBlock()</a>.</td></tr><tr><td><a href="class_Cryptocurrency_Bitcoin.html#getBlockCount" class="">getBlockCount(Logger $logger)</a></td><td>Get the most recent block count for this currency. This method blocks until the block count has been obtained.</td></tr><tr><td><a href="class_Cryptocurrency_Bitcoin.html#getCode" class="">getCode()</a></td><td>Get the unique three-letter currency code for this currency, e.g. 'btc' or 'usd'. Must be lowercase. This is not visible to users.</td></tr><tr><td><a href="class_Cryptocurrency_Bitcoin.html#getCommunityLinks" class="">getCommunityLinks()</a></td><td></td></tr><tr><td><a href="class_Cryptocurrency_Bitcoin.html#getDifficulty" class="">getDifficulty(Logger $logger)</a></td><td>Get the most recent difficulty for this currency. This method blocks until the balance has been obtained.</td></tr><tr><td><a href="class_Cryptocurrency_Bitcoin.html#getExplorerName" class="">getExplorerName()</a></td><td></td></tr><tr><td><a href="class_Cryptocurrency_Bitcoin.html#getExplorerURL" class="">getExplorerURL()</a></td><td></td></tr><tr><td><a href="class_Cryptocurrency_Bitcoin.html#getName" class="">getName()</a></td><td>Get the English name of this currency, e.g. "Bitcoin" or "United States Dollar".</td></tr><tr><td><a href="class_Cryptocurrency_Bitcoin.html#getReceived" class="">getReceived($address, Logger $logger)</a></td><td>Get the <i>received</i> account balance of the given account. This method blocks until the balance has been obtained.</td></tr><tr><td><a href="class_Cryptocurrency_Bitcoin.html#getURL" class="">getURL()</a></td><td></td></tr><tr><td><a href="class_Cryptocurrency_Bitcoin.html#hasExplorer" class="">hasExplorer()</a></td><td></td></tr><tr><td><a href="class_Cryptocurrency_Bitcoin.html#isValid" class="">isValid($address)</a></td><td>Is this account identifier valid for this currency?</td></tr>  </tbody>
+          <tr>
+        <td><a href="class_Cryptocurrency_Bitcoin.html#getAlgorithm" class="">getAlgorithm()</a></td>
+        <td>
+          Get the main algorithm used by this currency for hashing, as a code from HashAlgorithm#getCode.                  </td>
+      </tr>
+          <tr>
+        <td><a href="class_Cryptocurrency_Bitcoin.html#getBalance" class="">getBalance($address, Logger $logger)</a></td>
+        <td>
+          Get the account balance of the given account. This method blocks until the balance has been obtained.                  </td>
+      </tr>
+          <tr>
+        <td><a href="class_Cryptocurrency_Bitcoin.html#getBalanceAtBlock" class="">getBalanceAtBlock($address, $block = null, Logger $logger)</a></td>
+        <td>
+          Get the balance at the given block number. This allows us to cache the block number and not have to request it on every balance request.                  </td>
+      </tr>
+          <tr>
+        <td><a href="class_Cryptocurrency_Bitcoin.html#getBalanceURL" class="">getBalanceURL($address)</a></td>
+        <td>
+                            </td>
+      </tr>
+          <tr>
+        <td><a href="class_Cryptocurrency_Bitcoin.html#getBalanceWithConfirmations" class="">getBalanceWithConfirmations($address, $confirmations, Logger $logger)</a></td>
+        <td>
+          Get the balance at the given number of confirmations. If this is also a <a href="interface_Openclerk_Currencies_BlockBalanceableCurrency.html" class="">BlockBalanceableCurrency</a> then we can emulate this through <a href="class_Cryptocurrency_Bitcoin.html#getBalanceAtBlock" class="">#getBalanceAtBlock()</a>.                  </td>
+      </tr>
+          <tr>
+        <td><a href="class_Cryptocurrency_Bitcoin.html#getBlockCount" class="">getBlockCount(Logger $logger)</a></td>
+        <td>
+          Get the most recent block count for this currency. This method blocks until the block count has been obtained.                  </td>
+      </tr>
+          <tr>
+        <td><a href="class_Cryptocurrency_Bitcoin.html#getCode" class="">getCode()</a></td>
+        <td>
+          Get the unique three-letter currency code for this currency, e.g. 'btc' or 'usd'. Must be lowercase. This is not visible to users.                  </td>
+      </tr>
+          <tr>
+        <td><a href="class_Cryptocurrency_Bitcoin.html#getCommunityLinks" class="">getCommunityLinks()</a></td>
+        <td>
+                            </td>
+      </tr>
+          <tr>
+        <td><a href="class_Cryptocurrency_Bitcoin.html#getDifficulty" class="">getDifficulty(Logger $logger)</a></td>
+        <td>
+          Get the most recent difficulty for this currency. This method blocks until the balance has been obtained.                  </td>
+      </tr>
+          <tr>
+        <td><a href="class_Cryptocurrency_Bitcoin.html#getExplorerName" class="">getExplorerName()</a></td>
+        <td>
+                            </td>
+      </tr>
+          <tr>
+        <td><a href="class_Cryptocurrency_Bitcoin.html#getExplorerURL" class="">getExplorerURL()</a></td>
+        <td>
+                            </td>
+      </tr>
+          <tr>
+        <td><a href="class_Cryptocurrency_Bitcoin.html#getName" class="">getName()</a></td>
+        <td>
+          Get the English name of this currency, e.g. "Bitcoin" or "United States Dollar".                  </td>
+      </tr>
+          <tr>
+        <td><a href="class_Cryptocurrency_Bitcoin.html#getReceived" class="">getReceived($address, Logger $logger)</a></td>
+        <td>
+          Get the <i>received</i> account balance of the given account. This method blocks until the balance has been obtained.                  </td>
+      </tr>
+          <tr>
+        <td><a href="class_Cryptocurrency_Bitcoin.html#getURL" class="">getURL()</a></td>
+        <td>
+                            </td>
+      </tr>
+          <tr>
+        <td><a href="class_Cryptocurrency_Bitcoin.html#hasExplorer" class="">hasExplorer()</a></td>
+        <td>
+                            </td>
+      </tr>
+          <tr>
+        <td><a href="class_Cryptocurrency_Bitcoin.html#isValid" class="">isValid($address)</a></td>
+        <td>
+          Is this account identifier valid for this currency?                  </td>
+      </tr>
+      </tbody>
 </table>
-
-
-<h2>Inherited Method Summary</h2>
-
-<table>
-  <thead>
-    <tr>
-      <th>Name</th>
-      <th>Description</th>
-    </tr>
-  </thead>
-  <tbody>
-<tr><td><a href="class_Openclerk_Currencies_Cryptocurrency.html#getAbbr" class="">getAbbr()</a></td><td>Get the currency code visible to users, which can be of any length and does not need to be unique (but should be). Often just the uppercase of #getCode. <i>(from <a href="class_Openclerk_Currencies_Cryptocurrency.html#getAbbr" class="">Cryptocurrency</a>)</i></td></tr><tr><td><a href="class_Openclerk_Currencies_Cryptocurrency.html#getCurrency" class="">getCurrency()</a></td><td>Get the <a href="interface_Openclerk_Currencies_Currency.html" class="">Currency</a> for this <a href="interface_Openclerk_Currencies_CurrencyInformation.html" class="">CurrencyInformation</a>. <i>(from <a href="class_Openclerk_Currencies_Cryptocurrency.html#getCurrency" class="">Cryptocurrency</a>)</i></td></tr><tr><td><a href="class_Openclerk_Currencies_Cryptocurrency.html#isCommodity" class="">isCommodity()</a></td><td> <i>(from <a href="class_Openclerk_Currencies_Cryptocurrency.html#isCommodity" class="">Cryptocurrency</a>)</i></td></tr><tr><td><a href="class_Openclerk_Currencies_Cryptocurrency.html#isCryptocurrency" class="">isCryptocurrency()</a></td><td> <i>(from <a href="class_Openclerk_Currencies_Cryptocurrency.html#isCryptocurrency" class="">Cryptocurrency</a>)</i></td></tr><tr><td><a href="class_Openclerk_Currencies_Cryptocurrency.html#isFiat" class="">isFiat()</a></td><td> <i>(from <a href="class_Openclerk_Currencies_Cryptocurrency.html#isFiat" class="">Cryptocurrency</a>)</i></td></tr>  </tbody>
-</table>
-
-
-
-<hr>
-
-<h3>
-  <small>public function</small>
-  getAlgorithm()  <a name="getAlgorithm"></a>
-</h3>
-
-<blockquote>
-<p>Get the main algorithm used by this currency for hashing, as a code from HashAlgorithm#getCode.</p><p><a href="interface_Openclerk_Currencies_HashableCurrency.html" class="">HashableCurrency</a>s which share the same hash algorithm can be considered similar and their hash rates can be manipulated together. <i>(from <a href="interface_Openclerk_Currencies_HashableCurrency.html#getAlgorithm" class="">getAlgorithm</a>)</i></p><dl></dl></blockquote>
-
-
-<hr>
-
-<h3>
-  <small>public function</small>
-  getBalance($address, Logger $logger)  <a name="getBalance"></a>
-</h3>
-
-<blockquote>
-<p>Get the account balance of the given account. This method blocks until the balance has been obtained. <i>(from <a href="interface_Openclerk_Currencies_BalanceableCurrency.html#getBalance" class="">getBalance</a>)</i></p><dl><dt>Parameters:</dt><dd><code>$logger</code> - a logger to log info/error messages to<br></dd><dt>Throws:</dt><dd>BalanceException if something happened and the balance could not be obtained.<br></dd></dl></blockquote>
-
-
-<hr>
-
-<h3>
-  <small>public function</small>
-  getBalanceAtBlock($address, $block = null, Logger $logger)  <a name="getBalanceAtBlock"></a>
-</h3>
-
-<blockquote>
-<p>Get the balance at the given block number. This allows us to cache the block number and not have to request it on every balance request. <i>(from <a href="interface_Openclerk_Currencies_BlockBalanceableCurrency.html#getBalanceAtBlock" class="">getBalanceAtBlock</a>)</i></p><dl><dt>Parameters:</dt><dd><code>$block</code> - the block number, or <code>null</code> to get the most recent balance<br></dd><dt>Defaults:</dt><dd><code>block</code> = <code>null</code><br></dd><dt>Throws:</dt><dd>BalanceException if something happened and the balance could not be obtained.<br></dd></dl></blockquote>
-
-
-<hr>
-
-<h3>
-  <small>public function</small>
-  getBalanceURL($address)  <a name="getBalanceURL"></a>
-</h3>
-
-<blockquote>
-<dl><dt>Returns:</dt><dd>a public URL for exploring the given account, or <code>null</code> if there is none<br></dd></dl></blockquote>
-
-
-<hr>
-
-<h3>
-  <small>public function</small>
-  getBalanceWithConfirmations($address, $confirmations, Logger $logger)  <a name="getBalanceWithConfirmations"></a>
-</h3>
-
-<blockquote>
-<p>Get the balance at the given number of confirmations. If this is also a <a href="interface_Openclerk_Currencies_BlockBalanceableCurrency.html" class="">BlockBalanceableCurrency</a> then we can emulate this through <a href="class_Cryptocurrency_Bitcoin.html#getBalanceAtBlock" class="">#getBalanceAtBlock()</a>. <i>(from <a href="interface_Openclerk_Currencies_ConfirmableCurrency.html#getBalanceWithConfirmations" class="">getBalanceWithConfirmations</a>)</i></p><dl><dt>Parameters:</dt><dd><code>$confirmations</code> - the number of confirmations to use<br></dd><dt>Throws:</dt><dd>BalanceException if something happened and the balance could not be obtained.<br></dd></dl></blockquote>
-
-
-<hr>
-
-<h3>
-  <small>public function</small>
-  getBlockCount(Logger $logger)  <a name="getBlockCount"></a>
-</h3>
-
-<blockquote>
-<p>Get the most recent block count for this currency. This method blocks until the block count has been obtained. <i>(from <a href="interface_Openclerk_Currencies_BlockCurrency.html#getBlockCount" class="">getBlockCount</a>)</i></p><dl><dt>Parameters:</dt><dd><code>$logger</code> - a logger to log info/error messages to<br></dd><dt>Throws:</dt><dd>BlockException if something happened and the block count could not be obtained<br></dd></dl></blockquote>
-
-
-<hr>
-
-<h3>
-  <small>public function</small>
-  getCode()  <a name="getCode"></a>
-</h3>
-
-<blockquote>
-<p>Get the unique three-letter currency code for this currency, e.g. 'btc' or 'usd'. Must be lowercase. This is not visible to users. <i>(from <a href="interface_Openclerk_Currencies_Currency.html#getCode" class="">getCode</a>)</i></p><dl></dl></blockquote>
-
-
-<hr>
-
-<h3>
-  <small>public function</small>
-  getCommunityLinks()  <a name="getCommunityLinks"></a>
-</h3>
-
-<blockquote>
-<dl><dt>Returns:</dt><dd>an array of (url => title) community links, or an empty array if there are none<br></dd></dl></blockquote>
-
-
-<hr>
-
-<h3>
-  <small>public function</small>
-  getDifficulty(Logger $logger)  <a name="getDifficulty"></a>
-</h3>
-
-<blockquote>
-<p>Get the most recent difficulty for this currency. This method blocks until the balance has been obtained. <i>(from <a href="interface_Openclerk_Currencies_DifficultyCurrency.html#getDifficulty" class="">getDifficulty</a>)</i></p><dl><dt>Parameters:</dt><dd><code>$logger</code> - a logger to log info/error messages to<br></dd><dt>Throws:</dt><dd>DifficultyException if something happened and the block count could not be obtained<br></dd></dl></blockquote>
-
-
-<hr>
-
-<h3>
-  <small>public function</small>
-  getExplorerName()  <a name="getExplorerName"></a>
-</h3>
-
-<blockquote>
-<dl><dt>Returns:</dt><dd>the name of the explorer, or <code>null</code> if there is none<br></dd><dt>See Also:</dt><dd><a href="class_Cryptocurrency_Bitcoin.html#hasExplorer" class="">hasExplorer()</a><br></dd></dl></blockquote>
-
-
-<hr>
-
-<h3>
-  <small>public function</small>
-  getExplorerURL()  <a name="getExplorerURL"></a>
-</h3>
-
-<blockquote>
-<dl><dt>Returns:</dt><dd>a public URL for the explorer, or <code>null</code> if there is none<br></dd><dt>See Also:</dt><dd><a href="class_Cryptocurrency_Bitcoin.html#hasExplorer" class="">hasExplorer()</a><br></dd></dl></blockquote>
-
-
-<hr>
-
-<h3>
-  <small>public function</small>
-  getName()  <a name="getName"></a>
-</h3>
-
-<blockquote>
-<p>Get the English name of this currency, e.g. "Bitcoin" or "United States Dollar". <i>(from <a href="interface_Openclerk_Currencies_Currency.html#getName" class="">getName</a>)</i></p><dl></dl></blockquote>
-
-
-<hr>
-
-<h3>
-  <small>public function</small>
-  getReceived($address, Logger $logger)  <a name="getReceived"></a>
-</h3>
-
-<blockquote>
-<p>Get the <i>received</i> account balance of the given account. This method blocks until the balance has been obtained. <i>(from <a href="interface_Openclerk_Currencies_ReceivedCurrency.html#getReceived" class="">getReceived</a>)</i></p><dl><dt>Parameters:</dt><dd><code>$logger</code> - a logger to log info/error messages to<br></dd><dt>Throws:</dt><dd>BalanceException if something happened and the balance could not be obtained.<br></dd></dl></blockquote>
-
-
-<hr>
-
-<h3>
-  <small>public function</small>
-  getURL()  <a name="getURL"></a>
-</h3>
-
-<blockquote>
-<dl><dt>Returns:</dt><dd>a URL for more information about this currency, or <code>null</code> if there is none<br></dd></dl></blockquote>
-
-
-<hr>
-
-<h3>
-  <small>public function</small>
-  hasExplorer()  <a name="hasExplorer"></a>
-</h3>
-
-<blockquote>
-<dl><dt>Returns:</dt><dd>true if this Currency has a public explorer that can be used to look at an individual account.<br></dd></dl></blockquote>
-
-
-<hr>
-
-<h3>
-  <small>public function</small>
-  isValid($address)  <a name="isValid"></a>
-</h3>
-
-<blockquote>
-<p>Is this account identifier valid for this currency? <i>(from <a href="interface_Openclerk_Currencies_AddressableCurrency.html#isValid" class="">isValid</a>)</i></p><dl><dt>Returns:</dt><dd>false if this account identifier is not valid<br></dd></dl></blockquote>
-
-</div>
-
-<div class="footer">
-  Generated by <a href="https://github.com/soundasleep/phpdoc2/" class="github">PHPDoc2</a> Fri, 24 Apr 2015 14:42:27 +1200</div>
-
-</body>
-</html>
+  <h2>Inherited Method Summary</h2>
+  <table>
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+              <tr>
+          <td><a href="class_Openclerk_Currencies_Cryptocurrency.html#getAbbr" class="">getAbbr()</a></td>
+          <td>
+            Get the currency code visible to users, which can be of any length and does not need to be unique (but should be). Often just the uppercase of #getCode.            <i>(from <a href="class_Openclerk_Currencies_Cryptocurrency.html#getAbbr" class="">Cryptocurrency</a>)</i>
+                      </td>
+        </tr>
+              <tr>
+          <td><a href="class_Openclerk_Currencies_Cryptocurrency.html#getCurrency" class="">getCurrency()</a></td>
+          <td>
+            Get the <a href="interface_Openclerk_Currencies_Currency.html" class="">Currency</a> for this <a href="interface_Openclerk_Currencies_CurrencyInformation.html" class="">CurrencyInformation</a>.            <i>(from <a href="class_Openclerk_Currencies_Cryptocurrency.html#getCurrency" class="">Cryptocurrency</a>)</i>
+                      </td>
+        </tr>
+              <tr>
+          <td><a href="class_Openclerk_Currencies_Cryptocurrency.html#isCommodity" class="">isCommodity()</a></td>
+          <td>
+                        <i>(from <a href="class_Openclerk_Currencies_Cryptocurrency.html#isCommodity" class="">Cryptocurrency</a>)</i>
+                      </td>
+        </tr>
+              <tr>
+          <td><a href="class_Openclerk_Currencies_Cryptocurrency.html#isCryptocurrency" class="">isCryptocurrency()</a></td>
+          <td>
+                        <i>(from <a href="class_Openclerk_Currencies_Cryptocurrency.html#isCryptocurrency" class="">Cryptocurrency</a>)</i>
+                      </td>
+        </tr>
+              <tr>
+          <td><a href="class_Openclerk_Currencies_Cryptocurrency.html#isFiat" class="">isFiat()</a></td>
+          <td>
+                        <i>(from <a href="class_Openclerk_Currencies_Cryptocurrency.html#isFiat" class="">Cryptocurrency</a>)</i>
+                      </td>
+        </tr>
+          </tbody>
+  </table>
+  <hr>
+  <h3>
+    <small>public function</small>
+    getAlgorithm()    <a name="getAlgorithm"></a>
+  </h3>
+  <blockquote>
+      <p>
+    Get the main algorithm used by this currency for hashing, as a code from HashAlgorithm#getCode.          </p>
+  <p>
+    <a href="interface_Openclerk_Currencies_HashableCurrency.html" class="">HashableCurrencys</a> which share the same hash algorithm can be considered similar and their hash rates can be manipulated together.              <i>(from <a href="interface_Openclerk_Currencies_HashableCurrency.html#getAlgorithm" class="">getAlgorithm</a>)</i>
+      </p>
+<dl>
+            </dl>
+  </blockquote>
+  <hr>
+  <h3>
+    <small>public function</small>
+    getBalance($address, Logger $logger)    <a name="getBalance"></a>
+  </h3>
+  <blockquote>
+      <p>
+    Get the account balance of the given account. This method blocks until the balance has been obtained.              <i>(from <a href="interface_Openclerk_Currencies_BalanceableCurrency.html#getBalance" class="">getBalance</a>)</i>
+      </p>
+<dl>
+        <dt>Parameters:</dt>
+    <dd>
+              <div>
+          <code>$logger</code>
+          -
+          a logger to log info/error messages to        </div>
+          </dd>
+            <dt>Throws:</dt>
+    <dd>
+              <div>
+          BalanceException if something happened and the balance could not be obtained.        </div>
+          </dd>
+    </dl>
+  </blockquote>
+  <hr>
+  <h3>
+    <small>public function</small>
+    getBalanceAtBlock($address, $block = null, Logger $logger)    <a name="getBalanceAtBlock"></a>
+  </h3>
+  <blockquote>
+      <p>
+    Get the balance at the given block number. This allows us to cache the block number and not have to request it on every balance request.              <i>(from <a href="interface_Openclerk_Currencies_BlockBalanceableCurrency.html#getBalanceAtBlock" class="">getBalanceAtBlock</a>)</i>
+      </p>
+<dl>
+        <dt>Parameters:</dt>
+    <dd>
+              <div>
+          <code>$block</code>
+          -
+          the block number, or <code>null</code> to get the most recent balance        </div>
+          </dd>
+        <dt>Defaults:</dt>
+    <dd>
+              <div>
+          <code>block</code>
+          =
+          <code>null</code>        </div>
+          </dd>
+          <dt>Throws:</dt>
+    <dd>
+              <div>
+          BalanceException if something happened and the balance could not be obtained.        </div>
+          </dd>
+    </dl>
+  </blockquote>
+  <hr>
+  <h3>
+    <small>public function</small>
+    getBalanceURL($address)    <a name="getBalanceURL"></a>
+  </h3>
+  <blockquote>
+    <dl>
+            <dt>Returns:</dt>
+    <dd>
+              <div>
+          a public URL for exploring the given account, or <code>null</code> if there is none        </div>
+          </dd>
+      </dl>
+  </blockquote>
+  <hr>
+  <h3>
+    <small>public function</small>
+    getBalanceWithConfirmations($address, $confirmations, Logger $logger)    <a name="getBalanceWithConfirmations"></a>
+  </h3>
+  <blockquote>
+      <p>
+    Get the balance at the given number of confirmations. If this is also a <a href="interface_Openclerk_Currencies_BlockBalanceableCurrency.html" class="">BlockBalanceableCurrency</a> then we can emulate this through <a href="class_Cryptocurrency_Bitcoin.html#getBalanceAtBlock" class="">#getBalanceAtBlock()</a>.              <i>(from <a href="interface_Openclerk_Currencies_ConfirmableCurrency.html#getBalanceWithConfirmations" class="">getBalanceWithConfirmations</a>)</i>
+      </p>
+<dl>
+        <dt>Parameters:</dt>
+    <dd>
+              <div>
+          <code>$confirmations</code>
+          -
+          the number of confirmations to use        </div>
+          </dd>
+            <dt>Throws:</dt>
+    <dd>
+              <div>
+          BalanceException if something happened and the balance could not be obtained.        </div>
+          </dd>
+    </dl>
+  </blockquote>
+  <hr>
+  <h3>
+    <small>public function</small>
+    getBlockCount(Logger $logger)    <a name="getBlockCount"></a>
+  </h3>
+  <blockquote>
+      <p>
+    Get the most recent block count for this currency. This method blocks until the block count has been obtained.              <i>(from <a href="interface_Openclerk_Currencies_BlockCurrency.html#getBlockCount" class="">getBlockCount</a>)</i>
+      </p>
+<dl>
+        <dt>Parameters:</dt>
+    <dd>
+              <div>
+          <code>$logger</code>
+          -
+          a logger to log info/error messages to        </div>
+          </dd>
+            <dt>Throws:</dt>
+    <dd>
+              <div>
+          BlockException if something happened and the block count could not be obtained        </div>
+          </dd>
+    </dl>
+  </blockquote>
+  <hr>
+  <h3>
+    <small>public function</small>
+    getCode()    <a name="getCode"></a>
+  </h3>
+  <blockquote>
+      <p>
+    Get the unique three-letter currency code for this currency, e.g. 'btc' or 'usd'. Must be lowercase. This is not visible to users.              <i>(from <a href="interface_Openclerk_Currencies_Currency.html#getCode" class="">getCode</a>)</i>
+      </p>
+<dl>
+            </dl>
+  </blockquote>
+  <hr>
+  <h3>
+    <small>public function</small>
+    getCommunityLinks()    <a name="getCommunityLinks"></a>
+  </h3>
+  <blockquote>
+    <dl>
+            <dt>Returns:</dt>
+    <dd>
+              <div>
+          an array of (url => title) community links, or an empty array if there are none        </div>
+          </dd>
+      </dl>
+  </blockquote>
+  <hr>
+  <h3>
+    <small>public function</small>
+    getDifficulty(Logger $logger)    <a name="getDifficulty"></a>
+  </h3>
+  <blockquote>
+      <p>
+    Get the most recent difficulty for this currency. This method blocks until the balance has been obtained.              <i>(from <a href="interface_Openclerk_Currencies_DifficultyCurrency.html#getDifficulty" class="">getDifficulty</a>)</i>
+      </p>
+<dl>
+        <dt>Parameters:</dt>
+    <dd>
+              <div>
+          <code>$logger</code>
+          -
+          a logger to log info/error messages to        </div>
+          </dd>
+            <dt>Throws:</dt>
+    <dd>
+              <div>
+          DifficultyException if something happened and the block count could not be obtained        </div>
+          </dd>
+    </dl>
+  </blockquote>
+  <hr>
+  <h3>
+    <small>public function</small>
+    getExplorerName()    <a name="getExplorerName"></a>
+  </h3>
+  <blockquote>
+    <dl>
+            <dt>Returns:</dt>
+    <dd>
+              <div>
+          the name of the explorer, or <code>null</code> if there is none        </div>
+          </dd>
+          <dt>See:</dt>
+    <dd>
+              <div>
+          <a href="class_Cryptocurrency_Bitcoin.html#hasExplorer" class="">hasExplorer()</a>        </div>
+          </dd>
+  </dl>
+  </blockquote>
+  <hr>
+  <h3>
+    <small>public function</small>
+    getExplorerURL()    <a name="getExplorerURL"></a>
+  </h3>
+  <blockquote>
+    <dl>
+            <dt>Returns:</dt>
+    <dd>
+              <div>
+          a public URL for the explorer, or <code>null</code> if there is none        </div>
+          </dd>
+          <dt>See:</dt>
+    <dd>
+              <div>
+          <a href="class_Cryptocurrency_Bitcoin.html#hasExplorer" class="">hasExplorer()</a>        </div>
+          </dd>
+  </dl>
+  </blockquote>
+  <hr>
+  <h3>
+    <small>public function</small>
+    getName()    <a name="getName"></a>
+  </h3>
+  <blockquote>
+      <p>
+    Get the English name of this currency, e.g. "Bitcoin" or "United States Dollar".              <i>(from <a href="interface_Openclerk_Currencies_Currency.html#getName" class="">getName</a>)</i>
+      </p>
+<dl>
+            </dl>
+  </blockquote>
+  <hr>
+  <h3>
+    <small>public function</small>
+    getReceived($address, Logger $logger)    <a name="getReceived"></a>
+  </h3>
+  <blockquote>
+      <p>
+    Get the <i>received</i> account balance of the given account. This method blocks until the balance has been obtained.              <i>(from <a href="interface_Openclerk_Currencies_ReceivedCurrency.html#getReceived" class="">getReceived</a>)</i>
+      </p>
+<dl>
+        <dt>Parameters:</dt>
+    <dd>
+              <div>
+          <code>$logger</code>
+          -
+          a logger to log info/error messages to        </div>
+          </dd>
+            <dt>Throws:</dt>
+    <dd>
+              <div>
+          BalanceException if something happened and the balance could not be obtained.        </div>
+          </dd>
+    </dl>
+  </blockquote>
+  <hr>
+  <h3>
+    <small>public function</small>
+    getURL()    <a name="getURL"></a>
+  </h3>
+  <blockquote>
+    <dl>
+            <dt>Returns:</dt>
+    <dd>
+              <div>
+          a URL for more information about this currency, or <code>null</code> if there is none        </div>
+          </dd>
+      </dl>
+  </blockquote>
+  <hr>
+  <h3>
+    <small>public function</small>
+    hasExplorer()    <a name="hasExplorer"></a>
+  </h3>
+  <blockquote>
+    <dl>
+            <dt>Returns:</dt>
+    <dd>
+              <div>
+          true if this Currency has a public explorer that can be used to look at an individual account.        </div>
+          </dd>
+      </dl>
+  </blockquote>
+  <hr>
+  <h3>
+    <small>public function</small>
+    isValid($address)    <a name="isValid"></a>
+  </h3>
+  <blockquote>
+      <p>
+    Is this account identifier valid for this currency?              <i>(from <a href="interface_Openclerk_Currencies_AddressableCurrency.html#isValid" class="">isValid</a>)</i>
+      </p>
+<dl>
+            <dt>Returns:</dt>
+    <dd>
+              <div>
+          false if this account identifier is not valid        </div>
+          </dd>
+      </dl>
+  </blockquote>
+</div><div class="footer">
+  Generated by
+  <a class="github" href="https://github.com/soundasleep/phpdoc2/">PHPDoc2</a>
+  Wed, 06 May 2015 15:59:30 +1200</div>
+</body></html>

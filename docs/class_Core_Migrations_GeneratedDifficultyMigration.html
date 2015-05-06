@@ -1,32 +1,25 @@
-<!DOCTYPE HTML>
-<html>
-<head>
+<!DOCTYPE html>
+<html><head>
   <title>PHPDoc2 - openclerk</title>
   <link rel="stylesheet" type="text/css" href="default.css">
-</head>
-<body>
-<nav>
+  </head>
+<body><nav>
   <a href="index.html">Root</a>
 </nav>
-
-<div class="content">
-<ul class="class-hierarchy"><li><a href="class_Db_Migration.html" class="">Db\Migration</a><ul><li>Core\Migrations\GeneratedDifficultyMigration</li></ul></li></ul>
-<h1>
+<div class="content">  <ul class="class-hierarchy">  <li>      <a href="class_Db_Migration.html" class="">Db\Migration</a>  <ul>
+  <li>
+    Core\Migrations\GeneratedDifficultyMigration  </li>
+</ul>
+  </li>  </ul><h1>
   <small>class</small>
-
-  <a href="namespace_Core_Migrations.html" class="">Core\Migrations</a>  \
-  <a href="class_Core_Migrations_GeneratedDifficultyMigration.html" class="">GeneratedDifficultyMigration</a></h1>
-
-
-
-
+  <a href="namespace_Core_Migrations.html" class="">Core\Migrations</a>  \  <a href="class_Core_Migrations_GeneratedDifficultyMigration.html" class="">GeneratedDifficultyMigration</a></h1>
 <hr>
-
-<p>Allows migrations to be generated at runtime. This means we don't need to create separate migrations for each new currency discovered, because each currency will have a constant table structure.</p><dl></dl>
+  <p>
+    Allows migrations to be generated at runtime. This means we don't need to create separate migrations for each new currency discovered, because each currency will have a constant table structure.          </p>
+<dl>
+            </dl>
 <hr>
-
 <h2>Method Summary</h2>
-
 <table>
   <thead>
     <tr>
@@ -35,83 +28,144 @@
     </tr>
   </thead>
   <tbody>
-<tr><td><a href="class_Core_Migrations_GeneratedDifficultyMigration.html#__construct" class="">__construct($currency)</a></td><td></td></tr><tr><td><a href="class_Core_Migrations_GeneratedDifficultyMigration.html#apply" class="">apply(Connection $db)</a></td><td>Apply only the current migration.</td></tr><tr><td><a href="class_Core_Migrations_GeneratedDifficultyMigration.html#getName" class="">getName()</a></td><td></td></tr><tr><td><a href="class_Core_Migrations_GeneratedDifficultyMigration.html#getTable" class="">getTable()</a></td><td></td></tr><tr><td><a href="class_Core_Migrations_GeneratedDifficultyMigration.html#isApplied" class="">isApplied(Connection $db)</a></td><td>Override the default function to check that a table exists.</td></tr>  </tbody>
+          <tr>
+        <td><a href="class_Core_Migrations_GeneratedDifficultyMigration.html#__construct" class="">__construct($currency)</a></td>
+        <td>
+                            </td>
+      </tr>
+          <tr>
+        <td><a href="class_Core_Migrations_GeneratedDifficultyMigration.html#apply" class="">apply(Connection $db)</a></td>
+        <td>
+          Apply only the current migration.                  </td>
+      </tr>
+          <tr>
+        <td><a href="class_Core_Migrations_GeneratedDifficultyMigration.html#getName" class="">getName()</a></td>
+        <td>
+                            </td>
+      </tr>
+          <tr>
+        <td><a href="class_Core_Migrations_GeneratedDifficultyMigration.html#getTable" class="">getTable()</a></td>
+        <td>
+                            </td>
+      </tr>
+          <tr>
+        <td><a href="class_Core_Migrations_GeneratedDifficultyMigration.html#isApplied" class="">isApplied(Connection $db)</a></td>
+        <td>
+          Override the default function to check that a table exists.                  </td>
+      </tr>
+      </tbody>
 </table>
-
-
-<h2>Inherited Method Summary</h2>
-
-<table>
-  <thead>
-    <tr>
-      <th>Name</th>
-      <th>Description</th>
-    </tr>
-  </thead>
-  <tbody>
-<tr><td><a href="class_Db_Migration.html#getAllParents" class="">getAllParents()</a></td><td>Get all our parent <a href="class_Db_Migration.html" class="">Migration</a>s along with all of its parents migrations into one unique array. <i>(from <a href="class_Db_Migration.html#getAllParents" class="">Migration</a>)</i></td></tr><tr><td><a href="class_Db_Migration.html#getParents" class="">getParents()</a></td><td>Get all parent <a href="class_Db_Migration.html" class="">Migration</a>s that this migration depends on, as a list <i>(from <a href="class_Db_Migration.html#getParents" class="">Migration</a>)</i></td></tr><tr><td><a href="class_Db_Migration.html#hasPending" class="">hasPending(Connection $db)</a></td><td> <i>(from <a href="class_Db_Migration.html#hasPending" class="">Migration</a>)</i></td></tr><tr><td><a href="class_Db_Migration.html#install" class="">install(Connection $db, Logger $log)</a></td><td>Install the current migration and any parent migrations that this migration depends on. <i>(from <a href="class_Db_Migration.html#install" class="">Migration</a>)</i></td></tr><tr><td><a href="class_Db_Migration.html#tableExists" class="">tableExists(Connection $db, $table)</a></td><td>Used e.g. in BaseMigration <i>(from <a href="class_Db_Migration.html#tableExists" class="">Migration</a>)</i></td></tr>  </tbody>
-</table>
-
-
-
-<hr>
-
-<h3>
-  <small>public function</small>
-  __construct($currency)  <a name="__construct"></a>
-</h3>
-
-<blockquote>
-<dl></dl></blockquote>
-
-
-<hr>
-
-<h3>
-  <small>public function</small>
-  apply(<a href="interface_Db_Connection.html" class="">Connection</a> $db)  <a name="apply"></a>
-</h3>
-
-<blockquote>
-<p>Apply only the current migration.</p><dl><dt>Overrides:</dt><dd><a href="class_Db_Migration.html#apply" class="">apply(Connection $db)</a></dd><dt>Returns:</dt><dd>true on success or false on failure<br></dd></dl></blockquote>
-
-
-<hr>
-
-<h3>
-  <small>public function</small>
-  getName()  <a name="getName"></a>
-</h3>
-
-<blockquote>
-<dl><dt>Overrides:</dt><dd><a href="class_Db_Migration.html#getName" class="">getName()</a></dd></dl></blockquote>
-
-
-<hr>
-
-<h3>
-  <small>public function</small>
-  getTable()  <a name="getTable"></a>
-</h3>
-
-<blockquote>
-<dl></dl></blockquote>
-
-
-<hr>
-
-<h3>
-  <small>public function</small>
-  isApplied(<a href="interface_Db_Connection.html" class="">Connection</a> $db)  <a name="isApplied"></a>
-</h3>
-
-<blockquote>
-<p>Override the default function to check that a table exists.</p><dl><dt>Overrides:</dt><dd><a href="class_Db_Migration.html#isApplied" class="">isApplied(Connection $db)</a></dd><dt>Returns:</dt><dd>true if this migration is applied<br></dd></dl></blockquote>
-
-</div>
-
-<div class="footer">
-  Generated by <a href="https://github.com/soundasleep/phpdoc2/" class="github">PHPDoc2</a> Fri, 24 Apr 2015 14:42:26 +1200</div>
-
-</body>
-</html>
+  <h2>Inherited Method Summary</h2>
+  <table>
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+              <tr>
+          <td><a href="class_Db_Migration.html#getAllParents" class="">getAllParents()</a></td>
+          <td>
+            Get all our parent <a href="class_Db_Migration.html" class="">Migrations</a> along with all of its parents migrations into one unique array.            <i>(from <a href="class_Db_Migration.html#getAllParents" class="">Migration</a>)</i>
+                      </td>
+        </tr>
+              <tr>
+          <td><a href="class_Db_Migration.html#getParents" class="">getParents()</a></td>
+          <td>
+            Get all parent <a href="class_Db_Migration.html" class="">Migrations</a> that this migration depends on, as a list            <i>(from <a href="class_Db_Migration.html#getParents" class="">Migration</a>)</i>
+                      </td>
+        </tr>
+              <tr>
+          <td><a href="class_Db_Migration.html#hasPending" class="">hasPending(Connection $db)</a></td>
+          <td>
+                        <i>(from <a href="class_Db_Migration.html#hasPending" class="">Migration</a>)</i>
+                      </td>
+        </tr>
+              <tr>
+          <td><a href="class_Db_Migration.html#install" class="">install(Connection $db, Logger $log)</a></td>
+          <td>
+            Install the current migration and any parent migrations that this migration depends on.            <i>(from <a href="class_Db_Migration.html#install" class="">Migration</a>)</i>
+                      </td>
+        </tr>
+              <tr>
+          <td><a href="class_Db_Migration.html#tableExists" class="">tableExists(Connection $db, $table)</a></td>
+          <td>
+            Used e.g. in BaseMigration            <i>(from <a href="class_Db_Migration.html#tableExists" class="">Migration</a>)</i>
+                      </td>
+        </tr>
+          </tbody>
+  </table>
+  <hr>
+  <h3>
+    <small>public function</small>
+    __construct($currency)    <a name="__construct"></a>
+  </h3>
+  <blockquote>
+    <dl>
+            </dl>
+  </blockquote>
+  <hr>
+  <h3>
+    <small>public function</small>
+    apply(<a href="interface_Db_Connection.html" class="">Connection</a> $db)    <a name="apply"></a>
+  </h3>
+  <blockquote>
+      <p>
+    Apply only the current migration.          </p>
+<dl>
+      <dt>Overrides:</dt>
+    <dd>
+      <a href="class_Db_Migration.html#apply" class="">apply(Connection $db)</a>    </dd>
+            <dt>Returns:</dt>
+    <dd>
+              <div>
+          true on success or false on failure        </div>
+          </dd>
+      </dl>
+  </blockquote>
+  <hr>
+  <h3>
+    <small>public function</small>
+    getName()    <a name="getName"></a>
+  </h3>
+  <blockquote>
+    <dl>
+      <dt>Overrides:</dt>
+    <dd>
+      <a href="class_Db_Migration.html#getName" class="">getName()</a>    </dd>
+            </dl>
+  </blockquote>
+  <hr>
+  <h3>
+    <small>public function</small>
+    getTable()    <a name="getTable"></a>
+  </h3>
+  <blockquote>
+    <dl>
+            </dl>
+  </blockquote>
+  <hr>
+  <h3>
+    <small>public function</small>
+    isApplied(<a href="interface_Db_Connection.html" class="">Connection</a> $db)    <a name="isApplied"></a>
+  </h3>
+  <blockquote>
+      <p>
+    Override the default function to check that a table exists.          </p>
+<dl>
+      <dt>Overrides:</dt>
+    <dd>
+      <a href="class_Db_Migration.html#isApplied" class="">isApplied(Connection $db)</a>    </dd>
+            <dt>Returns:</dt>
+    <dd>
+              <div>
+          true if this migration is applied        </div>
+          </dd>
+      </dl>
+  </blockquote>
+</div><div class="footer">
+  Generated by
+  <a class="github" href="https://github.com/soundasleep/phpdoc2/">PHPDoc2</a>
+  Wed, 06 May 2015 15:59:30 +1200</div>
+</body></html>

@@ -1,39 +1,28 @@
-<!DOCTYPE HTML>
-<html>
-<head>
+<!DOCTYPE html>
+<html><head>
   <title>PHPDoc2 - openclerk</title>
   <link rel="stylesheet" type="text/css" href="default.css">
-</head>
-<body>
-<nav>
+  </head>
+<body><nav>
   <a href="index.html">Root</a>
 </nav>
-
-<div class="content">
-<ul class="class-hierarchy"><li><a href="class__GraphRenderer.html" class="">\GraphRenderer</a><ul class="class-hierarchy"><li><a href="class__GraphRenderer_AbstractCompositionGraph.html" class="">\GraphRenderer_AbstractCompositionGraph</a><ul><li>\GraphRenderer_CompositionGraph</li></ul></li></ul></li></ul>
-<h1>
+<div class="content">  <ul class="class-hierarchy">  <li>      <a href="class__GraphRenderer.html" class="">\GraphRenderer</a>    <ul class="class-hierarchy">  <li>      <a href="class__GraphRenderer_AbstractCompositionGraph.html" class="">\GraphRenderer_AbstractCompositionGraph</a>  <ul>
+  <li>
+    \GraphRenderer_CompositionGraph  </li>
+</ul>
+  </li>  </ul>  </li>  </ul><h1>
   <small>class</small>
-
-  <a href="namespace_.html" class="">(none)</a>  \
-  <a href="class__GraphRenderer_CompositionGraph.html" class="">GraphRenderer_CompositionGraph</a></h1>
-
-
-
-
+  <a href="namespace_.html" class="">(none)</a>  \  <a href="class__GraphRenderer_CompositionGraph.html" class="">GraphRenderer_CompositionGraph</a></h1>
+  <dl>
+    <dt>All known direct subclasses:</dt>
+    <dd>
+            <a href="class__GraphRenderer_CompositionProportional.html" class="">GraphRenderer_CompositionProportional</a>,<a href="class__GraphRenderer_CompositionStacked.html" class="">GraphRenderer_CompositionStacked</a>    </dd>
+  </dl>
+<hr>
 <dl>
-  <dt>All known direct subclasses:</dt>
-  <dd>
-    <a href="class__GraphRenderer_CompositionProportional.html" class="">GraphRenderer_CompositionProportional</a>, <a href="class__GraphRenderer_CompositionStacked.html" class="">GraphRenderer_CompositionStacked</a>  </dd>
-</dl>
-
-
+            </dl>
 <hr>
-
-<dl></dl>
-<hr>
-
 <h2>Method Summary</h2>
-
 <table>
   <thead>
     <tr>
@@ -42,83 +31,221 @@
     </tr>
   </thead>
   <tbody>
-<tr><td><a href="class__GraphRenderer_CompositionGraph.html#getCompositionArgs" class="">getCompositionArgs()</a></td><td></td></tr><tr><td><a href="class__GraphRenderer_CompositionGraph.html#getCompositionSources" class="">getCompositionSources($days, $extra_days)</a></td><td></td></tr><tr><td><a href="class__GraphRenderer_CompositionGraph.html#getHeadingTitle" class="">getHeadingTitle($key, $args)</a></td><td>e.g. #get_exchange_name</td></tr><tr><td><a href="class__GraphRenderer_CompositionGraph.html#getTitle" class="">getTitle()</a></td><td>Get the title of this graph</td></tr><tr><td><a href="class__GraphRenderer_CompositionGraph.html#getTitleArgs" class="">getTitleArgs()</a></td><td>Get any localisation (i18n) string arguments for the title given in <a href="class__GraphRenderer_CompositionGraph.html#getTitle" class="">#getTitle()</a>. By default, returns an empty array.</td></tr>  </tbody>
+          <tr>
+        <td><a href="class__GraphRenderer_CompositionGraph.html#getCompositionArgs" class="">getCompositionArgs()</a></td>
+        <td>
+                            </td>
+      </tr>
+          <tr>
+        <td><a href="class__GraphRenderer_CompositionGraph.html#getCompositionSources" class="">getCompositionSources($days, $extra_days)</a></td>
+        <td>
+                            </td>
+      </tr>
+          <tr>
+        <td><a href="class__GraphRenderer_CompositionGraph.html#getHeadingTitle" class="">getHeadingTitle($key, $args)</a></td>
+        <td>
+          e.g. #get_exchange_name                  </td>
+      </tr>
+          <tr>
+        <td><a href="class__GraphRenderer_CompositionGraph.html#getTitle" class="">getTitle()</a></td>
+        <td>
+          Get the title of this graph                  </td>
+      </tr>
+          <tr>
+        <td><a href="class__GraphRenderer_CompositionGraph.html#getTitleArgs" class="">getTitleArgs()</a></td>
+        <td>
+          Get any localisation (i18n) string arguments for the title given in <a href="class__GraphRenderer_CompositionGraph.html#getTitle" class="">#getTitle()</a>. By default, returns an empty array.                  </td>
+      </tr>
+      </tbody>
 </table>
-
-
-<h2>Inherited Method Summary</h2>
-
-<table>
-  <thead>
-    <tr>
-      <th>Name</th>
-      <th>Description</th>
-    </tr>
-  </thead>
-  <tbody>
-<tr><td><a href="class__GraphRenderer_AbstractCompositionGraph.html#__construct" class="">__construct($currency)</a></td><td> <i>(from <a href="class__GraphRenderer_AbstractCompositionGraph.html#__construct" class="">GraphRenderer_AbstractCompositionGraph</a>)</i></td></tr><tr><td><a href="class__GraphRenderer.html#canHaveTechnicals" class="">canHaveTechnicals()</a></td><td>Can this graph have technicals? If this returns <code>true</code>, then the resulting data will always be sorted. By default, returns <code>true</code>. <i>(from <a href="class__GraphRenderer.html#canHaveTechnicals" class="">GraphRenderer</a>)</i></td></tr><tr><td><a href="class__GraphRenderer.html#convertGraphToProportional" class="">convertGraphToProportional($original)</a></td><td>Relabel all columns to have ' %' prefix, and reformat all data to be proportional based on the sum of each row. Uses the output of <a href="class__GraphRenderer.html#getData" class="">#getData()</a>. <i>(from <a href="class__GraphRenderer.html#convertGraphToProportional" class="">GraphRenderer</a>)</i></td></tr><tr><td><a href="class__GraphRenderer.html#getChartType" class="">getChartType()</a></td><td>What type of chart is this rendered as? By default, returns <code>linechart</code>. <i>(from <a href="class__GraphRenderer.html#getChartType" class="">GraphRenderer</a>)</i></td></tr><tr><td><a href="class__GraphRenderer.html#getClasses" class="">getClasses()</a></td><td> <i>(from <a href="class__GraphRenderer.html#getClasses" class="">GraphRenderer</a>)</i></td></tr><tr><td><a href="class__GraphRenderer.html#getCustomSubheading" class="">getCustomSubheading()</a></td><td>Calculate the custom subheading value for this graph, or <code>false</code> if this graph does not have a custom subheading defined (and subheadings calculated through <a href="class__GraphRenderer.html#hasSubheading" class="">#hasSubheading()</a> will use default sum/array logic). By default, returns <code>false</code>. <i>(from <a href="class__GraphRenderer.html#getCustomSubheading" class="">GraphRenderer</a>)</i></td></tr><tr><td><a href="class__GraphRenderer_AbstractCompositionGraph.html#getData" class="">getData($days)</a></td><td> <i>(from <a href="class__GraphRenderer_AbstractCompositionGraph.html#getData" class="">GraphRenderer_AbstractCompositionGraph</a>)</i></td></tr><tr><td><a href="class__GraphRenderer.html#getLabel" class="">getLabel()</a></td><td>Get the label that should be associated with the <a href="class__GraphRenderer.html#getURL" class="">#getURL()</a>. <i>(from <a href="class__GraphRenderer.html#getLabel" class="">GraphRenderer</a>)</i></td></tr><tr><td><a href="class__GraphRenderer.html#getURL" class="">getURL()</a></td><td>Get the URL that the title of this graph should link to, or <code>false</code> if it should not link anywhere <i>(from <a href="class__GraphRenderer.html#getURL" class="">GraphRenderer</a>)</i></td></tr><tr><td><a href="class__GraphRenderer.html#getUser" class="">getUser()</a></td><td> <i>(from <a href="class__GraphRenderer.html#getUser" class="">GraphRenderer</a>)</i></td></tr><tr><td><a href="class__GraphRenderer_AbstractCompositionGraph.html#hasSubheading" class="">hasSubheading()</a></td><td>Does this graph have a subheading? By default, returns <code>true</code>. <i>(from <a href="class__GraphRenderer_AbstractCompositionGraph.html#hasSubheading" class="">GraphRenderer_AbstractCompositionGraph</a>)</i></td></tr><tr><td><a href="class__GraphRenderer.html#requiresAdmin" class="">requiresAdmin()</a></td><td>Does rendering this graph require an admin user? By default, returns <code>false</code>. <i>(from <a href="class__GraphRenderer.html#requiresAdmin" class="">GraphRenderer</a>)</i></td></tr><tr><td><a href="class__GraphRenderer_AbstractCompositionGraph.html#requiresUser" class="">requiresUser()</a></td><td>Does rendering this graph require a user? By default, returns <code>false</code>. <i>(from <a href="class__GraphRenderer_AbstractCompositionGraph.html#requiresUser" class="">GraphRenderer_AbstractCompositionGraph</a>)</i></td></tr><tr><td><a href="class__GraphRenderer.html#setUser" class="">setUser($user_id)</a></td><td> <i>(from <a href="class__GraphRenderer.html#setUser" class="">GraphRenderer</a>)</i></td></tr><tr><td><a href="class__GraphRenderer.html#usesDays" class="">usesDays()</a></td><td>Does this function require a days parameter? If <code>true</code>, then the returned data will be stripped based on the keys returned in the data - assumes that the data uses dates as keys. By default, returns <code>true</code>. <i>(from <a href="class__GraphRenderer.html#usesDays" class="">GraphRenderer</a>)</i></td></tr><tr><td><a href="class__GraphRenderer_AbstractCompositionGraph.html#usesSummaries" class="">usesSummaries()</a></td><td>Does this graph use summaries which may be out of date for a user? By default, returns <code>false</code>. <i>(from <a href="class__GraphRenderer_AbstractCompositionGraph.html#usesSummaries" class="">GraphRenderer_AbstractCompositionGraph</a>)</i></td></tr><tr><td><a href="class__GraphRenderer_AbstractCompositionGraph.html#isDaily" class="">isDaily()</a></td><td> <i>(from <a href="class__GraphRenderer_AbstractCompositionGraph.html#isDaily" class="">GraphRenderer_AbstractCompositionGraph</a>)</i></td></tr>  </tbody>
-</table>
-
-
-
-<hr>
-
-<h3>
-  <small>public function</small>
-  getCompositionArgs()  <a name="getCompositionArgs"></a>
-</h3>
-
-<blockquote>
-<dl><dt>Overrides:</dt><dd><a href="class__GraphRenderer_AbstractCompositionGraph.html#getCompositionArgs" class="">getCompositionArgs()</a></dd></dl></blockquote>
-
-
-<hr>
-
-<h3>
-  <small>public function</small>
-  getCompositionSources($days, $extra_days)  <a name="getCompositionSources"></a>
-</h3>
-
-<blockquote>
-<dl><dt>Overrides:</dt><dd><a href="class__GraphRenderer_AbstractCompositionGraph.html#getCompositionSources" class="">getCompositionSources($days, $extra_days)</a></dd></dl></blockquote>
-
-
-<hr>
-
-<h3>
-  <small>public function</small>
-  getHeadingTitle($key, $args)  <a name="getHeadingTitle"></a>
-</h3>
-
-<blockquote>
-<p>e.g. #get_exchange_name</p><dl><dt>Overrides:</dt><dd><a href="class__GraphRenderer_AbstractCompositionGraph.html#getHeadingTitle" class="">getHeadingTitle($key, $args)</a></dd></dl></blockquote>
-
-
-<hr>
-
-<h3>
-  <small>public function</small>
-  getTitle()  <a name="getTitle"></a>
-</h3>
-
-<blockquote>
-<p>Get the title of this graph <i>(from <a href="class__GraphRenderer.html#getTitle" class="">getTitle</a>)</i></p><dl><dt>Overrides:</dt><dd><a href="class__GraphRenderer.html#getTitle" class="">getTitle()</a></dd><dt>See Also:</dt><dd><a href="class__GraphRenderer_CompositionGraph.html#getTitleArgs" class="">getTitleArgs()</a><br></dd></dl></blockquote>
-
-
-<hr>
-
-<h3>
-  <small>public function</small>
-  getTitleArgs()  <a name="getTitleArgs"></a>
-</h3>
-
-<blockquote>
-<p>Get any localisation (i18n) string arguments for the title given in <a href="class__GraphRenderer_CompositionGraph.html#getTitle" class="">#getTitle()</a>. By default, returns an empty array. <i>(from <a href="class__GraphRenderer.html#getTitleArgs" class="">getTitleArgs</a>)</i></p><dl><dt>Overrides:</dt><dd><a href="class__GraphRenderer.html#getTitleArgs" class="">getTitleArgs()</a></dd></dl></blockquote>
-
-</div>
-
-<div class="footer">
-  Generated by <a href="https://github.com/soundasleep/phpdoc2/" class="github">PHPDoc2</a> Fri, 24 Apr 2015 14:42:18 +1200</div>
-
-</body>
-</html>
+  <h2>Inherited Method Summary</h2>
+  <table>
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+              <tr>
+          <td><a href="class__GraphRenderer_AbstractCompositionGraph.html#__construct" class="">__construct($currency)</a></td>
+          <td>
+                        <i>(from <a href="class__GraphRenderer_AbstractCompositionGraph.html#__construct" class="">GraphRenderer_AbstractCompositionGraph</a>)</i>
+                      </td>
+        </tr>
+              <tr>
+          <td><a href="class__GraphRenderer.html#canHaveTechnicals" class="">canHaveTechnicals()</a></td>
+          <td>
+            Can this graph have technicals? If this returns <code>true</code>, then the resulting data will always be sorted. By default, returns <code>true</code>.            <i>(from <a href="class__GraphRenderer.html#canHaveTechnicals" class="">GraphRenderer</a>)</i>
+                      </td>
+        </tr>
+              <tr>
+          <td><a href="class__GraphRenderer.html#convertGraphToProportional" class="">convertGraphToProportional($original)</a></td>
+          <td>
+            Relabel all columns to have ' %' prefix, and reformat all data to be proportional based on the sum of each row. Uses the output of <a href="class__GraphRenderer.html#getData" class="">#getData()</a>.            <i>(from <a href="class__GraphRenderer.html#convertGraphToProportional" class="">GraphRenderer</a>)</i>
+                      </td>
+        </tr>
+              <tr>
+          <td><a href="class__GraphRenderer.html#getChartType" class="">getChartType()</a></td>
+          <td>
+            What type of chart is this rendered as? By default, returns <code>linechart</code>.            <i>(from <a href="class__GraphRenderer.html#getChartType" class="">GraphRenderer</a>)</i>
+                      </td>
+        </tr>
+              <tr>
+          <td><a href="class__GraphRenderer.html#getClasses" class="">getClasses()</a></td>
+          <td>
+                        <i>(from <a href="class__GraphRenderer.html#getClasses" class="">GraphRenderer</a>)</i>
+                      </td>
+        </tr>
+              <tr>
+          <td><a href="class__GraphRenderer.html#getCustomSubheading" class="">getCustomSubheading()</a></td>
+          <td>
+            Calculate the custom subheading value for this graph, or <code>false</code> if this graph does not have a custom subheading defined (and subheadings calculated through <a href="class__GraphRenderer.html#hasSubheading" class="">#hasSubheading()</a> will use default sum/array logic). By default, returns <code>false</code>.            <i>(from <a href="class__GraphRenderer.html#getCustomSubheading" class="">GraphRenderer</a>)</i>
+                      </td>
+        </tr>
+              <tr>
+          <td><a href="class__GraphRenderer_AbstractCompositionGraph.html#getData" class="">getData($days)</a></td>
+          <td>
+                        <i>(from <a href="class__GraphRenderer_AbstractCompositionGraph.html#getData" class="">GraphRenderer_AbstractCompositionGraph</a>)</i>
+                      </td>
+        </tr>
+              <tr>
+          <td><a href="class__GraphRenderer.html#getLabel" class="">getLabel()</a></td>
+          <td>
+            Get the label that should be associated with the <a href="class__GraphRenderer.html#getURL" class="">#getURL()</a>, or <code>false</code> if there shouldn't be any. Should be wrapped in ct().            <i>(from <a href="class__GraphRenderer.html#getLabel" class="">GraphRenderer</a>)</i>
+                      </td>
+        </tr>
+              <tr>
+          <td><a href="class__GraphRenderer.html#getURL" class="">getURL()</a></td>
+          <td>
+            Get the URL that the title of this graph should link to, or <code>false</code> if it should not link anywhere            <i>(from <a href="class__GraphRenderer.html#getURL" class="">GraphRenderer</a>)</i>
+                      </td>
+        </tr>
+              <tr>
+          <td><a href="class__GraphRenderer.html#getUser" class="">getUser()</a></td>
+          <td>
+                        <i>(from <a href="class__GraphRenderer.html#getUser" class="">GraphRenderer</a>)</i>
+                      </td>
+        </tr>
+              <tr>
+          <td><a href="class__GraphRenderer_AbstractCompositionGraph.html#hasSubheading" class="">hasSubheading()</a></td>
+          <td>
+            Does this graph have a subheading? By default, returns <code>true</code>.            <i>(from <a href="class__GraphRenderer_AbstractCompositionGraph.html#hasSubheading" class="">GraphRenderer_AbstractCompositionGraph</a>)</i>
+                      </td>
+        </tr>
+              <tr>
+          <td><a href="class__GraphRenderer.html#requiresAdmin" class="">requiresAdmin()</a></td>
+          <td>
+            Does rendering this graph require an admin user? By default, returns <code>false</code>.            <i>(from <a href="class__GraphRenderer.html#requiresAdmin" class="">GraphRenderer</a>)</i>
+                      </td>
+        </tr>
+              <tr>
+          <td><a href="class__GraphRenderer_AbstractCompositionGraph.html#requiresUser" class="">requiresUser()</a></td>
+          <td>
+            Does rendering this graph require a user? By default, returns <code>false</code>.            <i>(from <a href="class__GraphRenderer_AbstractCompositionGraph.html#requiresUser" class="">GraphRenderer_AbstractCompositionGraph</a>)</i>
+                      </td>
+        </tr>
+              <tr>
+          <td><a href="class__GraphRenderer.html#setUser" class="">setUser($user_id)</a></td>
+          <td>
+                        <i>(from <a href="class__GraphRenderer.html#setUser" class="">GraphRenderer</a>)</i>
+                      </td>
+        </tr>
+              <tr>
+          <td><a href="class__GraphRenderer.html#usesDays" class="">usesDays()</a></td>
+          <td>
+            Does this function require a days parameter? If <code>true</code>, then the returned data will be stripped based on the keys returned in the data - assumes that the data uses dates as keys. By default, returns <code>true</code>.            <i>(from <a href="class__GraphRenderer.html#usesDays" class="">GraphRenderer</a>)</i>
+                      </td>
+        </tr>
+              <tr>
+          <td><a href="class__GraphRenderer_AbstractCompositionGraph.html#usesSummaries" class="">usesSummaries()</a></td>
+          <td>
+            Does this graph use summaries which may be out of date for a user? By default, returns <code>false</code>.            <i>(from <a href="class__GraphRenderer_AbstractCompositionGraph.html#usesSummaries" class="">GraphRenderer_AbstractCompositionGraph</a>)</i>
+                      </td>
+        </tr>
+              <tr>
+          <td><a href="class__GraphRenderer_AbstractCompositionGraph.html#isDaily" class="">isDaily()</a></td>
+          <td>
+                        <i>(from <a href="class__GraphRenderer_AbstractCompositionGraph.html#isDaily" class="">GraphRenderer_AbstractCompositionGraph</a>)</i>
+                      </td>
+        </tr>
+          </tbody>
+  </table>
+  <hr>
+  <h3>
+    <small>public function</small>
+    getCompositionArgs()    <a name="getCompositionArgs"></a>
+  </h3>
+  <blockquote>
+    <dl>
+      <dt>Overrides:</dt>
+    <dd>
+      <a href="class__GraphRenderer_AbstractCompositionGraph.html#getCompositionArgs" class="">getCompositionArgs()</a>    </dd>
+            </dl>
+  </blockquote>
+  <hr>
+  <h3>
+    <small>public function</small>
+    getCompositionSources($days, $extra_days)    <a name="getCompositionSources"></a>
+  </h3>
+  <blockquote>
+    <dl>
+      <dt>Overrides:</dt>
+    <dd>
+      <a href="class__GraphRenderer_AbstractCompositionGraph.html#getCompositionSources" class="">getCompositionSources($days, $extra_days)</a>    </dd>
+            </dl>
+  </blockquote>
+  <hr>
+  <h3>
+    <small>public function</small>
+    getHeadingTitle($key, $args)    <a name="getHeadingTitle"></a>
+  </h3>
+  <blockquote>
+      <p>
+    e.g. #get_exchange_name          </p>
+<dl>
+      <dt>Overrides:</dt>
+    <dd>
+      <a href="class__GraphRenderer_AbstractCompositionGraph.html#getHeadingTitle" class="">getHeadingTitle($key, $args)</a>    </dd>
+            </dl>
+  </blockquote>
+  <hr>
+  <h3>
+    <small>public function</small>
+    getTitle()    <a name="getTitle"></a>
+  </h3>
+  <blockquote>
+      <p>
+    Get the title of this graph              <i>(from <a href="class__GraphRenderer.html#getTitle" class="">getTitle</a>)</i>
+      </p>
+<dl>
+      <dt>Overrides:</dt>
+    <dd>
+      <a href="class__GraphRenderer.html#getTitle" class="">getTitle()</a>    </dd>
+                <dt>See:</dt>
+    <dd>
+              <div>
+          <a href="class__GraphRenderer_CompositionGraph.html#getTitleArgs" class="">getTitleArgs()</a>        </div>
+          </dd>
+  </dl>
+  </blockquote>
+  <hr>
+  <h3>
+    <small>public function</small>
+    getTitleArgs()    <a name="getTitleArgs"></a>
+  </h3>
+  <blockquote>
+      <p>
+    Get any localisation (i18n) string arguments for the title given in <a href="class__GraphRenderer_CompositionGraph.html#getTitle" class="">#getTitle()</a>. By default, returns an empty array.              <i>(from <a href="class__GraphRenderer.html#getTitleArgs" class="">getTitleArgs</a>)</i>
+      </p>
+<dl>
+      <dt>Overrides:</dt>
+    <dd>
+      <a href="class__GraphRenderer.html#getTitleArgs" class="">getTitleArgs()</a>    </dd>
+            </dl>
+  </blockquote>
+</div><div class="footer">
+  Generated by
+  <a class="github" href="https://github.com/soundasleep/phpdoc2/">PHPDoc2</a>
+  Wed, 06 May 2015 15:59:16 +1200</div>
+</body></html>

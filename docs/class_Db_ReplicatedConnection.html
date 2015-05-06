@@ -1,39 +1,30 @@
-<!DOCTYPE HTML>
-<html>
-<head>
+<!DOCTYPE html>
+<html><head>
   <title>PHPDoc2 - openclerk</title>
   <link rel="stylesheet" type="text/css" href="default.css">
-</head>
-<body>
-<nav>
+  </head>
+<body><nav>
   <a href="index.html">Root</a>
 </nav>
-
-<div class="content">
-<ul><li>Db\ReplicatedConnection</li></ul>
+<div class="content"><ul>
+  <li>
+    Db\ReplicatedConnection  </li>
+</ul>
 <h1>
   <small>class</small>
-
-  <a href="namespace_Db.html" class="">Db</a>  \
-  <a href="class_Db_ReplicatedConnection.html" class="">ReplicatedConnection</a></h1>
-
-
+  <a href="namespace_Db.html" class="">Db</a>  \  <a href="class_Db_ReplicatedConnection.html" class="">ReplicatedConnection</a></h1>
+  <dl>
+    <dt>All implemented interfaces:</dt>
+    <dd>
+            Serializable, <a href="interface_Db_Connection.html" class="">Connection</a>    </dd>
+  </dl>
+<hr>
+  <p>
+    Represents a database that stores the state of updated tables, and uses either replicated database hosts based on the type of query.          </p>
 <dl>
-  <dt>All implemented interfaces:</dt>
-  <dd>
-    Serializable, <a href="interface_Db_Connection.html" class="">Connection</a>  </dd>
-</dl>
-
-
-
-
+            </dl>
 <hr>
-
-<p>Represents a database that stores the state of updated tables, and uses either replicated database hosts based on the type of query.</p><dl></dl>
-<hr>
-
 <h2>Method Summary</h2>
-
 <table>
   <thead>
     <tr>
@@ -42,157 +33,250 @@
     </tr>
   </thead>
   <tbody>
-<tr><td><a href="class_Db_ReplicatedConnection.html#__construct" class="">__construct($master_host, $slave_host, $database, $username, $password, $port = 3306, $timezone = false)</a></td><td></td></tr><tr><td><a href="class_Db_ReplicatedConnection.html#getMaster" class="">getMaster()</a></td><td></td></tr><tr><td><a href="class_Db_ReplicatedConnection.html#getSlave" class="">getSlave()</a></td><td></td></tr><tr><td><a href="class_Db_ReplicatedConnection.html#getTable" class="">getTable($query)</a></td><td>NOTE this is a very simple implementation</td></tr><tr><td><a href="class_Db_ReplicatedConnection.html#isWriteQuery" class="">isWriteQuery($query)</a></td><td>NOTE this is a very simple implementation</td></tr><tr><td><a href="class_Db_ReplicatedConnection.html#lastInsertId" class="">lastInsertId()</a></td><td></td></tr><tr><td><a href="class_Db_ReplicatedConnection.html#prepare" class="">prepare($query)</a></td><td></td></tr><tr><td><a href="class_Db_ReplicatedConnection.html#queryUsesTable" class="">queryUsesTable($query, $table)</a></td><td>NOTE this is a very simple implementation</td></tr><tr><td><a href="class_Db_ReplicatedConnection.html#resetSessionData" class="">resetSessionData()</a></td><td></td></tr><tr><td><a href="class_Db_ReplicatedConnection.html#serialize" class="">serialize()</a></td><td>We implement Serializable so that this can be used in a serialized exception argument.</td></tr><tr><td><a href="class_Db_ReplicatedConnection.html#shouldUseMaster" class="">shouldUseMaster($query)</a></td><td>Returns true if one of the following situations is true: - <code>USE_MASTER_DB</code> is defined and true - the query is a write query: <a href="class_Db_ReplicatedConnection.html#isWriteQuery" class="">#isWriteQuery()</a> - this session has recently updated the table used in this query</td></tr><tr><td><a href="class_Db_ReplicatedConnection.html#trimSessionData" class="">trimSessionData()</a></td><td>Trim any old session data that we should actually no longer track. For example, we can maybe assume that all UPDATEs have gone through after 60 seconds.</td></tr><tr><td><a href="class_Db_ReplicatedConnection.html#unserialize" class="">unserialize($ser)</a></td><td></td></tr>  </tbody>
+          <tr>
+        <td><a href="class_Db_ReplicatedConnection.html#__construct" class="">__construct($master_host, $slave_host, $database, $username, $password, $port = 3306, $timezone = false)</a></td>
+        <td>
+                            </td>
+      </tr>
+          <tr>
+        <td><a href="class_Db_ReplicatedConnection.html#getMaster" class="">getMaster()</a></td>
+        <td>
+                            </td>
+      </tr>
+          <tr>
+        <td><a href="class_Db_ReplicatedConnection.html#getSlave" class="">getSlave()</a></td>
+        <td>
+                            </td>
+      </tr>
+          <tr>
+        <td><a href="class_Db_ReplicatedConnection.html#getTable" class="">getTable($query)</a></td>
+        <td>
+          NOTE this is a very simple implementation                  </td>
+      </tr>
+          <tr>
+        <td><a href="class_Db_ReplicatedConnection.html#isWriteQuery" class="">isWriteQuery($query)</a></td>
+        <td>
+          NOTE this is a very simple implementation                  </td>
+      </tr>
+          <tr>
+        <td><a href="class_Db_ReplicatedConnection.html#lastInsertId" class="">lastInsertId()</a></td>
+        <td>
+                            </td>
+      </tr>
+          <tr>
+        <td><a href="class_Db_ReplicatedConnection.html#prepare" class="">prepare($query)</a></td>
+        <td>
+                            </td>
+      </tr>
+          <tr>
+        <td><a href="class_Db_ReplicatedConnection.html#queryUsesTable" class="">queryUsesTable($query, $table)</a></td>
+        <td>
+          NOTE this is a very simple implementation                  </td>
+      </tr>
+          <tr>
+        <td><a href="class_Db_ReplicatedConnection.html#resetSessionData" class="">resetSessionData()</a></td>
+        <td>
+                            </td>
+      </tr>
+          <tr>
+        <td><a href="class_Db_ReplicatedConnection.html#serialize" class="">serialize()</a></td>
+        <td>
+          We implement Serializable so that this can be used in a serialized exception argument.                  </td>
+      </tr>
+          <tr>
+        <td><a href="class_Db_ReplicatedConnection.html#shouldUseMaster" class="">shouldUseMaster($query)</a></td>
+        <td>
+          Returns true if one of the following situations is true: - <code>USE_MASTER_DB</code> is defined and true - the query is a write query: <a href="class_Db_ReplicatedConnection.html#isWriteQuery" class="">#isWriteQuery()</a> - this session has recently updated the table used in this query                  </td>
+      </tr>
+          <tr>
+        <td><a href="class_Db_ReplicatedConnection.html#trimSessionData" class="">trimSessionData()</a></td>
+        <td>
+          Trim any old session data that we should actually no longer track. For example, we can maybe assume that all UPDATEs have gone through after 60 seconds.                  </td>
+      </tr>
+          <tr>
+        <td><a href="class_Db_ReplicatedConnection.html#unserialize" class="">unserialize($ser)</a></td>
+        <td>
+                            </td>
+      </tr>
+      </tbody>
 </table>
-
-
-
-<hr>
-
-<h3>
-  <small>public function</small>
-  __construct($master_host, $slave_host, $database, $username, $password, $port = 3306, $timezone = false)  <a name="__construct"></a>
-</h3>
-
-<blockquote>
-<dl><dt>Defaults:</dt><dd><code>port</code> = 3306<br><code>timezone</code> = <code>false</code><br></dd></dl></blockquote>
-
-
-<hr>
-
-<h3>
-  <small>public function</small>
-  getMaster()  <a name="getMaster"></a>
-</h3>
-
-<blockquote>
-<dl></dl></blockquote>
-
-
-<hr>
-
-<h3>
-  <small>public function</small>
-  getSlave()  <a name="getSlave"></a>
-</h3>
-
-<blockquote>
-<dl></dl></blockquote>
-
-
-<hr>
-
-<h3>
-  <small>static function</small>
-  getTable($query)  <a name="getTable"></a>
-</h3>
-
-<blockquote>
-<p>NOTE this is a very simple implementation</p><dl><dt>Returns:</dt><dd>the table name, in lowercase, from the given query<br></dd><dt>Throws:</dt><dd><a href="class_Db_DbException.html" class="">DbException</a> - if this is not a write query.<br></dd></dl></blockquote>
-
-
-<hr>
-
-<h3>
-  <small>static function</small>
-  isWriteQuery($query)  <a name="isWriteQuery"></a>
-</h3>
-
-<blockquote>
-<p>NOTE this is a very simple implementation</p><dl><dt>Returns:</dt><dd>false if there is any chance the given query is a write (UPDATE, SELECT, INSERT) query.<br></dd></dl></blockquote>
-
-
-<hr>
-
-<h3>
-  <small>public function</small>
-  lastInsertId()  <a name="lastInsertId"></a>
-</h3>
-
-<blockquote>
-<dl><dt>Returns:</dt><dd>the last inserted auto_increment id, if there is any<br></dd></dl></blockquote>
-
-
-<hr>
-
-<h3>
-  <small>public function</small>
-  prepare($query)  <a name="prepare"></a>
-</h3>
-
-<blockquote>
-<dl><dt>Returns:</dt><dd>a <a href="class_Db_Query.html" class="">Query</a> ready to be used<br></dd></dl></blockquote>
-
-
-<hr>
-
-<h3>
-  <small>public function</small>
-  queryUsesTable($query, $table)  <a name="queryUsesTable"></a>
-</h3>
-
-<blockquote>
-<p>NOTE this is a very simple implementation</p><dl><dt>Returns:</dt><dd>false if there is any chance the given query uses the given table<br></dd></dl></blockquote>
-
-
-<hr>
-
-<h3>
-  <small>public function</small>
-  resetSessionData()  <a name="resetSessionData"></a>
-</h3>
-
-<blockquote>
-<dl></dl></blockquote>
-
-
-<hr>
-
-<h3>
-  <small>public function</small>
-  serialize()  <a name="serialize"></a>
-</h3>
-
-<blockquote>
-<p>We implement Serializable so that this can be used in a serialized exception argument.</p><dl></dl></blockquote>
-
-
-<hr>
-
-<h3>
-  <small>public function</small>
-  shouldUseMaster($query)  <a name="shouldUseMaster"></a>
-</h3>
-
-<blockquote>
-<p>Returns true if one of the following situations is true: - <code>USE_MASTER_DB</code> is defined and true - the query is a write query: <a href="class_Db_ReplicatedConnection.html#isWriteQuery" class="">#isWriteQuery()</a> - this session has recently updated the table used in this query</p><dl></dl></blockquote>
-
-
-<hr>
-
-<h3>
-  <small>public function</small>
-  trimSessionData()  <a name="trimSessionData"></a>
-</h3>
-
-<blockquote>
-<p>Trim any old session data that we should actually no longer track. For example, we can maybe assume that all UPDATEs have gone through after 60 seconds.</p><dl></dl></blockquote>
-
-
-<hr>
-
-<h3>
-  <small>public function</small>
-  unserialize($ser)  <a name="unserialize"></a>
-</h3>
-
-<blockquote>
-<dl><dt>Throws:</dt><dd>Exception - since unserialize() is not supported on this object<br></dd></dl></blockquote>
-
-</div>
-
-<div class="footer">
-  Generated by <a href="https://github.com/soundasleep/phpdoc2/" class="github">PHPDoc2</a> Fri, 24 Apr 2015 14:42:36 +1200</div>
-
-</body>
-</html>
+  <hr>
+  <h3>
+    <small>public function</small>
+    __construct($master_host, $slave_host, $database, $username, $password, $port = 3306, $timezone = false)    <a name="__construct"></a>
+  </h3>
+  <blockquote>
+    <dl>
+          <dt>Defaults:</dt>
+    <dd>
+              <div>
+          <code>port</code>
+          =
+          3306        </div>
+              <div>
+          <code>timezone</code>
+          =
+          <code>false</code>        </div>
+          </dd>
+        </dl>
+  </blockquote>
+  <hr>
+  <h3>
+    <small>public function</small>
+    getMaster()    <a name="getMaster"></a>
+  </h3>
+  <blockquote>
+    <dl>
+            </dl>
+  </blockquote>
+  <hr>
+  <h3>
+    <small>public function</small>
+    getSlave()    <a name="getSlave"></a>
+  </h3>
+  <blockquote>
+    <dl>
+            </dl>
+  </blockquote>
+  <hr>
+  <h3>
+    <small>static function</small>
+    getTable($query)    <a name="getTable"></a>
+  </h3>
+  <blockquote>
+      <p>
+    NOTE this is a very simple implementation          </p>
+<dl>
+            <dt>Returns:</dt>
+    <dd>
+              <div>
+          the table name, in lowercase, from the given query        </div>
+          </dd>
+        <dt>Throws:</dt>
+    <dd>
+              <div>
+          <a href="class_Db_DbException.html" class="">DbException</a> - if this is not a write query.        </div>
+          </dd>
+    </dl>
+  </blockquote>
+  <hr>
+  <h3>
+    <small>static function</small>
+    isWriteQuery($query)    <a name="isWriteQuery"></a>
+  </h3>
+  <blockquote>
+      <p>
+    NOTE this is a very simple implementation          </p>
+<dl>
+            <dt>Returns:</dt>
+    <dd>
+              <div>
+          false if there is any chance the given query is a write (UPDATE, SELECT, INSERT) query.        </div>
+          </dd>
+      </dl>
+  </blockquote>
+  <hr>
+  <h3>
+    <small>public function</small>
+    lastInsertId()    <a name="lastInsertId"></a>
+  </h3>
+  <blockquote>
+    <dl>
+            <dt>Returns:</dt>
+    <dd>
+              <div>
+          the last inserted auto_increment id, if there is any        </div>
+          </dd>
+      </dl>
+  </blockquote>
+  <hr>
+  <h3>
+    <small>public function</small>
+    prepare($query)    <a name="prepare"></a>
+  </h3>
+  <blockquote>
+    <dl>
+            <dt>Returns:</dt>
+    <dd>
+              <div>
+          a <a href="class_Db_Query.html" class="">Query</a> ready to be used        </div>
+          </dd>
+      </dl>
+  </blockquote>
+  <hr>
+  <h3>
+    <small>public function</small>
+    queryUsesTable($query, $table)    <a name="queryUsesTable"></a>
+  </h3>
+  <blockquote>
+      <p>
+    NOTE this is a very simple implementation          </p>
+<dl>
+            <dt>Returns:</dt>
+    <dd>
+              <div>
+          false if there is any chance the given query uses the given table        </div>
+          </dd>
+      </dl>
+  </blockquote>
+  <hr>
+  <h3>
+    <small>public function</small>
+    resetSessionData()    <a name="resetSessionData"></a>
+  </h3>
+  <blockquote>
+    <dl>
+            </dl>
+  </blockquote>
+  <hr>
+  <h3>
+    <small>public function</small>
+    serialize()    <a name="serialize"></a>
+  </h3>
+  <blockquote>
+      <p>
+    We implement Serializable so that this can be used in a serialized exception argument.          </p>
+<dl>
+            </dl>
+  </blockquote>
+  <hr>
+  <h3>
+    <small>public function</small>
+    shouldUseMaster($query)    <a name="shouldUseMaster"></a>
+  </h3>
+  <blockquote>
+      <p>
+    Returns true if one of the following situations is true: - <code>USE_MASTER_DB</code> is defined and true - the query is a write query: <a href="class_Db_ReplicatedConnection.html#isWriteQuery" class="">#isWriteQuery()</a> - this session has recently updated the table used in this query          </p>
+<dl>
+            </dl>
+  </blockquote>
+  <hr>
+  <h3>
+    <small>public function</small>
+    trimSessionData()    <a name="trimSessionData"></a>
+  </h3>
+  <blockquote>
+      <p>
+    Trim any old session data that we should actually no longer track. For example, we can maybe assume that all UPDATEs have gone through after 60 seconds.          </p>
+<dl>
+            </dl>
+  </blockquote>
+  <hr>
+  <h3>
+    <small>public function</small>
+    unserialize($ser)    <a name="unserialize"></a>
+  </h3>
+  <blockquote>
+    <dl>
+              <dt>Throws:</dt>
+    <dd>
+              <div>
+          Exception - since unserialize() is not supported on this object        </div>
+          </dd>
+    </dl>
+  </blockquote>
+</div><div class="footer">
+  Generated by
+  <a class="github" href="https://github.com/soundasleep/phpdoc2/">PHPDoc2</a>
+  Wed, 06 May 2015 15:59:41 +1200</div>
+</body></html>

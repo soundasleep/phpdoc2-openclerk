@@ -1,32 +1,23 @@
-<!DOCTYPE HTML>
-<html>
-<head>
+<!DOCTYPE html>
+<html><head>
   <title>PHPDoc2 - openclerk</title>
   <link rel="stylesheet" type="text/css" href="default.css">
-</head>
-<body>
-<nav>
+  </head>
+<body><nav>
   <a href="index.html">Root</a>
 </nav>
-
-<div class="content">
-<ul><li>Emails\Email</li></ul>
+<div class="content"><ul>
+  <li>
+    Emails\Email  </li>
+</ul>
 <h1>
   <small>class</small>
-
-  <a href="namespace_Emails.html" class="">Emails</a>  \
-  <a href="class_Emails_Email.html" class="">Email</a></h1>
-
-
-
-
+  <a href="namespace_Emails.html" class="">Emails</a>  \  <a href="class_Emails_Email.html" class="">Email</a></h1>
 <hr>
-
-<dl></dl>
+<dl>
+            </dl>
 <hr>
-
 <h2>Method Summary</h2>
-
 <table>
   <thead>
     <tr>
@@ -35,69 +26,150 @@
     </tr>
   </thead>
   <tbody>
-<tr><td><a href="class_Emails_Email.html#compile" class="">compile($template_id, $arguments = array())</a></td><td></td></tr><tr><td><a href="class_Emails_Email.html#phpmailer" class="">phpmailer($to, $to_name, $subject, $message, $html_message = false)</a></td><td>TODO support HTML emails</td></tr><tr><td><a href="class_Emails_Email.html#registerGlobalArgument" class="">registerGlobalArgument($name, $callback)</a></td><td>This allows clients to add global variables to all emails sent.</td></tr><tr><td><a href="class_Emails_Email.html#send" class="">send($to_or_user, $template_id, $arguments = array())</a></td><td>Send an email with the given template to the given user or address. The subject of the e-mail is obtained from the first line of the text e-mail template, or the <title> of the HTML template.</td></tr><tr><td><a href="class_Emails_Email.html#setMockMailer" class="">setMockMailer($mock)</a></td><td></td></tr>  </tbody>
+          <tr>
+        <td><a href="class_Emails_Email.html#compile" class="">compile($template_id, $arguments = array())</a></td>
+        <td>
+                            </td>
+      </tr>
+          <tr>
+        <td><a href="class_Emails_Email.html#phpmailer" class="">phpmailer($to, $to_name, $subject, $message, $html_message = false)</a></td>
+        <td>
+          TODO support HTML emails                  </td>
+      </tr>
+          <tr>
+        <td><a href="class_Emails_Email.html#registerGlobalArgument" class="">registerGlobalArgument($name, $callback)</a></td>
+        <td>
+          This allows clients to add global variables to all emails sent.                  </td>
+      </tr>
+          <tr>
+        <td><a href="class_Emails_Email.html#send" class="">send($to_or_user, $template_id, $arguments = array())</a></td>
+        <td>
+          Send an email with the given template to the given user or address. The subject of the e-mail is obtained from the first line of the text e-mail template, or the <title> of the HTML template.                  </td>
+      </tr>
+          <tr>
+        <td><a href="class_Emails_Email.html#setMockMailer" class="">setMockMailer($mock)</a></td>
+        <td>
+                            </td>
+      </tr>
+      </tbody>
 </table>
-
-
-
-<hr>
-
-<h3>
-  <small>static function</small>
-  compile($template_id, $arguments = array())  <a name="compile"></a>
-</h3>
-
-<blockquote>
-<dl><dt>Defaults:</dt><dd><code>arguments</code> = array()<br></dd></dl></blockquote>
-
-
-<hr>
-
-<h3>
-  <small>static function</small>
-  phpmailer($to, $to_name, $subject, $message, $html_message = false)  <a name="phpmailer"></a>
-</h3>
-
-<blockquote>
-<p>TODO support HTML emails</p><dl><dt>Defaults:</dt><dd><code>html_message</code> = <code>false</code><br></dd><dt>Returns:</dt><dd>the sent message ID<br></dd><dt>Throws:</dt><dd><a href="class_Emails_MailerException.html" class="">MailerException</a> - if the mail could not be immediately sent<br></dd></dl></blockquote>
-
-
-<hr>
-
-<h3>
-  <small>static function</small>
-  registerGlobalArgument($name, $callback)  <a name="registerGlobalArgument"></a>
-</h3>
-
-<blockquote>
-<p>This allows clients to add global variables to all emails sent.</p><dl><dt>Parameters:</dt><dd><code>$callback</code> - callback function that returns an argument value, given the original $arguments as the first parameter<br></dd></dl></blockquote>
-
-
-<hr>
-
-<h3>
-  <small>static function</small>
-  send($to_or_user, $template_id, $arguments = array())  <a name="send"></a>
-</h3>
-
-<blockquote>
-<p>Send an email with the given template to the given user or address. The subject of the e-mail is obtained from the first line of the text e-mail template, or the <title> of the HTML template.</p><p>TODO support mock mailing TODO support i18n TODO service wrapper to allow emails to be queued</p><dl><dt>Parameters:</dt><dd><code>$to_or_user</code> - either an email address, or something with getEmail() and optionally getName()<br></dd><dt>Defaults:</dt><dd><code>arguments</code> = array()<br></dd><dt>Returns:</dt><dd>the email result object, which is also sent to the <code>email_sent</code> event trigger<br></dd><dt>Throws:</dt><dd><a href="class_Emails_MailerException.html" class="">MailerException</a> - if the mail could not be immediately sent (e.g. technical error, invalid e-mail address...)<br></dd></dl></blockquote>
-
-
-<hr>
-
-<h3>
-  <small>static function</small>
-  setMockMailer($mock)  <a name="setMockMailer"></a>
-</h3>
-
-<blockquote>
-<dl><dt>Parameters:</dt><dd><code>$mock</code> - a callback with arguments ($to_email, $to_name, $subject, $template, $html_template), or <code>null</code> to remove the mock mailer<br></dd></dl></blockquote>
-
-</div>
-
-<div class="footer">
-  Generated by <a href="https://github.com/soundasleep/phpdoc2/" class="github">PHPDoc2</a> Fri, 24 Apr 2015 14:42:37 +1200</div>
-
-</body>
-</html>
+  <hr>
+  <h3>
+    <small>static function</small>
+    compile($template_id, $arguments = array())    <a name="compile"></a>
+  </h3>
+  <blockquote>
+    <dl>
+          <dt>Defaults:</dt>
+    <dd>
+              <div>
+          <code>arguments</code>
+          =
+          array()        </div>
+          </dd>
+        </dl>
+  </blockquote>
+  <hr>
+  <h3>
+    <small>static function</small>
+    phpmailer($to, $to_name, $subject, $message, $html_message = false)    <a name="phpmailer"></a>
+  </h3>
+  <blockquote>
+      <p>
+    TODO support HTML emails          </p>
+<dl>
+          <dt>Defaults:</dt>
+    <dd>
+              <div>
+          <code>html_message</code>
+          =
+          <code>false</code>        </div>
+          </dd>
+        <dt>Returns:</dt>
+    <dd>
+              <div>
+          the sent message ID        </div>
+          </dd>
+        <dt>Throws:</dt>
+    <dd>
+              <div>
+          <a href="class_Emails_MailerException.html" class="">MailerException</a> - if the mail could not be immediately sent        </div>
+          </dd>
+    </dl>
+  </blockquote>
+  <hr>
+  <h3>
+    <small>static function</small>
+    registerGlobalArgument($name, $callback)    <a name="registerGlobalArgument"></a>
+  </h3>
+  <blockquote>
+      <p>
+    This allows clients to add global variables to all emails sent.          </p>
+<dl>
+        <dt>Parameters:</dt>
+    <dd>
+              <div>
+          <code>$callback</code>
+          -
+          callback function that returns an argument value, given the original $arguments as the first parameter        </div>
+          </dd>
+          </dl>
+  </blockquote>
+  <hr>
+  <h3>
+    <small>static function</small>
+    send($to_or_user, $template_id, $arguments = array())    <a name="send"></a>
+  </h3>
+  <blockquote>
+      <p>
+    Send an email with the given template to the given user or address. The subject of the e-mail is obtained from the first line of the text e-mail template, or the <title> of the HTML template.          </p>
+  <p>
+    TODO support mock mailing TODO support i18n TODO service wrapper to allow emails to be queued          </p>
+<dl>
+        <dt>Parameters:</dt>
+    <dd>
+              <div>
+          <code>$to_or_user</code>
+          -
+          either an email address, or something with getEmail() and optionally getName()        </div>
+          </dd>
+        <dt>Defaults:</dt>
+    <dd>
+              <div>
+          <code>arguments</code>
+          =
+          array()        </div>
+          </dd>
+        <dt>Returns:</dt>
+    <dd>
+              <div>
+          the email result object, which is also sent to the <code>email_sent</code> event trigger        </div>
+          </dd>
+        <dt>Throws:</dt>
+    <dd>
+              <div>
+          <a href="class_Emails_MailerException.html" class="">MailerException</a> - if the mail could not be immediately sent (e.g. technical error, invalid e-mail address...)        </div>
+          </dd>
+    </dl>
+  </blockquote>
+  <hr>
+  <h3>
+    <small>static function</small>
+    setMockMailer($mock)    <a name="setMockMailer"></a>
+  </h3>
+  <blockquote>
+    <dl>
+        <dt>Parameters:</dt>
+    <dd>
+              <div>
+          <code>$mock</code>
+          -
+          a callback with arguments ($to_email, $to_name, $subject, $template, $html_template), or <code>null</code> to remove the mock mailer        </div>
+          </dd>
+          </dl>
+  </blockquote>
+</div><div class="footer">
+  Generated by
+  <a class="github" href="https://github.com/soundasleep/phpdoc2/">PHPDoc2</a>
+  Wed, 06 May 2015 15:59:41 +1200</div>
+</body></html>

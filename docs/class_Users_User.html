@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html><head>
+  <title>PHPDoc2 - openclerk</title>
+  <link rel="stylesheet" type="text/css" href="default.css">
+  </head>
+<body><nav>
+  <a href="index.html">Root</a>
+</nav>
+<div class="content"><ul>
+  <li>
+    Users\User  </li>
+</ul>
+<h1>
+  <small>class</small>
+  <a href="namespace_Users.html" class="">Users</a>  \  <a href="class_Users_User.html" class="">User</a></h1>
+<hr>
+  <p>
+    Represents a user instance. Does not deal with authentication methods (e.g. passwords, OpenID, OAuth2).          </p>
+<dl>
+            </dl>
+<hr>
+<h2>Method Summary</h2>
+<table>
+  <thead>
+    <tr>
+      <th>Name</th>
+      <th>Description</th>
+    </tr>
+  </thead>
+  <tbody>
+          <tr>
+        <td><a href="class_Users_User.html#__construct" class="">__construct($params)</a></td>
+        <td>
+          Construct a user instance from the given user parameters (from the database).                  </td>
+      </tr>
+          <tr>
+        <td><a href="class_Users_User.html#__toString" class="">__toString()</a></td>
+        <td>
+                            </td>
+      </tr>
+          <tr>
+        <td><a href="class_Users_User.html#delete" class="">delete(Connection $db)</a></td>
+        <td>
+          Delete the given user. Triggers a 'user_deleted' event with the current user as an argument.                  </td>
+      </tr>
+          <tr>
+        <td><a href="class_Users_User.html#findUser" class="">findUser(Connection $db, $user_id)</a></td>
+        <td>
+                            </td>
+      </tr>
+          <tr>
+        <td><a href="class_Users_User.html#forceLogin" class="">forceLogin(Connection $db, $user_id)</a></td>
+        <td>
+          Login as the given user_id.                  </td>
+      </tr>
+          <tr>
+        <td><a href="class_Users_User.html#getEmail" class="">getEmail()</a></td>
+        <td>
+                            </td>
+      </tr>
+          <tr>
+        <td><a href="class_Users_User.html#getId" class="">getId()</a></td>
+        <td>
+                            </td>
+      </tr>
+          <tr>
+        <td><a href="class_Users_User.html#getIdentity" class="">getIdentity()</a></td>
+        <td>
+          Get the identity used to log in this user; persists across requests as it is stored in session.                  </td>
+      </tr>
+          <tr>
+        <td><a href="class_Users_User.html#getInstance" class="">getInstance(Connection $db)</a></td>
+        <td>
+          Get the current logged in user instance, or <code>null</code> if there is none, based on session variables.                  </td>
+      </tr>
+          <tr>
+        <td><a href="class_Users_User.html#isAutoLoggedIn" class="">isAutoLoggedIn()</a></td>
+        <td>
+          Was this user logged in automatically *in this session*?                  </td>
+      </tr>
+          <tr>
+        <td><a href="class_Users_User.html#logout" class="">logout(Connection $db)</a></td>
+        <td>
+                            </td>
+      </tr>
+          <tr>
+        <td><a href="class_Users_User.html#persist" class="">persist(Connection $db, $use_cookies = false)</a></td>
+        <td>
+                            </td>
+      </tr>
+          <tr>
+        <td><a href="class_Users_User.html#setIdentity" class="">setIdentity($identity)</a></td>
+        <td>
+                            </td>
+      </tr>
+          <tr>
+        <td><a href="class_Users_User.html#tryAutoLogin" class="">tryAutoLogin()</a></td>
+        <td>
+                            </td>
+      </tr>
+      </tbody>
+</table>
+  <hr>
+  <h3>
+    <small>public function</small>
+    __construct($params)    <a name="__construct"></a>
+  </h3>
+  <blockquote>
+      <p>
+    Construct a user instance from the given user parameters (from the database).          </p>
+<dl>
+            </dl>
+  </blockquote>
+  <hr>
+  <h3>
+    <small>public function</small>
+    __toString()    <a name="__toString"></a>
+  </h3>
+  <blockquote>
+    <dl>
+            </dl>
+  </blockquote>
+  <hr>
+  <h3>
+    <small>public function</small>
+    delete(<a href="interface_Db_Connection.html" class="">Connection</a> $db)    <a name="delete"></a>
+  </h3>
+  <blockquote>
+      <p>
+    Delete the given user. Triggers a 'user_deleted' event with the current user as an argument.          </p>
+<dl>
+            </dl>
+  </blockquote>
+  <hr>
+  <h3>
+    <small>static function</small>
+    findUser(<a href="interface_Db_Connection.html" class="">Connection</a> $db, $user_id)    <a name="findUser"></a>
+  </h3>
+  <blockquote>
+    <dl>
+            </dl>
+  </blockquote>
+  <hr>
+  <h3>
+    <small>static function</small>
+    forceLogin(<a href="interface_Db_Connection.html" class="">Connection</a> $db, $user_id)    <a name="forceLogin"></a>
+  </h3>
+  <blockquote>
+      <p>
+    Login as the given user_id.          </p>
+<dl>
+            </dl>
+  </blockquote>
+  <hr>
+  <h3>
+    <small>public function</small>
+    getEmail()    <a name="getEmail"></a>
+  </h3>
+  <blockquote>
+    <dl>
+            </dl>
+  </blockquote>
+  <hr>
+  <h3>
+    <small>public function</small>
+    getId()    <a name="getId"></a>
+  </h3>
+  <blockquote>
+    <dl>
+            </dl>
+  </blockquote>
+  <hr>
+  <h3>
+    <small>public function</small>
+    getIdentity()    <a name="getIdentity"></a>
+  </h3>
+  <blockquote>
+      <p>
+    Get the identity used to log in this user; persists across requests as it is stored in session.          </p>
+<dl>
+            </dl>
+  </blockquote>
+  <hr>
+  <h3>
+    <small>static function</small>
+    getInstance(<a href="interface_Db_Connection.html" class="">Connection</a> $db)    <a name="getInstance"></a>
+  </h3>
+  <blockquote>
+      <p>
+    Get the current logged in user instance, or <code>null</code> if there is none, based on session variables.          </p>
+<dl>
+            <dt>Returns:</dt>
+    <dd>
+              <div>
+          the <a href="class_Users_User.html" class="">User</a> logged in or <code>null</code> if none        </div>
+          </dd>
+      </dl>
+  </blockquote>
+  <hr>
+  <h3>
+    <small>public function</small>
+    isAutoLoggedIn()    <a name="isAutoLoggedIn"></a>
+  </h3>
+  <blockquote>
+      <p>
+    Was this user logged in automatically *in this session*?          </p>
+<dl>
+            </dl>
+  </blockquote>
+  <hr>
+  <h3>
+    <small>static function</small>
+    logout(<a href="interface_Db_Connection.html" class="">Connection</a> $db)    <a name="logout"></a>
+  </h3>
+  <blockquote>
+    <dl>
+            </dl>
+  </blockquote>
+  <hr>
+  <h3>
+    <small>public function</small>
+    persist(<a href="interface_Db_Connection.html" class="">Connection</a> $db, $use_cookies = false)    <a name="persist"></a>
+  </h3>
+  <blockquote>
+    <dl>
+          <dt>Defaults:</dt>
+    <dd>
+              <div>
+          <code>use_cookies</code>
+          =
+          <code>false</code>        </div>
+          </dd>
+        </dl>
+  </blockquote>
+  <hr>
+  <h3>
+    <small>public function</small>
+    setIdentity($identity)    <a name="setIdentity"></a>
+  </h3>
+  <blockquote>
+    <dl>
+            </dl>
+  </blockquote>
+  <hr>
+  <h3>
+    <small>static function</small>
+    tryAutoLogin()    <a name="tryAutoLogin"></a>
+  </h3>
+  <blockquote>
+    <dl>
+            </dl>
+  </blockquote>
+</div><div class="footer">
+  Generated by
+  <a class="github" href="https://github.com/soundasleep/phpdoc2/">PHPDoc2</a>
+  Wed, 06 May 2015 15:59:52 +1200</div>
+</body></html>

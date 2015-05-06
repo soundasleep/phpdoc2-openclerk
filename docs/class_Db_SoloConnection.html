@@ -1,39 +1,30 @@
-<!DOCTYPE HTML>
-<html>
-<head>
+<!DOCTYPE html>
+<html><head>
   <title>PHPDoc2 - openclerk</title>
   <link rel="stylesheet" type="text/css" href="default.css">
-</head>
-<body>
-<nav>
+  </head>
+<body><nav>
   <a href="index.html">Root</a>
 </nav>
-
-<div class="content">
-<ul><li>Db\SoloConnection</li></ul>
+<div class="content"><ul>
+  <li>
+    Db\SoloConnection  </li>
+</ul>
 <h1>
   <small>class</small>
-
-  <a href="namespace_Db.html" class="">Db</a>  \
-  <a href="class_Db_SoloConnection.html" class="">SoloConnection</a></h1>
-
-
+  <a href="namespace_Db.html" class="">Db</a>  \  <a href="class_Db_SoloConnection.html" class="">SoloConnection</a></h1>
+  <dl>
+    <dt>All implemented interfaces:</dt>
+    <dd>
+            Serializable, <a href="interface_Db_Connection.html" class="">Connection</a>    </dd>
+  </dl>
+<hr>
+  <p>
+    Represents an instance of a single database connection.          </p>
 <dl>
-  <dt>All implemented interfaces:</dt>
-  <dd>
-    Serializable, <a href="interface_Db_Connection.html" class="">Connection</a>  </dd>
-</dl>
-
-
-
-
+            </dl>
 <hr>
-
-<p>Represents an instance of a single database connection.</p><dl></dl>
-<hr>
-
 <h2>Method Summary</h2>
-
 <table>
   <thead>
     <tr>
@@ -42,91 +33,140 @@
     </tr>
   </thead>
   <tbody>
-<tr><td><a href="class_Db_SoloConnection.html#__construct" class="">__construct($database, $username, $password, $host = &quot;localhost&quot;, $port = 3306, $timezone = false)</a></td><td></td></tr><tr><td><a href="class_Db_SoloConnection.html#getDSN" class="">getDSN()</a></td><td></td></tr><tr><td><a href="class_Db_SoloConnection.html#getPDO" class="">getPDO()</a></td><td></td></tr><tr><td><a href="class_Db_SoloConnection.html#lastInsertId" class="">lastInsertId()</a></td><td></td></tr><tr><td><a href="class_Db_SoloConnection.html#prepare" class="">prepare($query)</a></td><td></td></tr><tr><td><a href="class_Db_SoloConnection.html#serialize" class="">serialize()</a></td><td>We implement Serializable so that this can be used in a serialized exception argument.</td></tr><tr><td><a href="class_Db_SoloConnection.html#unserialize" class="">unserialize($ser)</a></td><td></td></tr>  </tbody>
+          <tr>
+        <td><a href="class_Db_SoloConnection.html#__construct" class="">__construct($database, $username, $password, $host = &quot;localhost&quot;, $port = 3306, $timezone = false)</a></td>
+        <td>
+                            </td>
+      </tr>
+          <tr>
+        <td><a href="class_Db_SoloConnection.html#getDSN" class="">getDSN()</a></td>
+        <td>
+                            </td>
+      </tr>
+          <tr>
+        <td><a href="class_Db_SoloConnection.html#getPDO" class="">getPDO()</a></td>
+        <td>
+                            </td>
+      </tr>
+          <tr>
+        <td><a href="class_Db_SoloConnection.html#lastInsertId" class="">lastInsertId()</a></td>
+        <td>
+                            </td>
+      </tr>
+          <tr>
+        <td><a href="class_Db_SoloConnection.html#prepare" class="">prepare($query)</a></td>
+        <td>
+                            </td>
+      </tr>
+          <tr>
+        <td><a href="class_Db_SoloConnection.html#serialize" class="">serialize()</a></td>
+        <td>
+          We implement Serializable so that this can be used in a serialized exception argument.                  </td>
+      </tr>
+          <tr>
+        <td><a href="class_Db_SoloConnection.html#unserialize" class="">unserialize($ser)</a></td>
+        <td>
+                            </td>
+      </tr>
+      </tbody>
 </table>
-
-
-
-<hr>
-
-<h3>
-  <small>public function</small>
-  __construct($database, $username, $password, $host = "localhost", $port = 3306, $timezone = false)  <a name="__construct"></a>
-</h3>
-
-<blockquote>
-<dl><dt>Defaults:</dt><dd><code>host</code> = <code>"localhost"</code><br><code>port</code> = 3306<br><code>timezone</code> = <code>false</code><br></dd></dl></blockquote>
-
-
-<hr>
-
-<h3>
-  <small>public function</small>
-  getDSN()  <a name="getDSN"></a>
-</h3>
-
-<blockquote>
-<dl></dl></blockquote>
-
-
-<hr>
-
-<h3>
-  <small>public function</small>
-  getPDO()  <a name="getPDO"></a>
-</h3>
-
-<blockquote>
-<dl></dl></blockquote>
-
-
-<hr>
-
-<h3>
-  <small>public function</small>
-  lastInsertId()  <a name="lastInsertId"></a>
-</h3>
-
-<blockquote>
-<dl><dt>Returns:</dt><dd>the last inserted auto_increment id, if there is any<br></dd></dl></blockquote>
-
-
-<hr>
-
-<h3>
-  <small>public function</small>
-  prepare($query)  <a name="prepare"></a>
-</h3>
-
-<blockquote>
-<dl><dt>Returns:</dt><dd>a <a href="class_Db_Query.html" class="">Query</a> ready to be used<br></dd></dl></blockquote>
-
-
-<hr>
-
-<h3>
-  <small>public function</small>
-  serialize()  <a name="serialize"></a>
-</h3>
-
-<blockquote>
-<p>We implement Serializable so that this can be used in a serialized exception argument.</p><dl></dl></blockquote>
-
-
-<hr>
-
-<h3>
-  <small>public function</small>
-  unserialize($ser)  <a name="unserialize"></a>
-</h3>
-
-<blockquote>
-<dl><dt>Throws:</dt><dd>Exception - since unserialize() is not supported on this object<br></dd></dl></blockquote>
-
-</div>
-
-<div class="footer">
-  Generated by <a href="https://github.com/soundasleep/phpdoc2/" class="github">PHPDoc2</a> Fri, 24 Apr 2015 14:42:36 +1200</div>
-
-</body>
-</html>
+  <hr>
+  <h3>
+    <small>public function</small>
+    __construct($database, $username, $password, $host = "localhost", $port = 3306, $timezone = false)    <a name="__construct"></a>
+  </h3>
+  <blockquote>
+    <dl>
+          <dt>Defaults:</dt>
+    <dd>
+              <div>
+          <code>host</code>
+          =
+          <code>"localhost"</code>        </div>
+              <div>
+          <code>port</code>
+          =
+          3306        </div>
+              <div>
+          <code>timezone</code>
+          =
+          <code>false</code>        </div>
+          </dd>
+        </dl>
+  </blockquote>
+  <hr>
+  <h3>
+    <small>public function</small>
+    getDSN()    <a name="getDSN"></a>
+  </h3>
+  <blockquote>
+    <dl>
+            </dl>
+  </blockquote>
+  <hr>
+  <h3>
+    <small>public function</small>
+    getPDO()    <a name="getPDO"></a>
+  </h3>
+  <blockquote>
+    <dl>
+            </dl>
+  </blockquote>
+  <hr>
+  <h3>
+    <small>public function</small>
+    lastInsertId()    <a name="lastInsertId"></a>
+  </h3>
+  <blockquote>
+    <dl>
+            <dt>Returns:</dt>
+    <dd>
+              <div>
+          the last inserted auto_increment id, if there is any        </div>
+          </dd>
+      </dl>
+  </blockquote>
+  <hr>
+  <h3>
+    <small>public function</small>
+    prepare($query)    <a name="prepare"></a>
+  </h3>
+  <blockquote>
+    <dl>
+            <dt>Returns:</dt>
+    <dd>
+              <div>
+          a <a href="class_Db_Query.html" class="">Query</a> ready to be used        </div>
+          </dd>
+      </dl>
+  </blockquote>
+  <hr>
+  <h3>
+    <small>public function</small>
+    serialize()    <a name="serialize"></a>
+  </h3>
+  <blockquote>
+      <p>
+    We implement Serializable so that this can be used in a serialized exception argument.          </p>
+<dl>
+            </dl>
+  </blockquote>
+  <hr>
+  <h3>
+    <small>public function</small>
+    unserialize($ser)    <a name="unserialize"></a>
+  </h3>
+  <blockquote>
+    <dl>
+              <dt>Throws:</dt>
+    <dd>
+              <div>
+          Exception - since unserialize() is not supported on this object        </div>
+          </dd>
+    </dl>
+  </blockquote>
+</div><div class="footer">
+  Generated by
+  <a class="github" href="https://github.com/soundasleep/phpdoc2/">PHPDoc2</a>
+  Wed, 06 May 2015 15:59:41 +1200</div>
+</body></html>

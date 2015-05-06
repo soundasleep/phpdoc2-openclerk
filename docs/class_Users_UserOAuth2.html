@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html><head>
+  <title>PHPDoc2 - openclerk</title>
+  <link rel="stylesheet" type="text/css" href="default.css">
+  </head>
+<body><nav>
+  <a href="index.html">Root</a>
+</nav>
+<div class="content"><ul>
+  <li>
+    Users\UserOAuth2  </li>
+</ul>
+<h1>
+  <small>class</small>
+  <a href="namespace_Users.html" class="">Users</a>  \  <a href="class_Users_UserOAuth2.html" class="">UserOAuth2</a></h1>
+<hr>
+  <p>
+    Allows users to be logged in with OAuth2. Based on https://github.com/thephpleague/oauth2-client          </p>
+<dl>
+            </dl>
+<hr>
+<h2>Method Summary</h2>
+<table>
+  <thead>
+    <tr>
+      <th>Name</th>
+      <th>Description</th>
+    </tr>
+  </thead>
+  <tbody>
+          <tr>
+        <td><a href="class_Users_UserOAuth2.html#addIdentity" class="">addIdentity(Connection $db, User $user, OAuth2Providers $provider)</a></td>
+        <td>
+                            </td>
+      </tr>
+          <tr>
+        <td><a href="class_Users_UserOAuth2.html#auth" class="">auth(ProviderInterface $provider)</a></td>
+        <td>
+          Execute OAuth2 authentication and return the user.                  </td>
+      </tr>
+          <tr>
+        <td><a href="class_Users_UserOAuth2.html#removeIdentity" class="">removeIdentity(Connection $db, User $user, $provider, $uid)</a></td>
+        <td>
+          Remove the given OAuth2 identity from the given user.                  </td>
+      </tr>
+          <tr>
+        <td><a href="class_Users_UserOAuth2.html#tryLogin" class="">tryLogin(Connection $db, OAuth2Providers $provider)</a></td>
+        <td>
+          Try logging in as a user with the given email and password.                  </td>
+      </tr>
+          <tr>
+        <td><a href="class_Users_UserOAuth2.html#trySignup" class="">trySignup(Connection $db, OAuth2Providers $provider)</a></td>
+        <td>
+                            </td>
+      </tr>
+      </tbody>
+</table>
+  <hr>
+  <h3>
+    <small>static function</small>
+    addIdentity(<a href="interface_Db_Connection.html" class="">Connection</a> $db, <a href="class_Users_User.html" class="">User</a> $user, <a href="class_Users_OAuth2Providers.html" class="">OAuth2Providers</a> $provider)    <a name="addIdentity"></a>
+  </h3>
+  <blockquote>
+    <dl>
+              <dt>Throws:</dt>
+    <dd>
+              <div>
+          <a href="class_Users_UserSignupException.html" class="">UserSignupException</a> - if the user could not be signed up, with a reason        </div>
+              <div>
+          <a href="class_Users_UserAlreadyExistsException.html" class="">UserAlreadyExistsException</a> - if the identity already exists in the database        </div>
+          </dd>
+    </dl>
+  </blockquote>
+  <hr>
+  <h3>
+    <small>static function</small>
+    auth(ProviderInterface $provider)    <a name="auth"></a>
+  </h3>
+  <blockquote>
+      <p>
+    Execute OAuth2 authentication and return the user.          </p>
+<dl>
+            </dl>
+  </blockquote>
+  <hr>
+  <h3>
+    <small>static function</small>
+    removeIdentity(<a href="interface_Db_Connection.html" class="">Connection</a> $db, <a href="class_Users_User.html" class="">User</a> $user, $provider, $uid)    <a name="removeIdentity"></a>
+  </h3>
+  <blockquote>
+      <p>
+    Remove the given OAuth2 identity from the given user.          </p>
+<dl>
+            </dl>
+  </blockquote>
+  <hr>
+  <h3>
+    <small>static function</small>
+    tryLogin(<a href="interface_Db_Connection.html" class="">Connection</a> $db, <a href="class_Users_OAuth2Providers.html" class="">OAuth2Providers</a> $provider)    <a name="tryLogin"></a>
+  </h3>
+  <blockquote>
+      <p>
+    Try logging in as a user with the given email and password.          </p>
+<dl>
+        <dt>Parameters:</dt>
+    <dd>
+              <div>
+          <code>$redirect</code>
+          -
+          the registered redirect URI        </div>
+          </dd>
+          <dt>Returns:</dt>
+    <dd>
+              <div>
+          a valid <a href="class_Users_User.html" class="">User</a>        </div>
+          </dd>
+        <dt>Throws:</dt>
+    <dd>
+              <div>
+          <a href="class_Users_UserAuthenticationException.html" class="">UserAuthenticationException</a> - if the user could not be logged in, with a reason        </div>
+          </dd>
+    </dl>
+  </blockquote>
+  <hr>
+  <h3>
+    <small>static function</small>
+    trySignup(<a href="interface_Db_Connection.html" class="">Connection</a> $db, <a href="class_Users_OAuth2Providers.html" class="">OAuth2Providers</a> $provider)    <a name="trySignup"></a>
+  </h3>
+  <blockquote>
+    <dl>
+            <dt>Returns:</dt>
+    <dd>
+              <div>
+          the created <a href="class_Users_User.html" class="">User</a>        </div>
+          </dd>
+        <dt>Throws:</dt>
+    <dd>
+              <div>
+          <a href="class_Users_UserSignupException.html" class="">UserSignupException</a> - if the user could not be signed up, with a reason        </div>
+              <div>
+          <a href="class_Users_UserAlreadyExistsException.html" class="">UserAlreadyExistsException</a> - if the user already exists in the database        </div>
+          </dd>
+    </dl>
+  </blockquote>
+</div><div class="footer">
+  Generated by
+  <a class="github" href="https://github.com/soundasleep/phpdoc2/">PHPDoc2</a>
+  Wed, 06 May 2015 15:59:52 +1200</div>
+</body></html>

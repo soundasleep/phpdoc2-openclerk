@@ -1,46 +1,38 @@
-<!DOCTYPE HTML>
-<html>
-<head>
+<!DOCTYPE html>
+<html><head>
   <title>PHPDoc2 - openclerk</title>
   <link rel="stylesheet" type="text/css" href="default.css">
-</head>
-<body>
-<nav>
+  </head>
+<body><nav>
   <a href="index.html">Root</a>
 </nav>
-
-<div class="content">
-<ul><li>Openclerk\Currencies\SimpleExchange</li></ul>
+<div class="content"><ul>
+  <li>
+    Openclerk\Currencies\SimpleExchange  </li>
+</ul>
 <h1>
   <small>abstract class</small>
-
-  <a href="namespace_Openclerk_Currencies.html" class="">Openclerk\Currencies</a>  \
-  <a href="class_Openclerk_Currencies_SimpleExchange.html" class="">SimpleExchange</a></h1>
-
-
-<dl>
-  <dt>All implemented interfaces:</dt>
-  <dd>
-    <a href="interface_Openclerk_Currencies_Exchange.html" class="">Exchange</a>, <a href="interface_Openclerk_Currencies_ExchangeInformation.html" class="">ExchangeInformation</a>  </dd>
-</dl>
-
-
-
-
-<dl>
-  <dt>All known direct subclasses:</dt>
-  <dd>
-    <a href="class_Exchange_Anxpro.html" class="">Anxpro</a>, <a href="class_Exchange_BTCChina.html" class="">BTCChina</a>, <a href="class_Exchange_BTCe.html" class="">BTCe</a>, <a href="class_Exchange_Bit2c.html" class="">Bit2c</a>, <a href="class_Exchange_BitNZ.html" class="">BitNZ</a>, <a href="class_Exchange_Bitcurex.html" class="">Bitcurex</a>, <a href="class_Exchange_BitmarketPl.html" class="">BitmarketPl</a>, <a href="class_Exchange_Bitstamp.html" class="">Bitstamp</a>, <a href="class_Exchange_Bittrex.html" class="">Bittrex</a>, <a href="class_Exchange_Bter.html" class="">Bter</a>, <a href="class_Exchange_CEXio.html" class="">CEXio</a>, <a href="class_Exchange_Coinbase.html" class="">Coinbase</a>, <a href="class_Exchange_CoinsE.html" class="">CoinsE</a>, <a href="class_Exchange_CryptoTrade.html" class="">CryptoTrade</a>, <a href="class_Exchange_Cryptsy.html" class="">Cryptsy</a>, <a href="class_Exchange_ItBit.html" class="">ItBit</a>, <a href="class_Exchange_Kraken.html" class="">Kraken</a>, <a href="class_Exchange_Poloniex.html" class="">Poloniex</a>, <a href="class_Exchange_TheMoneyConverter.html" class="">TheMoneyConverter</a>, <a href="class_Exchange_Vircurex.html" class="">Vircurex</a>, <a href="class_Exchange_VirtEx.html" class="">VirtEx</a>  </dd>
-</dl>
-
-
+  <a href="namespace_Openclerk_Currencies.html" class="">Openclerk\Currencies</a>  \  <a href="class_Openclerk_Currencies_SimpleExchange.html" class="">SimpleExchange</a></h1>
+  <dl>
+    <dt>All implemented interfaces:</dt>
+    <dd>
+            <a href="interface_Openclerk_Currencies_Exchange.html" class="">Exchange</a>, <a href="interface_Openclerk_Currencies_ExchangeInformation.html" class="">ExchangeInformation</a>    </dd>
+  </dl>
+  <dl>
+    <dt>All known direct subclasses:</dt>
+    <dd>
+            <a href="class_Exchange_Anxpro.html" class="">Anxpro</a>,<a href="class_Exchange_BTCChina.html" class="">BTCChina</a>,<a href="class_Exchange_BTCe.html" class="">BTCe</a>,<a href="class_Exchange_Bit2c.html" class="">Bit2c</a>,<a href="class_Exchange_BitNZ.html" class="">BitNZ</a>,<a href="class_Exchange_Bitcurex.html" class="">Bitcurex</a>,<a href="class_Exchange_BitmarketPl.html" class="">BitmarketPl</a>,<a href="class_Exchange_Bitstamp.html" class="">Bitstamp</a>,<a href="class_Exchange_Bittrex.html" class="">Bittrex</a>,<a href="class_Exchange_Bter.html" class="">Bter</a>,<a href="class_Exchange_CEXio.html" class="">CEXio</a>,<a href="class_Exchange_Coinbase.html" class="">Coinbase</a>,<a href="class_Exchange_CoinsE.html" class="">CoinsE</a>,<a href="class_Exchange_CryptoTrade.html" class="">CryptoTrade</a>,<a href="class_Exchange_Cryptsy.html" class="">Cryptsy</a>,<a href="class_Exchange_ItBit.html" class="">ItBit</a>,<a href="class_Exchange_Kraken.html" class="">Kraken</a>,<a href="class_Exchange_MintPal.html" class="">MintPal</a>,<a href="class_Exchange_MtGox.html" class="">MtGox</a>,<a href="class_Exchange_Poloniex.html" class="">Poloniex</a>,<a href="class_Exchange_TheMoneyConverter.html" class="">TheMoneyConverter</a>,<a href="class_Exchange_VaultOfSatoshi.html" class="">VaultOfSatoshi</a>,<a href="class_Exchange_Vircurex.html" class="">Vircurex</a>,<a href="class_Exchange_VirtEx.html" class="">VirtEx</a>    </dd>
+  </dl>
 <hr>
-
-<p>Implements some basic implementations of an <a href="interface_Openclerk_Currencies_Exchange.html" class="">Exchange</a>. Assumes there is a single API call that can be used to list all exchanges and get all rates - #fetchAllRates.</p><p>An <a href="interface_Openclerk_Currencies_Exchange.html" class="">Exchange</a> does not provide conversion functionality; this can be done naively with #getLastTrade.</p><p>This is the base interface; other interfaces will provide additional functionality as necessary. <i>(from <a href="interface_Openclerk_Currencies_Exchange.html" class="">Exchange</a>)</i></p><dl></dl>
+  <p>
+    Implements some basic implementations of an <a href="interface_Openclerk_Currencies_Exchange.html" class="">Exchange</a>. Assumes there is a single API call that can be used to list all exchanges and get all rates - #fetchAllRates.          </p>
+  <p>
+    An <a href="interface_Openclerk_Currencies_Exchange.html" class="">Exchange</a> does not provide conversion functionality; this can be done naively with #getLastTrade.</p><p>This is the base interface; other interfaces will provide additional functionality as necessary.              <i>(from <a href="interface_Openclerk_Currencies_Exchange.html" class="">Exchange</a>)</i>
+      </p>
+<dl>
+            </dl>
 <hr>
-
 <h2>Method Summary</h2>
-
 <table>
   <thead>
     <tr>
@@ -49,80 +41,124 @@
     </tr>
   </thead>
   <tbody>
-<tr><td><a href="class_Openclerk_Currencies_SimpleExchange.html#fetchAsk" class="">fetchAsk($currency1, $currency2, Logger $logger)</a></td><td>Get the lowest price that a seller is willing to accept for trading the given pair (also known as the <i>buy price</i>), or <code>null</code> if there is none.</td></tr><tr><td><a href="class_Openclerk_Currencies_SimpleExchange.html#fetchBid" class="">fetchBid($currency1, $currency2, Logger $logger)</a></td><td>Get the highest price that a buyer is willing to accept for trading the given pair (also known as the <i>sell price</i>), or <code>null</code> if there is none.</td></tr><tr><td><a href="class_Openclerk_Currencies_SimpleExchange.html#fetchLastTrade" class="">fetchLastTrade($currency1, $currency2, Logger $logger)</a></td><td>Get the last traded value for the given currency pair, or <code>null</code> if there is none.</td></tr><tr><td><a href="class_Openclerk_Currencies_SimpleExchange.html#fetchMarkets" class="">fetchMarkets(Logger $logger)</a></td><td>Each of these pairs represents a market, e.g. 'btc', 'usd' These pairs can be in any (a, b) order, because we should (in theory) be able to swap last/bid/ask as necessary.</td></tr><tr><td><a href="class_Openclerk_Currencies_SimpleExchange.html#fetchRates" class="">fetchRates($currency1, $currency2, Logger $logger)</a></td><td>Fetch all rates for a given currency, returns an array of (last_trade, bid, ask, volume). Some fields may not be present for a given exchange. <code>volume</code> is the last 24h volume. May also return additional fields.</td></tr><tr><td><a href="class_Openclerk_Currencies_SimpleExchange.html#throttle" class="">throttle(Logger $logger)</a></td><td>This allows all exchanges to optionally throttle multiple repeated requests based on a runtime configuration value. The throttle time is selected from either the <code>exchanges_NAME_throttle</code> or <code>exchanges_throttle</code> config values, or three seconds; which is the time in seconds to wait between repeated requests.</td></tr>  </tbody>
+          <tr>
+        <td><a href="class_Openclerk_Currencies_SimpleExchange.html#fetchAsk" class="">fetchAsk($currency1, $currency2, Logger $logger)</a></td>
+        <td>
+          Get the lowest price that a seller is willing to accept for trading the given pair (also known as the <i>buy price</i>), or <code>null</code> if there is none.                  </td>
+      </tr>
+          <tr>
+        <td><a href="class_Openclerk_Currencies_SimpleExchange.html#fetchBid" class="">fetchBid($currency1, $currency2, Logger $logger)</a></td>
+        <td>
+          Get the highest price that a buyer is willing to accept for trading the given pair (also known as the <i>sell price</i>), or <code>null</code> if there is none.                  </td>
+      </tr>
+          <tr>
+        <td><a href="class_Openclerk_Currencies_SimpleExchange.html#fetchLastTrade" class="">fetchLastTrade($currency1, $currency2, Logger $logger)</a></td>
+        <td>
+          Get the last traded value for the given currency pair, or <code>null</code> if there is none.                  </td>
+      </tr>
+          <tr>
+        <td><a href="class_Openclerk_Currencies_SimpleExchange.html#fetchMarkets" class="">fetchMarkets(Logger $logger)</a></td>
+        <td>
+          Each of these pairs represents a market, e.g. 'btc', 'usd' These pairs can be in any (a, b) order, because we should (in theory) be able to swap last/bid/ask as necessary.                  </td>
+      </tr>
+          <tr>
+        <td><a href="class_Openclerk_Currencies_SimpleExchange.html#fetchRates" class="">fetchRates($currency1, $currency2, Logger $logger)</a></td>
+        <td>
+          Fetch all rates for a given currency, returns an array of (last_trade, bid, ask, volume). Some fields may not be present for a given exchange. <code>volume</code> is the last 24h volume. May also return additional fields.                  </td>
+      </tr>
+          <tr>
+        <td><a href="class_Openclerk_Currencies_SimpleExchange.html#throttle" class="">throttle(Logger $logger)</a></td>
+        <td>
+          This allows all exchanges to optionally throttle multiple repeated requests based on a runtime configuration value. The throttle time is selected from either the <code>exchanges_NAME_throttle</code> or <code>exchanges_throttle</code> config values, or three seconds; which is the time in seconds to wait between repeated requests.                  </td>
+      </tr>
+      </tbody>
 </table>
-
-
-
-<hr>
-
-<h3>
-  <small>public function</small>
-  fetchAsk($currency1, $currency2, Logger $logger)  <a name="fetchAsk"></a>
-</h3>
-
-<blockquote>
-<p>Get the lowest price that a seller is willing to accept for trading the given pair (also known as the <i>buy price</i>), or <code>null</code> if there is none.</p><dl></dl></blockquote>
-
-
-<hr>
-
-<h3>
-  <small>public function</small>
-  fetchBid($currency1, $currency2, Logger $logger)  <a name="fetchBid"></a>
-</h3>
-
-<blockquote>
-<p>Get the highest price that a buyer is willing to accept for trading the given pair (also known as the <i>sell price</i>), or <code>null</code> if there is none.</p><dl></dl></blockquote>
-
-
-<hr>
-
-<h3>
-  <small>public function</small>
-  fetchLastTrade($currency1, $currency2, Logger $logger)  <a name="fetchLastTrade"></a>
-</h3>
-
-<blockquote>
-<p>Get the last traded value for the given currency pair, or <code>null</code> if there is none.</p><dl></dl></blockquote>
-
-
-<hr>
-
-<h3>
-  <small>public function</small>
-  fetchMarkets(Logger $logger)  <a name="fetchMarkets"></a>
-</h3>
-
-<blockquote>
-<p>Each of these pairs represents a market, e.g. 'btc', 'usd' These pairs can be in any (a, b) order, because we should (in theory) be able to swap last/bid/ask as necessary.</p><dl><dt>Returns:</dt><dd>an array of (from, to) 3-character <a href="interface_Openclerk_Currencies_Currency.html" class="">Currency</a> codes<br></dd></dl></blockquote>
-
-
-<hr>
-
-<h3>
-  <small>public function</small>
-  fetchRates($currency1, $currency2, Logger $logger)  <a name="fetchRates"></a>
-</h3>
-
-<blockquote>
-<p>Fetch all rates for a given currency, returns an array of (last_trade, bid, ask, volume). Some fields may not be present for a given exchange. <code>volume</code> is the last 24h volume. May also return additional fields.</p><p>Some fields may not be present for a given exchange. <code>volume</code> is the last 24h volume.</p><p>May also return additional fields, e.g. high/low/vwap <i>(from <a href="interface_Openclerk_Currencies_Exchange.html#fetchRates" class="">fetchRates</a>)</i></p><dl><dt>Returns:</dt><dd>A list of rates for the currency pair<br></dd><dt>Throws:</dt><dd><a href="class_Openclerk_Currencies_ExchangeRateException.html" class="">ExchangeRateException</a> - if there are no rates for the given pair<br></dd></dl></blockquote>
-
-
-<hr>
-
-<h3>
-  <small>public function</small>
-  throttle(Logger $logger)  <a name="throttle"></a>
-</h3>
-
-<blockquote>
-<p>This allows all exchanges to optionally throttle multiple repeated requests based on a runtime configuration value. The throttle time is selected from either the <code>exchanges_NAME_throttle</code> or <code>exchanges_throttle</code> config values, or three seconds; which is the time in seconds to wait between repeated requests.</p><dl></dl></blockquote>
-
-</div>
-
-<div class="footer">
-  Generated by <a href="https://github.com/soundasleep/phpdoc2/" class="github">PHPDoc2</a> Fri, 24 Apr 2015 14:42:40 +1200</div>
-
-</body>
-</html>
+  <hr>
+  <h3>
+    <small>public function</small>
+    fetchAsk($currency1, $currency2, Logger $logger)    <a name="fetchAsk"></a>
+  </h3>
+  <blockquote>
+      <p>
+    Get the lowest price that a seller is willing to accept for trading the given pair (also known as the <i>buy price</i>), or <code>null</code> if there is none.          </p>
+<dl>
+            </dl>
+  </blockquote>
+  <hr>
+  <h3>
+    <small>public function</small>
+    fetchBid($currency1, $currency2, Logger $logger)    <a name="fetchBid"></a>
+  </h3>
+  <blockquote>
+      <p>
+    Get the highest price that a buyer is willing to accept for trading the given pair (also known as the <i>sell price</i>), or <code>null</code> if there is none.          </p>
+<dl>
+            </dl>
+  </blockquote>
+  <hr>
+  <h3>
+    <small>public function</small>
+    fetchLastTrade($currency1, $currency2, Logger $logger)    <a name="fetchLastTrade"></a>
+  </h3>
+  <blockquote>
+      <p>
+    Get the last traded value for the given currency pair, or <code>null</code> if there is none.          </p>
+<dl>
+            </dl>
+  </blockquote>
+  <hr>
+  <h3>
+    <small>public function</small>
+    fetchMarkets(Logger $logger)    <a name="fetchMarkets"></a>
+  </h3>
+  <blockquote>
+      <p>
+    Each of these pairs represents a market, e.g. 'btc', 'usd' These pairs can be in any (a, b) order, because we should (in theory) be able to swap last/bid/ask as necessary.          </p>
+<dl>
+            <dt>Returns:</dt>
+    <dd>
+              <div>
+          an array of (from, to) 3-character <a href="interface_Openclerk_Currencies_Currency.html" class="">Currency</a> codes        </div>
+          </dd>
+      </dl>
+  </blockquote>
+  <hr>
+  <h3>
+    <small>public function</small>
+    fetchRates($currency1, $currency2, Logger $logger)    <a name="fetchRates"></a>
+  </h3>
+  <blockquote>
+      <p>
+    Fetch all rates for a given currency, returns an array of (last_trade, bid, ask, volume). Some fields may not be present for a given exchange. <code>volume</code> is the last 24h volume. May also return additional fields.          </p>
+  <p>
+    Some fields may not be present for a given exchange. <code>volume</code> is the last 24h volume.</p><p>May also return additional fields, e.g. high/low/vwap              <i>(from <a href="interface_Openclerk_Currencies_Exchange.html#fetchRates" class="">fetchRates</a>)</i>
+      </p>
+<dl>
+            <dt>Returns:</dt>
+    <dd>
+              <div>
+          A list of rates for the currency pair        </div>
+          </dd>
+        <dt>Throws:</dt>
+    <dd>
+              <div>
+          <a href="class_Openclerk_Currencies_ExchangeRateException.html" class="">ExchangeRateException</a> - if there are no rates for the given pair        </div>
+          </dd>
+    </dl>
+  </blockquote>
+  <hr>
+  <h3>
+    <small>public function</small>
+    throttle(Logger $logger)    <a name="throttle"></a>
+  </h3>
+  <blockquote>
+      <p>
+    This allows all exchanges to optionally throttle multiple repeated requests based on a runtime configuration value. The throttle time is selected from either the <code>exchanges_NAME_throttle</code> or <code>exchanges_throttle</code> config values, or three seconds; which is the time in seconds to wait between repeated requests.          </p>
+<dl>
+            </dl>
+  </blockquote>
+</div><div class="footer">
+  Generated by
+  <a class="github" href="https://github.com/soundasleep/phpdoc2/">PHPDoc2</a>
+  Wed, 06 May 2015 15:59:45 +1200</div>
+</body></html>

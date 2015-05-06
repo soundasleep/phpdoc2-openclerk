@@ -1,0 +1,436 @@
+<!DOCTYPE html>
+<html><head>
+  <title>PHPDoc2 - openclerk</title>
+  <link rel="stylesheet" type="text/css" href="default.css">
+  </head>
+<body><nav>
+  <a href="index.html">Root</a>
+</nav>
+<div class="content"><ul>
+  <li>
+    \LightOpenID  </li>
+</ul>
+<h1>
+  <small>class</small>
+  <a href="namespace_.html" class="">(none)</a>  \  <a href="class__LightOpenID.html" class="">LightOpenID</a></h1>
+<hr>
+  <p>
+    This class provides a simple interface for OpenID (1.1 and 2.0) authentication. Supports Yadis discovery. The authentication process is stateless/dumb.          </p>
+  <p>
+    Usage: Sign-on with OpenID is a two step process: Step one is authentication with the provider: <code> $openid = new LightOpenID('my-host.example.org'); $openid->identity = 'ID supplied by user'; header('Location: ' . $openid->authUrl()); </code> The provider then sends various parameters via GET, one of them is openid_mode. Step two is verification: <code> $openid = new LightOpenID('my-host.example.org'); if ($openid->mode) { echo $openid->validate() ? 'Logged in.' : 'Failed'; } </code></p><p>Change the 'my-host.example.org' to your domain name. Do NOT use $_SERVER['HTTP_HOST'] for that, unless you know what you are doing.</p><p>Optionally, you can set $returnUrl and $realm (or $trustRoot, which is an alias). The default values for those are: $openid->realm = (!empty($_SERVER['HTTPS']) ? 'https' : 'http') . '://' . $_SERVER['HTTP_HOST']; $openid->returnUrl = $openid->realm . $_SERVER['REQUEST_URI']; If you don't know their meaning, refer to any openid tutorial, or specification. Or just guess.</p><p>AX and SREG extensions are supported. To use them, specify $openid->required and/or $openid->optional before calling $openid->authUrl(). These are arrays, with values being AX schema paths (the 'path' part of the URL). For example: $openid->required = array('namePerson/friendly', 'contact/email'); $openid->optional = array('namePerson/first'); If the server supports only SREG or OpenID 1.1, these are automaticaly mapped to SREG names, so that user doesn't have to know anything about the server.</p><p>To get the values, use $openid->getAttributes().</p><p>If LIGHTOPENID_TIMEOUT is defined, then this value (in ms) will be used to timeout the CURL OpenID requests; by default, this is limited to 10 seconds (instead of infinite). This can help in blocking potential Denial of Service attacks.</p><p>The library requires PHP >= 5.1.2 with curl or http/https stream wrappers enabled.          </p>
+<dl>
+            </dl>
+<hr>
+<h2>Method Summary</h2>
+<table>
+  <thead>
+    <tr>
+      <th>Name</th>
+      <th>Description</th>
+    </tr>
+  </thead>
+  <tbody>
+          <tr>
+        <td><a href="class__LightOpenID.html#__construct" class="">__construct($host)</a></td>
+        <td>
+                            </td>
+      </tr>
+          <tr>
+        <td><a href="class__LightOpenID.html#__get" class="">__get($name)</a></td>
+        <td>
+                            </td>
+      </tr>
+          <tr>
+        <td><a href="class__LightOpenID.html#__set" class="">__set($name, $value)</a></td>
+        <td>
+                            </td>
+      </tr>
+          <tr>
+        <td><a href="class__LightOpenID.html#authUrl" class="">authUrl($immediate = false)</a></td>
+        <td>
+          Returns authentication url. Usually, you want to redirect your user to it.                  </td>
+      </tr>
+          <tr>
+        <td><a href="class__LightOpenID.html#authUrl_v1" class="">authUrl_v1($immediate)</a></td>
+        <td>
+                            </td>
+      </tr>
+          <tr>
+        <td><a href="class__LightOpenID.html#authUrl_v2" class="">authUrl_v2($immediate)</a></td>
+        <td>
+                            </td>
+      </tr>
+          <tr>
+        <td><a href="class__LightOpenID.html#axParams" class="">axParams()</a></td>
+        <td>
+                            </td>
+      </tr>
+          <tr>
+        <td><a href="class__LightOpenID.html#build_url" class="">build_url($url, $parts)</a></td>
+        <td>
+                            </td>
+      </tr>
+          <tr>
+        <td><a href="class__LightOpenID.html#discover" class="">discover($url)</a></td>
+        <td>
+          Performs Yadis and HTML discovery. Normally not used.                  </td>
+      </tr>
+          <tr>
+        <td><a href="class__LightOpenID.html#getAttributes" class="">getAttributes()</a></td>
+        <td>
+          Gets AX/SREG attributes provided by OP. should be used only after successful validaton. Note that it does not guarantee that any of the required/optional parameters will be present, or that there will be no other attributes besides those specified. In other words. OP may provide whatever information it wants to. * SREG names will be mapped to AX names. * @return Array Array of attributes with keys being the AX schema names, e.g. 'contact/email'                  </td>
+      </tr>
+          <tr>
+        <td><a href="class__LightOpenID.html#getAxAttributes" class="">getAxAttributes()</a></td>
+        <td>
+                            </td>
+      </tr>
+          <tr>
+        <td><a href="class__LightOpenID.html#getSregAttributes" class="">getSregAttributes()</a></td>
+        <td>
+                            </td>
+      </tr>
+          <tr>
+        <td><a href="class__LightOpenID.html#hostExists" class="">hostExists($url)</a></td>
+        <td>
+          Checks if the server specified in the url exists.                  </td>
+      </tr>
+          <tr>
+        <td><a href="class__LightOpenID.html#htmlTag" class="">htmlTag($content, $tag, $attrName, $attrValue, $valueName)</a></td>
+        <td>
+          Helper function used to scan for <meta>/<link> tags and extract information from them                  </td>
+      </tr>
+          <tr>
+        <td><a href="class__LightOpenID.html#parse_header_array" class="">parse_header_array($array, $update_claimed_id)</a></td>
+        <td>
+                            </td>
+      </tr>
+          <tr>
+        <td><a href="class__LightOpenID.html#request" class="">request($url, $method = &quot;GET&quot;, $params = array(), $update_claimed_id = false)</a></td>
+        <td>
+                            </td>
+      </tr>
+          <tr>
+        <td><a href="class__LightOpenID.html#request_curl" class="">request_curl($url, $method = &quot;GET&quot;, $params = array(), $update_claimed_id)</a></td>
+        <td>
+                            </td>
+      </tr>
+          <tr>
+        <td><a href="class__LightOpenID.html#request_streams" class="">request_streams($url, $method = &quot;GET&quot;, $params = array(), $update_claimed_id)</a></td>
+        <td>
+                            </td>
+      </tr>
+          <tr>
+        <td><a href="class__LightOpenID.html#sregParams" class="">sregParams()</a></td>
+        <td>
+                            </td>
+      </tr>
+          <tr>
+        <td><a href="class__LightOpenID.html#validate" class="">validate()</a></td>
+        <td>
+          Performs OpenID verification with the OP.                  </td>
+      </tr>
+      </tbody>
+</table>
+  <hr>
+  <h3>
+    <small>public function</small>
+    __construct($host)    <a name="__construct"></a>
+  </h3>
+  <blockquote>
+    <dl>
+            </dl>
+  </blockquote>
+  <hr>
+  <h3>
+    <small>public function</small>
+    __get($name)    <a name="__get"></a>
+  </h3>
+  <blockquote>
+    <dl>
+            </dl>
+  </blockquote>
+  <hr>
+  <h3>
+    <small>public function</small>
+    __set($name, $value)    <a name="__set"></a>
+  </h3>
+  <blockquote>
+    <dl>
+            </dl>
+  </blockquote>
+  <hr>
+  <h3>
+    <small>public function</small>
+    authUrl($immediate = false)    <a name="authUrl"></a>
+  </h3>
+  <blockquote>
+      <p>
+    Returns authentication url. Usually, you want to redirect your user to it.          </p>
+<dl>
+        <dt>Parameters:</dt>
+    <dd>
+              <div>
+          <code>String</code>
+          -
+          $select_identifier Whether to request OP to select identity for an user in OpenID 2. Does not affect OpenID 1.        </div>
+          </dd>
+        <dt>Defaults:</dt>
+    <dd>
+              <div>
+          <code>immediate</code>
+          =
+          <code>false</code>        </div>
+          </dd>
+        <dt>Returns:</dt>
+    <dd>
+              <div>
+          String The authentication url.        </div>
+          </dd>
+        <dt>Throws:</dt>
+    <dd>
+              <div>
+          ErrorException        </div>
+          </dd>
+    </dl>
+  </blockquote>
+  <hr>
+  <h3>
+    <small>protected function</small>
+    authUrl_v1($immediate)    <a name="authUrl_v1"></a>
+  </h3>
+  <blockquote>
+    <dl>
+            </dl>
+  </blockquote>
+  <hr>
+  <h3>
+    <small>protected function</small>
+    authUrl_v2($immediate)    <a name="authUrl_v2"></a>
+  </h3>
+  <blockquote>
+    <dl>
+            </dl>
+  </blockquote>
+  <hr>
+  <h3>
+    <small>protected function</small>
+    axParams()    <a name="axParams"></a>
+  </h3>
+  <blockquote>
+    <dl>
+            </dl>
+  </blockquote>
+  <hr>
+  <h3>
+    <small>protected function</small>
+    build_url($url, $parts)    <a name="build_url"></a>
+  </h3>
+  <blockquote>
+    <dl>
+            </dl>
+  </blockquote>
+  <hr>
+  <h3>
+    <small>public function</small>
+    discover($url)    <a name="discover"></a>
+  </h3>
+  <blockquote>
+      <p>
+    Performs Yadis and HTML discovery. Normally not used.          </p>
+<dl>
+        <dt>Parameters:</dt>
+    <dd>
+              <div>
+          <code>$url</code>
+          -
+          Identity URL.        </div>
+          </dd>
+          <dt>Returns:</dt>
+    <dd>
+              <div>
+          String OP Endpoint (i.e. OpenID provider address).        </div>
+          </dd>
+        <dt>Throws:</dt>
+    <dd>
+              <div>
+          ErrorException        </div>
+          </dd>
+    </dl>
+  </blockquote>
+  <hr>
+  <h3>
+    <small>public function</small>
+    getAttributes()    <a name="getAttributes"></a>
+  </h3>
+  <blockquote>
+      <p>
+    Gets AX/SREG attributes provided by OP. should be used only after successful validaton. Note that it does not guarantee that any of the required/optional parameters will be present, or that there will be no other attributes besides those specified. In other words. OP may provide whatever information it wants to. * SREG names will be mapped to AX names. * @return Array Array of attributes with keys being the AX schema names, e.g. 'contact/email'          </p>
+<dl>
+                <dt>See:</dt>
+    <dd>
+              <div>
+          http://www.axschema.org/types/        </div>
+          </dd>
+  </dl>
+  </blockquote>
+  <hr>
+  <h3>
+    <small>protected function</small>
+    getAxAttributes()    <a name="getAxAttributes"></a>
+  </h3>
+  <blockquote>
+    <dl>
+            </dl>
+  </blockquote>
+  <hr>
+  <h3>
+    <small>protected function</small>
+    getSregAttributes()    <a name="getSregAttributes"></a>
+  </h3>
+  <blockquote>
+    <dl>
+            </dl>
+  </blockquote>
+  <hr>
+  <h3>
+    <small>public function</small>
+    hostExists($url)    <a name="hostExists"></a>
+  </h3>
+  <blockquote>
+      <p>
+    Checks if the server specified in the url exists.          </p>
+<dl>
+        <dt>Parameters:</dt>
+    <dd>
+              <div>
+          <code>$url</code>
+          -
+          url to check        </div>
+          </dd>
+          <dt>Returns:</dt>
+    <dd>
+              <div>
+          true, if the server exists; false otherwise        </div>
+          </dd>
+      </dl>
+  </blockquote>
+  <hr>
+  <h3>
+    <small>protected function</small>
+    htmlTag($content, $tag, $attrName, $attrValue, $valueName)    <a name="htmlTag"></a>
+  </h3>
+  <blockquote>
+      <p>
+    Helper function used to scan for <meta>/<link> tags and extract information from them          </p>
+<dl>
+            </dl>
+  </blockquote>
+  <hr>
+  <h3>
+    <small>protected function</small>
+    parse_header_array($array, $update_claimed_id)    <a name="parse_header_array"></a>
+  </h3>
+  <blockquote>
+    <dl>
+            </dl>
+  </blockquote>
+  <hr>
+  <h3>
+    <small>protected function</small>
+    request($url, $method = "GET", $params = array(), $update_claimed_id = false)    <a name="request"></a>
+  </h3>
+  <blockquote>
+    <dl>
+          <dt>Defaults:</dt>
+    <dd>
+              <div>
+          <code>method</code>
+          =
+          <code>"GET"</code>        </div>
+              <div>
+          <code>params</code>
+          =
+          array()        </div>
+              <div>
+          <code>update_claimed_id</code>
+          =
+          <code>false</code>        </div>
+          </dd>
+        </dl>
+  </blockquote>
+  <hr>
+  <h3>
+    <small>protected function</small>
+    request_curl($url, $method = "GET", $params = array(), $update_claimed_id)    <a name="request_curl"></a>
+  </h3>
+  <blockquote>
+    <dl>
+          <dt>Defaults:</dt>
+    <dd>
+              <div>
+          <code>method</code>
+          =
+          <code>"GET"</code>        </div>
+              <div>
+          <code>params</code>
+          =
+          array()        </div>
+          </dd>
+        </dl>
+  </blockquote>
+  <hr>
+  <h3>
+    <small>protected function</small>
+    request_streams($url, $method = "GET", $params = array(), $update_claimed_id)    <a name="request_streams"></a>
+  </h3>
+  <blockquote>
+    <dl>
+          <dt>Defaults:</dt>
+    <dd>
+              <div>
+          <code>method</code>
+          =
+          <code>"GET"</code>        </div>
+              <div>
+          <code>params</code>
+          =
+          array()        </div>
+          </dd>
+        </dl>
+  </blockquote>
+  <hr>
+  <h3>
+    <small>protected function</small>
+    sregParams()    <a name="sregParams"></a>
+  </h3>
+  <blockquote>
+    <dl>
+            </dl>
+  </blockquote>
+  <hr>
+  <h3>
+    <small>public function</small>
+    validate()    <a name="validate"></a>
+  </h3>
+  <blockquote>
+      <p>
+    Performs OpenID verification with the OP.          </p>
+<dl>
+            <dt>Returns:</dt>
+    <dd>
+              <div>
+          Bool Whether the verification was successful.        </div>
+          </dd>
+        <dt>Throws:</dt>
+    <dd>
+              <div>
+          ErrorException        </div>
+          </dd>
+    </dl>
+  </blockquote>
+</div><div class="footer">
+  Generated by
+  <a class="github" href="https://github.com/soundasleep/phpdoc2/">PHPDoc2</a>
+  Wed, 06 May 2015 15:59:17 +1200</div>
+</body></html>

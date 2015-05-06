@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html><head>
+  <title>PHPDoc2 - openclerk</title>
+  <link rel="stylesheet" type="text/css" href="default.css">
+  </head>
+<body><nav>
+  <a href="index.html">Root</a>
+</nav>
+<div class="content"><ul>
+  <li>
+    Users\OAuth2Providers  </li>
+</ul>
+<h1>
+  <small>class</small>
+  <a href="namespace_Users.html" class="">Users</a>  \  <a href="class_Users_OAuth2Providers.html" class="">OAuth2Providers</a></h1>
+<hr>
+  <p>
+    Provides an interface to supported OAuth2 providers. We need to provide a wrapper around this so we can map our <code>oauth2 provider</code> key (e.g. 'google' to the relevant ProviderInterface for OAuth2.) TODO this could be abstracted out into component-discovery for each provider          </p>
+<dl>
+            </dl>
+<hr>
+<h2>Method Summary</h2>
+<table>
+  <thead>
+    <tr>
+      <th>Name</th>
+      <th>Description</th>
+    </tr>
+  </thead>
+  <tbody>
+          <tr>
+        <td><a href="class_Users_OAuth2Providers.html#__construct" class="">__construct($key, ProviderInterface $provider)</a></td>
+        <td>
+                            </td>
+      </tr>
+          <tr>
+        <td><a href="class_Users_OAuth2Providers.html#createProvider" class="">createProvider($key, $redirect)</a></td>
+        <td>
+          Allows instances to be created based on <a href="class_Users_OAuth2Providers.html#getProviders" class="">#getProviders()</a>.                  </td>
+      </tr>
+          <tr>
+        <td><a href="class_Users_OAuth2Providers.html#facebook" class="">facebook($redirect)</a></td>
+        <td>
+          Get the <a href="class_Users_OAuth2Providers.html" class="">OAuth2Providers</a> for the Facebook authentication handler.                  </td>
+      </tr>
+          <tr>
+        <td><a href="class_Users_OAuth2Providers.html#getKey" class="">getKey()</a></td>
+        <td>
+                            </td>
+      </tr>
+          <tr>
+        <td><a href="class_Users_OAuth2Providers.html#getProvider" class="">getProvider()</a></td>
+        <td>
+                            </td>
+      </tr>
+          <tr>
+        <td><a href="class_Users_OAuth2Providers.html#getProviders" class="">getProviders()</a></td>
+        <td>
+          Get a list of all the provider keys supported by this component.                  </td>
+      </tr>
+          <tr>
+        <td><a href="class_Users_OAuth2Providers.html#github" class="">github($redirect)</a></td>
+        <td>
+          Get the <a href="class_Users_OAuth2Providers.html" class="">OAuth2Providers</a> for the Github authentication handler.                  </td>
+      </tr>
+          <tr>
+        <td><a href="class_Users_OAuth2Providers.html#google" class="">google($redirect)</a></td>
+        <td>
+          Get the <a href="class_Users_OAuth2Providers.html" class="">OAuth2Providers</a> for the Google authentication handler.                  </td>
+      </tr>
+          <tr>
+        <td><a href="class_Users_OAuth2Providers.html#loadProvider" class="">loadProvider($key, $redirect)</a></td>
+        <td>
+          Load the ProviderInterface with the given key, from <a href="class_Users_OAuth2Providers.html#getProviders" class="">#getProviders()</a>.                  </td>
+      </tr>
+      </tbody>
+</table>
+  <hr>
+  <h3>
+    <small>public function</small>
+    __construct($key, ProviderInterface $provider)    <a name="__construct"></a>
+  </h3>
+  <blockquote>
+    <dl>
+            </dl>
+  </blockquote>
+  <hr>
+  <h3>
+    <small>static function</small>
+    createProvider($key, $redirect)    <a name="createProvider"></a>
+  </h3>
+  <blockquote>
+      <p>
+    Allows instances to be created based on <a href="class_Users_OAuth2Providers.html#getProviders" class="">#getProviders()</a>.          </p>
+<dl>
+            </dl>
+  </blockquote>
+  <hr>
+  <h3>
+    <small>static function</small>
+    facebook($redirect)    <a name="facebook"></a>
+  </h3>
+  <blockquote>
+      <p>
+    Get the <a href="class_Users_OAuth2Providers.html" class="">OAuth2Providers</a> for the Facebook authentication handler.          </p>
+<dl>
+        <dt>Parameters:</dt>
+    <dd>
+              <div>
+          <code>$redirect</code>
+          -
+          the <code>redirectUri</code> to provide the provider.        </div>
+          </dd>
+          <dt>Returns:</dt>
+    <dd>
+              <div>
+          A <a href="class_Users_OAuth2Providers.html" class="">OAuth2Providers</a>        </div>
+          </dd>
+      </dl>
+  </blockquote>
+  <hr>
+  <h3>
+    <small>public function</small>
+    getKey()    <a name="getKey"></a>
+  </h3>
+  <blockquote>
+    <dl>
+            </dl>
+  </blockquote>
+  <hr>
+  <h3>
+    <small>public function</small>
+    getProvider()    <a name="getProvider"></a>
+  </h3>
+  <blockquote>
+    <dl>
+            </dl>
+  </blockquote>
+  <hr>
+  <h3>
+    <small>static function</small>
+    getProviders()    <a name="getProviders"></a>
+  </h3>
+  <blockquote>
+      <p>
+    Get a list of all the provider keys supported by this component.          </p>
+<dl>
+                <dt>See:</dt>
+    <dd>
+              <div>
+          <a href="class_Users_OAuth2Providers.html#createProvider" class="">createProvider($key, $redirect)</a>        </div>
+          </dd>
+  </dl>
+  </blockquote>
+  <hr>
+  <h3>
+    <small>static function</small>
+    github($redirect)    <a name="github"></a>
+  </h3>
+  <blockquote>
+      <p>
+    Get the <a href="class_Users_OAuth2Providers.html" class="">OAuth2Providers</a> for the Github authentication handler.          </p>
+<dl>
+        <dt>Parameters:</dt>
+    <dd>
+              <div>
+          <code>$redirect</code>
+          -
+          the <code>redirectUri</code> to provide the provider.        </div>
+          </dd>
+          <dt>Returns:</dt>
+    <dd>
+              <div>
+          A <a href="class_Users_OAuth2Providers.html" class="">OAuth2Providers</a>        </div>
+          </dd>
+      </dl>
+  </blockquote>
+  <hr>
+  <h3>
+    <small>static function</small>
+    google($redirect)    <a name="google"></a>
+  </h3>
+  <blockquote>
+      <p>
+    Get the <a href="class_Users_OAuth2Providers.html" class="">OAuth2Providers</a> for the Google authentication handler.          </p>
+<dl>
+        <dt>Parameters:</dt>
+    <dd>
+              <div>
+          <code>$redirect</code>
+          -
+          the <code>redirectUri</code> to provide the provider.        </div>
+          </dd>
+          <dt>Returns:</dt>
+    <dd>
+              <div>
+          A <a href="class_Users_OAuth2Providers.html" class="">OAuth2Providers</a>        </div>
+          </dd>
+      </dl>
+  </blockquote>
+  <hr>
+  <h3>
+    <small>static function</small>
+    loadProvider($key, $redirect)    <a name="loadProvider"></a>
+  </h3>
+  <blockquote>
+      <p>
+    Load the ProviderInterface with the given key, from <a href="class_Users_OAuth2Providers.html#getProviders" class="">#getProviders()</a>.          </p>
+<dl>
+        <dt>Parameters:</dt>
+    <dd>
+              <div>
+          <code>$redirect</code>
+          -
+          the <code>redirectUri</code> to provide the provider.        </div>
+          </dd>
+          <dt>Returns:</dt>
+    <dd>
+              <div>
+          A ProviderInterface        </div>
+          </dd>
+      </dl>
+  </blockquote>
+</div><div class="footer">
+  Generated by
+  <a class="github" href="https://github.com/soundasleep/phpdoc2/">PHPDoc2</a>
+  Wed, 06 May 2015 15:59:52 +1200</div>
+</body></html>

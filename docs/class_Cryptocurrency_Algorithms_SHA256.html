@@ -1,39 +1,33 @@
-<!DOCTYPE HTML>
-<html>
-<head>
+<!DOCTYPE html>
+<html><head>
   <title>PHPDoc2 - openclerk</title>
   <link rel="stylesheet" type="text/css" href="default.css">
-</head>
-<body>
-<nav>
+  </head>
+<body><nav>
   <a href="index.html">Root</a>
 </nav>
-
-<div class="content">
-<ul class="class-hierarchy"><li><a href="class_Openclerk_Currencies_HashAlgorithm.html" class="">Openclerk\Currencies\HashAlgorithm</a><ul><li>Cryptocurrency\Algorithms\SHA256</li></ul></li></ul>
-<h1>
+<div class="content">  <ul class="class-hierarchy">  <li>      <a href="class_Openclerk_Currencies_HashAlgorithm.html" class="">Openclerk\Currencies\HashAlgorithm</a>  <ul>
+  <li>
+    Cryptocurrency\Algorithms\SHA256  </li>
+</ul>
+  </li>  </ul><h1>
   <small>class</small>
-
-  <a href="namespace_Cryptocurrency_Algorithms.html" class="">Cryptocurrency\Algorithms</a>  \
-  <a href="class_Cryptocurrency_Algorithms_SHA256.html" class="">SHA256</a></h1>
-
-
+  <a href="namespace_Cryptocurrency_Algorithms.html" class="">Cryptocurrency\Algorithms</a>  \  <a href="class_Cryptocurrency_Algorithms_SHA256.html" class="">SHA256</a></h1>
+  <dl>
+    <dt>All implemented interfaces:</dt>
+    <dd>
+            <a href="interface_Openclerk_Currencies_HashAlgorithmInformation.html" class="">HashAlgorithmInformation</a>    </dd>
+  </dl>
+<hr>
+  <p>
+    The SHA-256 algorithm used in Bitcoin, Namecoin etc hashing.          </p>
+  <p>
+    This is the base interface; other interfaces will provide additional functionality as necessary.              <i>(from <a href="class_Openclerk_Currencies_HashAlgorithm.html" class="">HashAlgorithm</a>)</i>
+      </p>
 <dl>
-  <dt>All implemented interfaces:</dt>
-  <dd>
-    <a href="interface_Openclerk_Currencies_HashAlgorithmInformation.html" class="">HashAlgorithmInformation</a>  </dd>
-</dl>
-
-
-
-
+            </dl>
 <hr>
-
-<p>The SHA-256 algorithm used in Bitcoin, Namecoin etc hashing.</p><p>This is the base interface; other interfaces will provide additional functionality as necessary. <i>(from <a href="class_Openclerk_Currencies_HashAlgorithm.html" class="">HashAlgorithm</a>)</i></p><dl></dl>
-<hr>
-
 <h2>Method Summary</h2>
-
 <table>
   <thead>
     <tr>
@@ -42,72 +36,108 @@
     </tr>
   </thead>
   <tbody>
-<tr><td><a href="class_Cryptocurrency_Algorithms_SHA256.html#getCode" class="">getCode()</a></td><td>Get the unique 1-32 character algorithm code for this algorithm, e.g. 'sha256' or 'scrypt'. Must be lowercase. This is not visible to users.</td></tr><tr><td><a href="class_Cryptocurrency_Algorithms_SHA256.html#getDivisor" class="">getDivisor()</a></td><td>For some currencies, hashrates are normally measured in kh/s (divisor = 1e3); for some currencies, hashrates are normally measured in MH/s (divisor = 1e6); for some currencies, hashrates are normally measured in GH/s (divisor = 1e9).</td></tr><tr><td><a href="class_Cryptocurrency_Algorithms_SHA256.html#getName" class="">getName()</a></td><td>Get the English name of this algorithm, e.g. "SHA-256" or "Scrypt".</td></tr><tr><td><a href="class_Cryptocurrency_Algorithms_SHA256.html#getURL" class="">getURL()</a></td><td></td></tr>  </tbody>
+          <tr>
+        <td><a href="class_Cryptocurrency_Algorithms_SHA256.html#getCode" class="">getCode()</a></td>
+        <td>
+          Get the unique 1-32 character algorithm code for this algorithm, e.g. 'sha256' or 'scrypt'. Must be lowercase. This is not visible to users.                  </td>
+      </tr>
+          <tr>
+        <td><a href="class_Cryptocurrency_Algorithms_SHA256.html#getDivisor" class="">getDivisor()</a></td>
+        <td>
+          For some currencies, hashrates are normally measured in kh/s (divisor = 1e3); for some currencies, hashrates are normally measured in MH/s (divisor = 1e6); for some currencies, hashrates are normally measured in GH/s (divisor = 1e9).                  </td>
+      </tr>
+          <tr>
+        <td><a href="class_Cryptocurrency_Algorithms_SHA256.html#getName" class="">getName()</a></td>
+        <td>
+          Get the English name of this algorithm, e.g. "SHA-256" or "Scrypt".                  </td>
+      </tr>
+          <tr>
+        <td><a href="class_Cryptocurrency_Algorithms_SHA256.html#getURL" class="">getURL()</a></td>
+        <td>
+                            </td>
+      </tr>
+      </tbody>
 </table>
-
-
-<h2>Inherited Method Summary</h2>
-
-<table>
-  <thead>
-    <tr>
-      <th>Name</th>
-      <th>Description</th>
-    </tr>
-  </thead>
-  <tbody>
-<tr><td><a href="class_Openclerk_Currencies_HashAlgorithm.html#getDivisorText" class="">getDivisorText()</a></td><td>Get the user-visible text for this divisor. By default, generates the text based on <a href="class_Openclerk_Currencies_HashAlgorithm.html#getDivisor" class="">#getDivisor()</a>. <i>(from <a href="class_Openclerk_Currencies_HashAlgorithm.html#getDivisorText" class="">HashAlgorithm</a>)</i></td></tr>  </tbody>
-</table>
-
-
-
-<hr>
-
-<h3>
-  <small>public function</small>
-  getCode()  <a name="getCode"></a>
-</h3>
-
-<blockquote>
-<p>Get the unique 1-32 character algorithm code for this algorithm, e.g. 'sha256' or 'scrypt'. Must be lowercase. This is not visible to users.</p><dl><dt>Overrides:</dt><dd><a href="class_Openclerk_Currencies_HashAlgorithm.html#getCode" class="">getCode()</a></dd></dl></blockquote>
-
-
-<hr>
-
-<h3>
-  <small>public function</small>
-  getDivisor()  <a name="getDivisor"></a>
-</h3>
-
-<blockquote>
-<p>For some currencies, hashrates are normally measured in kh/s (divisor = 1e3); for some currencies, hashrates are normally measured in MH/s (divisor = 1e6); for some currencies, hashrates are normally measured in GH/s (divisor = 1e9).</p><dl><dt>Overrides:</dt><dd><a href="class_Openclerk_Currencies_HashAlgorithm.html#getDivisor" class="">getDivisor()</a></dd><dt>Returns:</dt><dd>by default, 1e3<br></dd></dl></blockquote>
-
-
-<hr>
-
-<h3>
-  <small>public function</small>
-  getName()  <a name="getName"></a>
-</h3>
-
-<blockquote>
-<p>Get the English name of this algorithm, e.g. "SHA-256" or "Scrypt".</p><dl><dt>Overrides:</dt><dd><a href="class_Openclerk_Currencies_HashAlgorithm.html#getName" class="">getName()</a></dd></dl></blockquote>
-
-
-<hr>
-
-<h3>
-  <small>public function</small>
-  getURL()  <a name="getURL"></a>
-</h3>
-
-<blockquote>
-<dl><dt>Returns:</dt><dd>the URL of the hash algorithm, or <code>null</code><br></dd></dl></blockquote>
-
-</div>
-
-<div class="footer">
-  Generated by <a href="https://github.com/soundasleep/phpdoc2/" class="github">PHPDoc2</a> Fri, 24 Apr 2015 14:42:35 +1200</div>
-
-</body>
-</html>
+  <h2>Inherited Method Summary</h2>
+  <table>
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+              <tr>
+          <td><a href="class_Openclerk_Currencies_HashAlgorithm.html#getDivisorText" class="">getDivisorText()</a></td>
+          <td>
+            Get the user-visible text for this divisor. By default, generates the text based on <a href="class_Openclerk_Currencies_HashAlgorithm.html#getDivisor" class="">#getDivisor()</a>.            <i>(from <a href="class_Openclerk_Currencies_HashAlgorithm.html#getDivisorText" class="">HashAlgorithm</a>)</i>
+                      </td>
+        </tr>
+          </tbody>
+  </table>
+  <hr>
+  <h3>
+    <small>public function</small>
+    getCode()    <a name="getCode"></a>
+  </h3>
+  <blockquote>
+      <p>
+    Get the unique 1-32 character algorithm code for this algorithm, e.g. 'sha256' or 'scrypt'. Must be lowercase. This is not visible to users.          </p>
+<dl>
+      <dt>Overrides:</dt>
+    <dd>
+      <a href="class_Openclerk_Currencies_HashAlgorithm.html#getCode" class="">getCode()</a>    </dd>
+            </dl>
+  </blockquote>
+  <hr>
+  <h3>
+    <small>public function</small>
+    getDivisor()    <a name="getDivisor"></a>
+  </h3>
+  <blockquote>
+      <p>
+    For some currencies, hashrates are normally measured in kh/s (divisor = 1e3); for some currencies, hashrates are normally measured in MH/s (divisor = 1e6); for some currencies, hashrates are normally measured in GH/s (divisor = 1e9).          </p>
+<dl>
+      <dt>Overrides:</dt>
+    <dd>
+      <a href="class_Openclerk_Currencies_HashAlgorithm.html#getDivisor" class="">getDivisor()</a>    </dd>
+            <dt>Returns:</dt>
+    <dd>
+              <div>
+          by default, 1e3        </div>
+          </dd>
+      </dl>
+  </blockquote>
+  <hr>
+  <h3>
+    <small>public function</small>
+    getName()    <a name="getName"></a>
+  </h3>
+  <blockquote>
+      <p>
+    Get the English name of this algorithm, e.g. "SHA-256" or "Scrypt".          </p>
+<dl>
+      <dt>Overrides:</dt>
+    <dd>
+      <a href="class_Openclerk_Currencies_HashAlgorithm.html#getName" class="">getName()</a>    </dd>
+            </dl>
+  </blockquote>
+  <hr>
+  <h3>
+    <small>public function</small>
+    getURL()    <a name="getURL"></a>
+  </h3>
+  <blockquote>
+    <dl>
+            <dt>Returns:</dt>
+    <dd>
+              <div>
+          the URL of the hash algorithm, or <code>null</code>        </div>
+          </dd>
+      </dl>
+  </blockquote>
+</div><div class="footer">
+  Generated by
+  <a class="github" href="https://github.com/soundasleep/phpdoc2/">PHPDoc2</a>
+  Wed, 06 May 2015 15:59:39 +1200</div>
+</body></html>
